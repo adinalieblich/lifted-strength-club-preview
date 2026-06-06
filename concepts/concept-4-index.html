@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Concept 4 — The Index (Swiss / editorial)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.16)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:var(--greige);color:var(--charcoal);-webkit-font-smoothing:antialiased}
+  .tag{background:var(--brass);color:var(--charcoal);text-align:center;font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:6px}
+  .mono{font-family:'Space Mono',monospace}
+  .topbar{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--rule);padding:18px clamp(20px,4vw,52px);font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgray)}
+  .topbar .brand{color:var(--charcoal);font-weight:700;letter-spacing:.18em}
+  .topbar nav{display:flex;gap:26px}
+  .grid{display:grid;grid-template-columns:1.45fr 1fr;min-height:calc(100vh - 96px)}
+  .left{padding:clamp(34px,5vw,70px);border-right:1px solid var(--rule);display:flex;flex-direction:column;justify-content:space-between;position:relative}
+  .num-lbl{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--brass);letter-spacing:.1em}
+  .left h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.6rem,5.6vw,5.4rem);line-height:.98;margin-top:24px;letter-spacing:-.01em}
+  .left h1 em{font-style:italic;color:var(--teal-dk)}
+  .left .sub{max-width:32em;color:var(--warmgray);margin-top:28px;font-size:1.04rem;line-height:1.7}
+  .left .foot{display:flex;justify-content:space-between;align-items:flex-end;font-family:'Space Mono',monospace;font-size:.72rem;color:var(--warmgray);text-transform:uppercase;letter-spacing:.06em;margin-top:40px}
+  .left .foot a{color:var(--charcoal);text-decoration:none;border:1px solid var(--charcoal);padding:12px 20px;border-radius:1px}
+  .left .foot a:hover{background:var(--charcoal);color:var(--cream)}
+  .right{display:flex;flex-direction:column}
+  .ix{flex:1;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(28px,4vw,52px);border-bottom:1px solid var(--rule);text-decoration:none;color:inherit;transition:.3s;position:relative}
+  .ix:hover{background:var(--cream);padding-left:clamp(40px,5vw,72px)}
+  .ix:last-child{border-bottom:none}
+  .ix .n{font-family:'Space Mono',monospace;font-size:.8rem;color:var(--brass)}
+  .ix .t{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.4vw,2.1rem);font-weight:400}
+  .ix .a{font-family:'Space Mono',monospace;color:var(--warmgray)}
+  .ix:hover .a{color:var(--brass)}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}.left{border-right:none;border-bottom:1px solid var(--rule)}.topbar nav{display:none}.ix{padding:26px clamp(20px,4vw,52px)}}
+</style>
+</head>
+<body>
+<div class="tag">ROUGH CONCEPT 4 — “THE INDEX” · Swiss / editorial grid (intellectual, academic, anti-template)</div>
+<div class="topbar">
+  <span class="brand">LIFTED STRENGTH CLUB</span>
+  <nav><span>28.70°N / 81.34°W — Longwood, FL</span></nav>
+  <span>Est. by Dr. S. Gam, PhD</span>
+</div>
+<div class="grid">
+  <div class="left">
+    <div>
+      <div class="num-lbl">00 — Strength training for mental health</div>
+      <h1>Strong mind.<br>Strong body.<br><em>Strong life.</em></h1>
+      <p class="sub">A private studio in Longwood built on exercise science — for people who’ve felt unwelcome, judged, or defeated by fitness culture. No weigh-ins. No before-and-after photos.</p>
+    </div>
+    <div class="foot">
+      <span>Fig. 01 — The Method →</span>
+      <a href="#">Book a consult ↗</a>
+    </div>
+  </div>
+  <div class="right">
+    <a class="ix" href="#"><span class="n">01</span><span class="t">The Method</span><span class="a">↗</span></a>
+    <a class="ix" href="#"><span class="n">02</span><span class="t">The Science</span><span class="a">↗</span></a>
+    <a class="ix" href="#"><span class="n">03</span><span class="t">Membership</span><span class="a">↗</span></a>
+    <a class="ix" href="#"><span class="n">04</span><span class="t">Dr. Sharon Gam</span><span class="a">↗</span></a>
+    <a class="ix" href="#"><span class="n">05</span><span class="t">The Journal</span><span class="a">↗</span></a>
+  </div>
+</div>
+</body>
+</html>
