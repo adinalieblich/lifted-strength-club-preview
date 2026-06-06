@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Slow Down During Strength Training For Better Results -- Lifted Strength Club</title><meta name="description" content="Many people do their strength training exercises too fast. Slowing down can help stimulate more muscle growth, prevent injury, and even improve your mental heal"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">6 min read</span></div><h1>Slow Down During Strength Training For Better Results</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/684c7dc84b85c504418f9740/1749844844093/Slow+down+movement.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>Movement tempo is how fast you’re moving during each strength training exercise.</p>
+<p>Many people do their exercises too fast, and simply slowing down can help stimulate more muscle growth and even improve your mental health.</p>
+<p>Here’s why it’s important to move slowly, how to make sure you’re moving slowly enough, and when it’s appropriate to move fast.</p>
+<h2>Why Slowing Down Can Help</h2>
+<p>Using good exercise form is essential for lifting weights safely and effectively. It’s important for stimulating the right muscles to grow and get stronger, for protecting your muscles and joints, and for feeling confident and improving exercise motivation.</p>
+<p>When you move slowly and deliberately, it’s easier to focus on your form and on working the target muscles.</p>
+<p>By moving slowly, you also avoid using momentum. You may have seen someone in the gym leaning back with every bicep curl or rocking back and forth during their seated rows. They’re using momentum to move the weights.</p>
+<p>Using momentum means your muscles don’t have to work as hard, so they won’t get the full benefit of each exercise.</p>
+<p>Using momentum can also increase your risk of injury. Swaying or leaning during a bicep curl or row or dropping quickly to the bottom of a squat, for example, can put an unnecessary strain on your muscles and joints.</p>
+<p>There are three main factors that create the stimulus for muscle growth. The most important, according to recent research, is lifting heavy weights. That’s known in the scientific community as “mechanical tension”.</p>
+<p>Another factor that contributes to muscle growth is metabolic stress. Metabolic stress is when waste products build up in your muscle cells. Don’t worry, though, as soon as the exercise is over your body starts clearing them out. Your brain senses those waste products and sends signals that eventually result in muscle growth.</p>
+<p>Slowing down your movement keeps your muscles under tension for longer, and the longer your muscles stay under tension, the more metabolic stress you create.</p>
+<p>This is why you might hear the concept of slowing down described as increasing “time under tension”.</p>
+<p>This is especially important for people who can’t or aren’t ready to lift heavy weights. Beginners need to work their way up to heavy weights over time, and people with certain underlying conditions or previous injuries may not be able to lift heavy.</p>
+<p>In those cases, increasing metabolic stress by slowing down movement tempo can be an effective way of getting the benefits with lighter weights.</p>
+<p>In my work with people dealing with depression, anxiety, and other mental health issues, many people are disconnected from their bodies.</p>
+<p>Slowing down helps you get into your body and pay attention to what your body is telling you.</p>
+<p>The skill of listening to your body signals (which is called interoception) can help boost your mental health by helping you sense when you’re feeling anxious, stressed, or depressed so you can identify triggers and take action.</p>
+<p>It also helps connect you to a feeling of deep strength and capability within your body, and that creates a sense of safety that can allow you to relax.</p>
+<p>With my clients who tend to avoid uncomfortable sensations or situations (which is a lot of people), I find slowing down to be an especially important tool.</p>
+<p>Lifting weights slowly creates discomfort, which is one reason many people move too fast. In this case, though, it’s a controlled discomfort with a clear source. Practicing the skill of feeling that discomfort without overreaction or worry, and even leaning into it, can have incredibly positive impacts on your ability to face discomfort in your daily life.</p>
+<p>To learn more about the value of getting comfortable with discomfort and how strength training can build that skill, check out my full article: Using Strength Training To Get Comfortable With Discomfort</p>
+<h2>When To Go A Little Faster</h2>
+<p>You’ll probably have to decrease the weights you use or do an easier exercise variation if you’re moving slowly, since slowing down makes the exercise feel harder.</p>
+<p>Lifting heavy weights is important for building strength, so you’ll sacrifice some of that strength building potential if you decrease the weights.</p>
+<p>If building strength is your main goal and you have enough exercise experience to be able to lift heavy, you should move a little faster on your big strength exercises.</p>
+<p>Always maintain good form and stay in control of the weights at all times, though. Lifting heavy is not an excuse to use momentum or get sloppy with your reps.</p>
+<p>Similarly, if you’re training for muscular power, speed is important. In that case you’d use a lighter weight and move it as quickly and explosively as possible on each rep. Again, though, good form and body control are essential.</p>
+<h2>How Slow Should You Go</h2>
+<p>A recent review study looked at the previous research and concluded that in order to optimally stimulate muscle growth, each repetition should last between 2-8 seconds.</p>
+<p>Within that 2-8 seconds, it’s helpful to focus on slowing down a specific part of the movement.</p>
+<p>A strength exercise can be divided into two parts: There’s the “lifting” part of the movement, and the “lowering” part of the movement.</p>
+<p>During the “lifting” part, you’re overcoming resistance. That part of the exercise is also called the “concentric” or “positive” part. It’s usually the harder part of the exercise.</p>
+<p>Next comes the “lowering” part, when you return to the starting position. This is usually the easier part, since you’re simply using your muscles to control the weights as gravity pulls them down. This part of the movement is also called the “eccentric” or “negative” part of the exercise. There’s some evidence that emphasizing this part of the exercise can help stimulate more muscle growth.</p>
+<p>Let’s look at a dumbbell chest press. You start the exercise with the dumbbells on either side of your chest. The lifting (concentric) part of the exercise is when you push the dumbbells up and away from you, towards the ceiling.</p>
+<p>The lowering (eccentric) part of the exercise is when you return the dumbbells to the bottom position next to your chest.</p>
+<p>A good goal is to make the lifting (concentric) part of the exercise last 1-2 seconds and the lowering (eccentric) part last 3-4 seconds. That would put you squarely in the 2-8 second range, and you can experiment a little and find what feels best for you.</p>
+<h2>If You Need Help</h2>
+<p>If you feel like you’ve been moving too fast in your workouts and aren’t sure how to dial in your form and movement speed, I’d be happy to help. Contact me to learn about training options!</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>
