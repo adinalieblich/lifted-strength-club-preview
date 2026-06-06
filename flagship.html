@@ -7,16 +7,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <!-- Brand type: Futura PT (headings) + Poppins (body) per drsharongam.com. Jost = free Futura PT stand-in for preview; production uses real Futura PT via Adobe Fonts. -->
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.15)}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  h1,h2,h3,.serif{font-family:'Jost',sans-serif;font-weight:400;line-height:1.02;letter-spacing:-.015em}
+  body{font-family:'Outfit',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.04;letter-spacing:0}
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
-  .mono{font-family:'Jost',sans-serif}
+  .mono{font-family:'Outfit',sans-serif}
   .wrap{max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
   .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;font-weight:600}
 
@@ -27,8 +27,9 @@
   header{position:fixed;top:0;left:0;right:0;z-index:120;transition:.4s;border-bottom:1px solid transparent}
   header.scrolled{background:rgba(42,42,42,.8);backdrop-filter:blur(12px);border-color:rgba(255,255,255,.08)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:82px}
-  .logo{font-family:'Jost',sans-serif;font-weight:500;font-size:1.2rem;letter-spacing:.32em;color:#fff}
-  .logo b{color:var(--brass)}
+  .logo{display:inline-flex;align-items:center;color:#fff;text-decoration:none}
+  .logo svg{height:52px;width:auto;display:block}
+  footer .logo svg{height:60px}
   .menu{display:flex;align-items:center;gap:36px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
   .menu a{position:relative}
   .menu a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--brass);transition:width .35s}
@@ -52,12 +53,12 @@
      linear-gradient(180deg,rgba(42,42,42,.5) 0%,rgba(42,42,42,.18) 30%,rgba(42,42,42,.5) 62%,rgba(42,42,42,.97) 100%),
      linear-gradient(90deg,rgba(42,42,42,.8) 0%,rgba(42,42,42,.32) 44%,transparent 72%)}
   .hero .wrap{position:relative;z-index:3;width:100%;padding-bottom:6vh}
-  .live{position:absolute;bottom:34px;left:clamp(24px,5vw,64px);z-index:4;display:flex;align-items:center;gap:9px;font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,248,245,.75);background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:8px 14px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
+  .live{position:absolute;bottom:34px;left:clamp(24px,5vw,64px);z-index:4;display:flex;align-items:center;gap:9px;font-family:'Outfit',sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,248,245,.75);background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:8px 14px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
   .live .d{width:8px;height:8px;border-radius:50%;background:var(--blush);animation:pulse 1.6s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
   /* prominent credentials + press, top of hero */
   .herotop{position:absolute;top:88px;left:0;right:0;z-index:4;display:flex;align-items:center;justify-content:center;padding:8px clamp(24px,5vw,64px);flex-wrap:wrap}
-  .herotop .cred{font-family:'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;color:var(--cream);display:flex;align-items:center;gap:9px;white-space:nowrap;background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:9px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
+  .herotop .cred{font-family:'Outfit',sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;color:var(--cream);display:flex;align-items:center;gap:9px;white-space:nowrap;background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:9px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
   .herotop .cred b{color:var(--brass);font-weight:600}
   /* prominent press band, directly under the hero */
   .featband{background:var(--greige);padding:26px 0;border-bottom:1px solid rgba(42,42,42,.07)}
@@ -86,7 +87,7 @@
 
   .marquee{background:var(--brass);color:var(--charcoal);overflow:hidden;white-space:nowrap;padding:15px 0}
   .marquee .track{display:inline-block;animation:scroll 30s linear infinite}
-  .marquee span{font-family:'Jost',sans-serif;font-style:italic;font-size:1.35rem;margin:0 30px}
+  .marquee span{font-family:'Outfit',sans-serif;font-style:italic;font-size:1.35rem;margin:0 30px}
   .marquee span.o{font-style:normal;font-weight:500}
   @keyframes scroll{to{transform:translateX(-50%)}}
 
@@ -98,7 +99,7 @@
   .manifesto{background:var(--teal-dk);color:var(--cream);padding:clamp(90px,16vh,180px) 0;position:relative;overflow:hidden}
   .manifesto .k{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--blush);margin-bottom:36px;display:flex;align-items:center;gap:14px}
   .manifesto .k::before{content:'';width:46px;height:1px;background:var(--blush)}
-  .manifesto h2{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(2rem,6vw,5rem);line-height:1.06;max-width:17em}
+  .manifesto h2{font-family:'Outfit',sans-serif;font-weight:300;font-size:clamp(2rem,6vw,5rem);line-height:1.06;max-width:17em}
   .manifesto .strike{position:relative;color:rgba(244,248,245,.45)}
   .manifesto .strike::after{content:'';position:absolute;left:-2%;right:-2%;top:52%;height:2px;background:var(--blush);transform:rotate(-2deg)}
   .manifesto .hi{font-style:italic;color:var(--brass)}
@@ -110,7 +111,7 @@
   .split .bg{position:absolute;top:0;left:0;height:100%;width:100vw;max-width:none;object-fit:cover}
   .split .content{position:absolute;bottom:0;z-index:3;padding:clamp(40px,6vw,84px);max-width:30em}
   .split .num{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:18px}
-  .split h3{font-family:'Jost',sans-serif;font-size:clamp(2.4rem,5.4vw,4.6rem);font-weight:300;line-height:.92;margin-bottom:18px}
+  .split h3{font-family:'Outfit',sans-serif;font-size:clamp(2.4rem,5.4vw,4.6rem);font-weight:300;line-height:.92;margin-bottom:18px}
   .split p{font-size:1.02rem;line-height:1.65}
   /* BODY pane (full width, behind) */
   .split .bodypane{z-index:1}
@@ -144,7 +145,7 @@
   .stats{background:var(--charcoal);color:var(--cream);padding:clamp(60px,9vh,110px) 0}
   .stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
   .stat{border-left:1px solid rgba(244,248,245,.16);padding-left:24px}
-  .stat .v{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(2.6rem,5vw,4rem);line-height:1;color:var(--brass)}
+  .stat .v{font-family:'Outfit',sans-serif;font-weight:300;font-size:clamp(2.6rem,5vw,4rem);line-height:1;color:var(--brass)}
   .stat .l{margin-top:12px;font-size:.82rem;letter-spacing:.06em;color:rgba(244,248,245,.65);line-height:1.5}
 
   /* ===== SECTION HEAD ===== */
@@ -159,12 +160,12 @@
   .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
   .cell{background:rgba(244,248,245,.04);border:1px solid rgba(244,248,245,.09);border-radius:16px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;transition:.4s;overflow:hidden;position:relative}
   .cell:hover{background:rgba(183,139,82,.12);border-color:rgba(183,139,82,.5);transform:translateY(-4px)}
-  .cell .n{font-family:'Jost',sans-serif;font-size:1.4rem;color:var(--brass)}
-  .cell h4{font-family:'Jost',sans-serif;font-weight:400;font-size:1.35rem;color:var(--cream);margin-bottom:8px}
+  .cell .n{font-family:'Outfit',sans-serif;font-size:1.4rem;color:var(--brass)}
+  .cell h4{font-family:'Outfit',sans-serif;font-weight:400;font-size:1.35rem;color:var(--cream);margin-bottom:8px}
   .cell p{color:rgba(244,248,245,.62);font-size:.92rem;line-height:1.6}
   .cell.wide{grid-column:span 2}
   .cell.feature{grid-column:span 2;grid-row:span 2;background:var(--teal-dk);border-color:transparent;justify-content:flex-end}
-  .cell.feature .big{font-family:'Jost',sans-serif;font-size:clamp(1.6rem,2.4vw,2.4rem);font-weight:300;line-height:1.1;color:var(--cream)}
+  .cell.feature .big{font-family:'Outfit',sans-serif;font-size:clamp(1.6rem,2.4vw,2.4rem);font-weight:300;line-height:1.1;color:var(--cream)}
   .cell.feature .big em{font-style:italic;color:var(--blush)}
   .cell.img{padding:0}.cell.img img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) sepia(.12) contrast(1.05)}
 
@@ -176,12 +177,12 @@
   .gcard{flex:0 0 clamp(260px,32vw,400px);scroll-snap-align:start;border-radius:14px;overflow:hidden;position:relative;aspect-ratio:4/5;background:var(--cream)}
   .gcard img{width:100%;height:100%;object-fit:cover;filter:grayscale(.25) sepia(.1) contrast(1.04);transition:.6s}
   .gcard:hover img{transform:scale(1.05)}
-  .gcard .cap{position:absolute;left:18px;bottom:16px;right:18px;color:var(--cream);font-family:'Jost',sans-serif;font-size:1.15rem;text-shadow:0 2px 14px rgba(0,0,0,.5);z-index:2}
+  .gcard .cap{position:absolute;left:18px;bottom:16px;right:18px;color:var(--cream);font-family:'Outfit',sans-serif;font-size:1.15rem;text-shadow:0 2px 14px rgba(0,0,0,.5);z-index:2}
   .gcard::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(42,42,42,.6))}
   .gcard.quote{background:var(--teal-dk);display:flex;align-items:center;padding:36px}
-  .gcard.quote p{font-family:'Jost',sans-serif;font-weight:300;font-size:1.4rem;line-height:1.35;color:var(--cream)}
+  .gcard.quote p{font-family:'Outfit',sans-serif;font-weight:300;font-size:1.4rem;line-height:1.35;color:var(--cream)}
   .gcard.quote::after{display:none}
-  .ghint{padding:0 clamp(24px,5vw,64px);max-width:1280px;margin:0 auto;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgray)}
+  .ghint{padding:0 clamp(24px,5vw,64px);max-width:1280px;margin:0 auto;font-family:'Outfit',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgray)}
 
   /* ===== FOUNDER ===== */
   .founder{padding:clamp(80px,12vh,150px) 0;background:var(--cream)}
@@ -190,10 +191,10 @@
   .founder .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;filter:grayscale(.2) sepia(.08) contrast(1.03)}
   .founder .pic .frame{position:absolute;inset:-14px;border:1px solid var(--brass);border-radius:6px;z-index:-1}
   .founder .pic .badge{position:absolute;left:-22px;bottom:34px;background:var(--charcoal);color:var(--cream);padding:18px 22px;border-radius:6px}
-  .founder .pic .badge b{font-family:'Jost',sans-serif;font-size:1.7rem;display:block;color:var(--brass)}
+  .founder .pic .badge b{font-family:'Outfit',sans-serif;font-size:1.7rem;display:block;color:var(--brass)}
   .founder .pic .badge span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,248,245,.7)}
   .founder .lbl{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:26px}
-  .founder blockquote{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(1.5rem,2.8vw,2.5rem);line-height:1.28;margin-bottom:28px}
+  .founder blockquote{font-family:'Outfit',sans-serif;font-weight:300;font-size:clamp(1.5rem,2.8vw,2.5rem);line-height:1.28;margin-bottom:28px}
   .founder blockquote em{font-style:italic;color:var(--teal-dk)}
   .founder .by{color:var(--warmgray);font-size:1rem;line-height:1.7;max-width:34em;margin-bottom:26px}
   .chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:30px}
@@ -204,14 +205,14 @@
 
   /* ===== THE INDEX ===== */
   .index{background:var(--greige);padding:clamp(70px,10vh,120px) 0}
-  .index .top{display:flex;justify-content:space-between;align-items:baseline;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgray);border-bottom:1px solid var(--rule);padding-bottom:18px;margin-bottom:6px}
+  .index .top{display:flex;justify-content:space-between;align-items:baseline;font-family:'Outfit',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgray);border-bottom:1px solid var(--rule);padding-bottom:18px;margin-bottom:6px}
   .ix{display:flex;align-items:center;gap:clamp(16px,4vw,48px);padding:clamp(20px,3.4vw,38px) 6px;border-bottom:1px solid var(--rule);transition:.35s;position:relative}
   .ix:hover{padding-left:clamp(20px,3vw,40px);background:linear-gradient(90deg,rgba(183,139,82,.08),transparent)}
-  .ix .n{font-family:'Jost',sans-serif;font-size:.8rem;color:var(--brass);width:34px}
-  .ix .t{font-family:'Jost',sans-serif;font-size:clamp(1.5rem,3.4vw,2.8rem);font-weight:400;flex:1}
+  .ix .n{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--brass);width:34px}
+  .ix .t{font-family:'Outfit',sans-serif;font-size:clamp(1.5rem,3.4vw,2.8rem);font-weight:400;flex:1}
   .ix .t em{font-style:italic;color:var(--teal-dk)}
   .ix .desc{max-width:20em;color:var(--warmgray);font-size:.92rem;line-height:1.6}
-  .ix .a{font-family:'Jost',sans-serif;color:var(--warmgray);transition:.35s}
+  .ix .a{font-family:'Outfit',sans-serif;color:var(--warmgray);transition:.35s}
   .ix:hover .a{color:var(--brass);transform:translateX(6px)}
   @media(max-width:760px){.ix .desc{display:none}}
 
@@ -225,10 +226,10 @@
   .plan{background:rgba(244,248,245,.05);border:1px solid rgba(244,248,245,.12);border-radius:18px;padding:40px;display:flex;flex-direction:column}
   .plan.feat{background:var(--cream);color:var(--charcoal)}
   .plan .t{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
-  .plan h3{font-family:'Jost',sans-serif;font-weight:400;font-size:1.7rem;margin-bottom:6px}
-  .plan .amt{font-family:'Jost',sans-serif;font-size:3rem;font-weight:300;margin:8px 0}
+  .plan h3{font-family:'Outfit',sans-serif;font-weight:400;font-size:1.7rem;margin-bottom:6px}
+  .plan .amt{font-family:'Outfit',sans-serif;font-size:3rem;font-weight:300;margin:8px 0}
   .plan.feat .amt{color:var(--teal-dk)}
-  .plan .amt span{font-family:'Poppins';font-size:.9rem;opacity:.6}
+  .plan .amt span{font-family:'Outfit';font-size:.9rem;opacity:.6}
   .plan ul{list-style:none;margin:18px 0 28px}
   .plan li{padding:9px 0;font-size:.92rem;border-bottom:1px solid rgba(255,255,255,.1);opacity:.85}
   .plan.feat li{border-color:rgba(42,42,42,.1)}
@@ -240,8 +241,8 @@
   .quotes{padding:clamp(80px,12vh,150px) 0;background:var(--greige)}
   .quotes .grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
   .qc{background:var(--cream);border-radius:18px;padding:clamp(34px,4vw,56px)}
-  .qc .mk{font-family:'Jost',sans-serif;font-size:3.4rem;color:var(--blush);line-height:.4}
-  .qc p{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.4;margin:18px 0 24px}
+  .qc .mk{font-family:'Outfit',sans-serif;font-size:3.4rem;color:var(--blush);line-height:.4}
+  .qc p{font-family:'Outfit',sans-serif;font-weight:300;font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.4;margin:18px 0 24px}
   .qc cite{font-style:normal;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--warmgray)}
 
   /* ===== JOURNAL ===== */
@@ -253,11 +254,11 @@
   .pcard .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) sepia(.1) contrast(1.05);transition:.6s}
   .pcard:hover .im img{transform:scale(1.06)}
   .pcard .c{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
-  .pcard h3{font-family:'Jost',sans-serif;font-weight:400;font-size:1.3rem;line-height:1.25;margin:8px 0;color:var(--cream)}
+  .pcard h3{font-family:'Outfit',sans-serif;font-weight:400;font-size:1.3rem;line-height:1.25;margin:8px 0;color:var(--cream)}
 
   /* ===== END / FOOTER ===== */
   .endcta{padding:clamp(100px,16vh,200px) 0;background:var(--teal-dk);color:var(--cream);text-align:center}
-  .endcta h2{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(2.4rem,6vw,5rem);line-height:1}
+  .endcta h2{font-family:'Outfit',sans-serif;font-weight:300;font-size:clamp(2.4rem,6vw,5rem);line-height:1}
   .endcta h2 em{font-style:italic;color:var(--blush)}
   .endcta p{color:rgba(244,248,245,.75);margin:24px auto 36px;max-width:30em}
   .endcta .cta{background:var(--brass);color:#fff}
@@ -290,7 +291,7 @@
 
 <header id="hdr">
   <div class="wrap nav">
-    <div class="logo">LIFTED<b>.</b></div>
+    <a class="logo" href="#"><svg viewBox="0 0 460 226" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lscSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6BC62"/><stop offset="0.5" stop-color="#CFA152"/><stop offset="1" stop-color="#BC8E4E"/></linearGradient></defs><line x1="203.4" y1="55.3" x2="185.7" y2="52.2" stroke="#C99A57" stroke-width="4.0" stroke-linecap="round"/><line x1="206.6" y1="46.5" x2="191.0" y2="37.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="212.6" y1="39.3" x2="201.1" y2="25.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="220.8" y1="34.6" x2="214.6" y2="17.7" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="230.0" y1="33.0" x2="230.0" y2="15.0" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="239.2" y1="34.6" x2="245.4" y2="17.7" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="247.4" y1="39.3" x2="258.9" y2="25.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="253.4" y1="46.5" x2="269.0" y2="37.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="256.6" y1="55.3" x2="274.3" y2="52.2" stroke="#C99A57" stroke-width="4.0" stroke-linecap="round"/><path d="M 210 60 A 20 20 0 0 1 250 60 Z" fill="url(#lscSun)"/><text x="229.0" y="160" text-anchor="middle" font-family="Outfit, sans-serif" font-size="92" font-weight="600" letter-spacing="2" fill="currentColor">LIFTED</text><rect x="52.0" y="174.5" width="356.0" height="7.0" rx="3.5" fill="currentColor"/><rect x="408.0" y="169.5" width="7.0" height="17.0" rx="4.0" fill="currentColor"/><rect x="419.0" y="164.5" width="9.0" height="27.0" rx="4.0" fill="currentColor"/><rect x="432.0" y="170.5" width="6.0" height="15.0" rx="3.0" fill="currentColor"/><rect x="45.0" y="169.5" width="7.0" height="17.0" rx="4.0" fill="currentColor"/><rect x="32.0" y="164.5" width="9.0" height="27.0" rx="4.0" fill="currentColor"/><rect x="22.0" y="170.5" width="6.0" height="15.0" rx="3.0" fill="currentColor"/><text x="223.5" y="206" text-anchor="middle" font-family="Outfit, sans-serif" font-size="18.5" font-weight="500" letter-spacing="13" fill="currentColor">STRENGTH CLUB</text></svg></a>
     <nav class="menu">
       <a href="#method">Method</a><a href="#founder">Dr. Gam</a><a href="#pricing">Membership</a><a href="blog.html">Journal</a>
       <a class="pill" href="#book">Book a Consult</a>
@@ -513,7 +514,7 @@
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div><div class="logo">LIFTED<b style="color:var(--brass)">.</b></div><p>Strength training for mental health. A private studio in Longwood, serving Seminole County, FL &amp; beyond.</p></div>
+      <div><a class="logo" href="#" style="display:inline-flex;margin-bottom:16px"><svg viewBox="0 0 460 226" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lscSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6BC62"/><stop offset="0.5" stop-color="#CFA152"/><stop offset="1" stop-color="#BC8E4E"/></linearGradient></defs><line x1="203.4" y1="55.3" x2="185.7" y2="52.2" stroke="#C99A57" stroke-width="4.0" stroke-linecap="round"/><line x1="206.6" y1="46.5" x2="191.0" y2="37.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="212.6" y1="39.3" x2="201.1" y2="25.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="220.8" y1="34.6" x2="214.6" y2="17.7" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="230.0" y1="33.0" x2="230.0" y2="15.0" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="239.2" y1="34.6" x2="245.4" y2="17.7" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="247.4" y1="39.3" x2="258.9" y2="25.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="253.4" y1="46.5" x2="269.0" y2="37.5" stroke="currentColor" stroke-width="4.0" stroke-linecap="round"/><line x1="256.6" y1="55.3" x2="274.3" y2="52.2" stroke="#C99A57" stroke-width="4.0" stroke-linecap="round"/><path d="M 210 60 A 20 20 0 0 1 250 60 Z" fill="url(#lscSun)"/><text x="229.0" y="160" text-anchor="middle" font-family="Outfit, sans-serif" font-size="92" font-weight="600" letter-spacing="2" fill="currentColor">LIFTED</text><rect x="52.0" y="174.5" width="356.0" height="7.0" rx="3.5" fill="currentColor"/><rect x="408.0" y="169.5" width="7.0" height="17.0" rx="4.0" fill="currentColor"/><rect x="419.0" y="164.5" width="9.0" height="27.0" rx="4.0" fill="currentColor"/><rect x="432.0" y="170.5" width="6.0" height="15.0" rx="3.0" fill="currentColor"/><rect x="45.0" y="169.5" width="7.0" height="17.0" rx="4.0" fill="currentColor"/><rect x="32.0" y="164.5" width="9.0" height="27.0" rx="4.0" fill="currentColor"/><rect x="22.0" y="170.5" width="6.0" height="15.0" rx="3.0" fill="currentColor"/><text x="223.5" y="206" text-anchor="middle" font-family="Outfit, sans-serif" font-size="18.5" font-weight="500" letter-spacing="13" fill="currentColor">STRENGTH CLUB</text></svg></a><p>Strength training for mental health. A private studio in Longwood, serving Seminole County, FL &amp; beyond.</p></div>
       <div class="fcol"><h4>Explore</h4><a href="#method">Method</a><a href="#founder">Dr. Gam</a><a href="#pricing">Membership</a><a href="blog.html">Journal</a></div>
       <div class="fcol"><h4>Visit</h4><span>2100 N Ronald Reagan Blvd #1012</span><span>Longwood, FL 32750</span><a href="tel:4073427613">407-342-7613</a><a href="mailto:Sharon@DrSharonGam.com">Sharon@DrSharonGam.com</a></div>
     </div>
