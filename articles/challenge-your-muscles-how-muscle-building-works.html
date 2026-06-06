@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Challenge Your Muscles: How Muscle Building Works -- Lifted Strength Club</title><meta name="description" content="If you want to build muscle, it"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">6 min read</span></div><h1>Challenge Your Muscles: How Muscle Building Works</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e461b8546e68bc7b1c31/1736861090866/Back+Muscle.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><ul><li>The blue group fibers are medium size and strength.</li><li>The green group are the biggest and strongest.</li></ul>
+<p>When you lift a pretty light weight, your brain tells only the orange group to work, because those fibers are strong enough to lift that light weight.</p>
+<p>If you pick up a slightly heavier weight, the orange group needs the blue group’s help, so both groups are activated.</p>
+<p>If you lift a really heavy weight, all the groups, including the green group, are activated to lift that weight.</p>
+<p>Here’s the important part: only when the green group is activated (the biggest and strongest muscle fibers) does the muscle growth process start.</p>
+<p>Think of it as if those big strong muscle fibers have a little alarm in them that goes off when they’re activated, which tells the alarm monitoring company (your brain) to start the growth process. Then (as long as you’re getting enough sleep and eating well), your muscles will get bigger and stronger.</p>
+<p>If you only ever use the smaller orange and blue muscle fibers, you won’t get muscle growth because those fibers don’t have growth alarms.</p>
+<p>So, how do you make sure you activate the green muscle fibers to stimulate growth? There are two ways – lift heavy weights, and/or lift medium or light weights close to failure. Let’s start with lifting light weights close to failure.</p>
+<h2>How To Get Stronger, More Defined Muscles By Lifting Light Weights Close to Failure</h2>
+<p>Muscle failure means that on your last repetition, you try as hard as you possibly can to move the weight, and it just won’t budge. On a scale of 1-10, that would be a 10 out of 10 effort.</p>
+<p>Going to full muscle failure is probably not necessary, but you should be getting within 2 or 3 reps of failure. That would be about an 8 or 9 out of 10 on the effort scale.</p>
+<p>If you want to stimulate muscle growth this way, start with a light or moderate weight and keep doing reps until you get close to failure.</p>
+<p>Since the weight isn’t that heavy, the orange group (the smallest fibers) can handle it on their own at the beginning of your set. But as you keep doing repetitions, the orange group starts to get tired, and soon they need to call in the blue group for help. A few reps later the blue group is also tired, so the green group comes in to help finish off the last few reps.</p>
+<p>Since the green group got involved, the growth alarms were set off and you should be on your way to bigger and stronger muscles. If you stopped early, though, at the point where you could still have done several more repetitions, the green group would not have been activated and you wouldn’t have gotten those growth signals.</p>
+<h2>How To Get Stronger, More Defined Muscle By Lifting Heavy Weights</h2>
+<p>The other way to signal for muscle growth is to lift heavy weights. When you lift something very heavy, your brain tells all of the muscle fibers to activate from the beginning of the set, because you need them all to be able to lift the weight even just a few times.</p>
+<p>That means the green group gets activated right away and the growth alarms go off. Because the green group is already activated, you don’t need to get as close to muscle failure in this situation, you could stop at about a 6 or 7 on the effort scale and still get the benefits of heavy weights.</p>
+<p>By “heavy”, I mean a weight that you can’t lift more than about 5 or 6 times with good form.</p>
+<h2>Which Method Should You Choose?</h2>
+<p>The answer largely depends on your training experience and your preference. You should spend the first month or two of your strength training journey just getting used to how to do each exercise and getting comfortable lifting weights at all.</p>
+<p>When you haven’t lifted weights before, you will get stronger in the first few weeks just by lifting anything, as long as you do it consistently. It’s pretty amazing.</p>
+<p>Once you’re comfortable with how to do your exercises and you’ve been lifting consistently for at least a few months, I recommend starting with the “lift lighter weights close to failure” method. Do that for a few months, then slowly start to increase the weights and decrease the reps until you’re lifting heavy for 4-6 reps in each set.</p>
+<p>Remember that good form is key. Never lift more than you can handle, and if you can’t maintain good form during your exercise, the weight is too heavy for you.</p>
+<p>Once you’ve tried both lifting to failure and lifting heavy for a while, you can decide what works best for you.</p>
+<p>You might enjoy one type of lifting more than the other. Personally, I prefer to lift heavy weights. Lifting a heavy weight makes me feel strong and confident, and I enjoy my heavy sessions and feel energetic afterwards.</p>
+<p>I find lifting close to failure much less enjoyable. Sometimes I mix it up and do my first few sets of an exercise heavy, then do the last set lighter and close to failure, just to make sure I’m getting the benefits of both methods.</p>
+<p>After trying both methods for a few months, you’ll also have a good idea of what your body responds best to. Several studies have found that some people do better with certain rep ranges than others.</p>
+<p>Experiment with different rep ranges and lifting methods, and see what happens. If you don’t like the method you’re doing and don’t feel like it’s working for you, try something else. As long as you’re lifting weights consistently and stimulating those big muscle fibers, you’re doing it right!</p>
+<h2>The Takeaway Message</h2>
+<p>The main thing I hope you learn from this article is that building muscle and gaining strength takes effort. You really need to challenge your muscles when you exercise.</p>
+<p>Learning to recognize when a weight is heavy enough and building the ability to push yourself during your workouts are important skills of strength training, but they take time to develop.</p>
+<p>Start slowly, work at it persistently, be patient, and you will achieve your goals!</p>
+<p>If you need help, contact me!</p>
+<p>To get started right away, check out my Strength Training For Anxiety Program. It's a 12-week workout program, guided by an app so you can do the workouts on your own, anytime, anywhere. It also includes an in-depth eBook that teaches you how to lift weights effectively and has unique features that can help you build mental strength at the same time as you build physical strength.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

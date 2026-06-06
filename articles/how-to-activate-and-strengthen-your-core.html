@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>How To Strengthen Your Core -- Lifted Strength Club</title><meta name="description" content="You probably know that strengthening your core is important, but do you know how to activate your core properly? Find out."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">8 min read</span></div><h1>How To Strengthen Your Core</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e46db8546e68bc7b1d36/1712676223098/Core+Activation+and+Strengthening.png?format=1500w" alt=""></div><div class="art"><div class="prose"><ul><li>The top of the box is your Diaphragm, which is the muscle that helps you breathe.</li><li>The bottom of the box is your Pelvic Floor muscles, which support your internal organs.</li></ul>
+<p>These muscles work together to support and stabilize your body. It’s important to learn how to activate each one and how to get them to work together.</p>
+<h2>How to Activate Your Core Muscles:</h2>
+<h3>Transverse Abdominus</h3>
+<p>Lie on your back on a solid surface, with your knees bent and your feet flat on the floor. Take your fingertips on both hands and stick them into your stomach about 3 inches to either side of your belly button.</p>
+<p>Many people have been told to activate these muscles by “pulling your belly button into your spine”, but that’s not actually the right way to do it.</p>
+<p>Pulling your abs in doesn’t activate them properly, and it doesn’t support your back and spine, which is the whole point of core activation.</p>
+<p>Think about it. When you pull your belly button into your spine you're making your midsection smaller. If you were standing and a kid was running towards you to jump into your arms, you wouldn't move your feet closer together. That would make your base of support smaller and make you more likely to be knocked over. You would move your feet wider apart so you were more stable. It's the same with your core.</p>
+<p>You want to think about bracing your core, as if you’re about to get hit in the stomach and you tense up to absorb the blow.</p>
+<p>Or, while pressing your fingers into your stomach, try to use your core muscles to push them back out again. Your core should tense and stiffen, which is what stabilizes and protects your midsection.</p>
+<p>If you’ve activated those muscles correctly, you should feel them contract and push against your fingers. Don’t worry if you can’t feel it right away, many people don’t. Just keep practicing, and use the blood pressure cuff trick below to help.</p>
+<h3>Pelvic Floor</h3>
+<p>To activate your Pelvic Floor muscles, think of your pelvic floor as a clock face. Your pubic bone is at 12 o’clock, your tailbone is at 6 o’clock and your hips are at 3 and 9 o’clock. Try to squeeze the numbers together in the center and lift them up toward your belly button.</p>
+<p>You might have also heard of kegel exercises, which activate your pelvic floor. You can do those instead of using the clock face method if that feels easier for you.</p>
+<h3>Diaphragm</h3>
+<p>You can contract your diaphragm by taking long, deep breaths all the way down into your stomach and 360 degrees around your midsection. That’s called diaphragmatic breathing, and it’s really important for stabilizing your core.</p>
+<p>Many people breathe up into their chest instead of down using their diaphragm, and that can cause your neck and shoulder muscles to get tight and stiff. Diaphragmatic breathing corrects those bad breathing mechanics, and pressurizes and stabilizes your core.</p>
+<h2>Putting It All Together</h2>
+<p>Practice activating both your Transverse Abdominus and Pelvic Floor at the same time while lying on your back with your knees bent and your feet flat on the floor. I find it easier to start by activating my Transverse Abdominus first, then activate my pelvic floor while keeping my Transverse Abdominus contracted. Next, hold both of those contractions and start diaphragmatic breathing.</p>
+<p>This isn’t easy to do, so start with just a few seconds at a time. Keep practicing, it will get easier.</p>
+<h2>A Trick To Help You Make Sure You’re Activating Your Core</h2>
+<p>If you’re not sure whether you’re activating your core properly, here’s a little trick that can help. Get a blood pressure cuff, the manual kind that they use at the doctor’s office. You can get them on Amazon, and they’re pretty inexpensive.</p>
+<p>Lay the fabric cuff part flat on the floor, then lie on your back on top of it, with your lower back directly over the cuff. Pump a little bit of air in. You don’t need much, fill it until the needle hovers above zero.</p>
+<p>Activate your core using the steps I described above, and watch what happens to the gauge needle. It should move up, since you are now applying pressure to the cuff by pushing your lower back into the floor.</p>
+<p>Now practice holding that core contraction and breathe deeply. Hold that contraction as firmly as you can and for as long as you can without letting the needle drop. It will fluctuate a little, but if your core is still activated it shouldn’t move down too much. You’ll know you’re relaxing your core if you see the needle drop.</p>
+<h2>Practice Core Activation Often</h2>
+<p>Once you know what it feels like to properly activate your core, practice it as much as possible. When you feel confident that you can hold your core contraction while lying down, start practicing while sitting and standing.</p>
+<p>Set yourself a reminder to practice several times a day, even if it’s only for a few seconds. My favorite tip is to practice core activation every time you stop at a traffic light.</p>
+<h2>Strengthen Your Core</h2>
+<p>The following exercises can help strengthen your core, but it’s essential that you do each one with good form and with good core activation.</p>
+<p>It’s important to learn good core activation before you start specific core strengthening exercises, because, more than maybe any other muscle group, it’s very easy to “cheat” on core exercises and do the movement without really activating your core. If you do that, you’re only cheating yourself.</p>
+<p>Before you start any core exercise, brace your core and keep those muscles braced throughout the whole exercise. If at any point you feel your core muscles relaxing, stop the exercise, reset your core, and start again.</p>
+<p>Even the simplest core exercise should feel very difficult if you’re activating and bracing your core the whole time.</p>
+<p>Here are the best exercises to start strengthening your core. No sit-ups or crunches required!</p>
+<h3>Dead Bug</h3>
+<p>The most important part of this exercise is that you keep your core braced and your lower back pressed against the floor the entire time.</p>
+<p>You don’t need to lower your leg all the way to the floor. Move each leg as slowly as you possibly can (if it feels too easy, go slower), and the second you feel your lower back start to come off the floor or your core relaxing, reverse direction and return to the starting position.</p>
+<p>I often use the blood pressure cuff trick with this exercise to check for core activation. As you lower each leg, watch the cuff gauge. As soon as that needle starts to drop, you should go back to the starting position.</p>
+<p>If that means you only move each leg a couple of inches, that’s fine. As your core gets stronger, you’ll be able to lower each leg closer to the floor without losing core activation.</p>
+<h3>Bird Dog</h3>
+<p>I see a lot of people doing this exercise wrong by trying to lift their arm and leg up as high as they can. You'll lose your core stability that way.</p>
+<p>The key is to brace your core through the entire movement. You should barely lift your foot off the floor and extend your arm straight forward.</p>
+<h3>Plank</h3>
+<p>Most people also do planks wrong. What you can't see in this gif is that I'm bracing my core hard, squeezing my legs and glutes, and pulling my elbows down towards my feet.</p>
+<p>If you create tension in those three body areas (your upper body by pulling your elbows down, your midsection, and your legs), it feels totally different and much harder than a traditional plank.</p>
+<h3>Side Plank</h3>
+<p>As with the front plank, you'll get much more out of this exercise if you brace your core and create full body tension by pulling your forearm down towards your feet and squeezing your legs.</p>
+<p>Also, you'll feel it more if you slightly rotate your top hip and shoulder forward. Keeping your feet unstacked with your top foot in front of your bottom foot helps you get into that forward rotated position better.</p>
+<h2>How Often Should You Train To Strengthen Your Core? How Many Sets And Reps Should You Do?</h2>
+<p>I recommend choosing 1 or 2 core exercises at first and practicing them 2-3 times per week. I believe Dead Bugs are the best exercise to start with, especially if you can use a blood pressure cuff to make sure your form is good and your core is activated the entire time.</p>
+<p>Aim for 3 sets of 8-12 repetitions of each exercise, or try to hold each stationary position for 10 seconds longer than you did last time.</p>
+<p>Remember, good form should be your main focus: always move slowly and concentrate on holding your core contraction throughout the entire exercise. Do fewer reps if you need to. It’s better to do 2 or 3 quality repetitions of an exercise than 15-20 sloppy ones.</p>
+<p>If you need some help learning to activate and strengthen your core, contact me! It can help to have a professional there to make sure you're doing each exercise properly.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

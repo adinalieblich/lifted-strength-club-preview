@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Why You Should Train Movements, Not Muscles -- Lifted Strength Club</title><meta name="description" content="Forget training individual muscles. Here"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">6 min read</span></div><h1>Why You Should Train Movements, Not Muscles</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e46db8546e68bc7b1d52/1712676307436/Movements+not+muscles.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>You can train like that, but it's not the best way. Here's why you should train movements, not muscles, to get better results from your strength workouts.</p>
+<h3>Training Some Muscles and Not Others Results In Muscle Imbalances</h3>
+<p>I know a lot of people are interested in working certain areas or body parts. They want to tone the back of their arms or their glutes, so they only want to do exercises for those body parts. That’s the wrong way to strength train, for a few reasons.</p>
+<p>First of all, if you work some muscles and not others, you’ll end up with a muscle imbalance. Each muscle in your body has a partner that does the opposite motion. For example, your bicep, on the front of your upper arm, bends your elbow to bring your hand up toward your shoulder. Your triceps, on the back of your arm, straightens your elbow to move your hand away from your shoulder.</p>
+<p>See how both of them are working at your elbow? If you only work your triceps and not your biceps, you’ll have a muscle imbalance where your triceps are pulling harder on your elbow than your biceps, and that could lead to joint problems and injury. Exercising all of your muscle groups is absolutely non-negotiable in a safe, effective program.</p>
+<p>Your muscles also want to grow in balance. If you want to get stronger and have more defined muscles, that will only happen if you’re stimulating all your muscle groups. Because of that risk of injury, your body doesn’t really want to build a significant amount of muscle in an uneven way.</p>
+<p>So if you’re only working some muscle groups and not others, you might get a little stronger (enough of a strength imbalance to hurt yourself) but your muscles won’t grow and get much more defined because your body will realize what’s going on and put the brakes on muscle growth.</p>
+<p>Bottom line, you have to work all your muscles.</p>
+<h3>How do you make sure you’re working all your muscle groups?</h3>
+<p>There are 8-10 different major muscle groups (depending on how you split them up), and there are many different exercises you could do for each muscle group.</p>
+<p>That’s a lot of exercises to learn and remember. I want to keep things simple to set you up for success.</p>
+<p>I prefer to use a savvier method of strength training, which is to train movements, not muscles. Specifically, I focus on 5 different movements. Together, these 5 movements will work all of your major muscle groups.</p>
+<p>These movements are functional and effective, because they make up the basic movement patterns that you use in real life.</p>
+<p>If you train in a way that transfers to your daily life, you’ll get more benefits than just nice looking muscles. You’ll be able to move through your day with more ease and less chance of pain.</p>
+<p>If you think about your daily routine, you’re constantly doing movements that require your body to move in coordinated ways.</p>
+<p>Every time you get in and out of a chair, walk up stairs, carry your groceries, push open a door, or lift your kids, you need your muscles to work effectively and efficiently.</p>
+<p>Training movement patterns is the best way to help you move better and get stronger in ways that make your daily life better. And, as an added bonus, you’ll also change your body shape and look great!</p>
+<h2>The 5 Movements Are: Push, Pull, Squat, Hinge, and Core Activation.</h2>
+<h3>Push</h3>
+<p>The push movement is any exercise where you're pushing something away from your upper body. That might be a push up, where you’re actually pushing your body away from the floor, or any exercise with the word “press” in it, like a bench press, chest press, or shoulder press.</p>
+<p>Push movements work your chest, your shoulders, and your triceps. Outside the gym, you push things all the time. Any time you push open a door, you’re doing a push movement pattern.</p>
+<h3>Pull</h3>
+<p>The pull movement is basically the opposite of a push. You're pulling something towards you or pulling yourself towards something. Pull ups or chin ups are in this category, and any exercise with the word “pull” or “row” in it.</p>
+<p>Pull movements work your back, shoulders, and biceps. In real life, you do a pull movement any time you pull open a door.</p>
+<h3>Squat</h3>
+<p>The squat is a really important fundamental movement. Squat exercises usually have the word “squat” in the name, and for simplicity I also put lunges into this category, since they are pretty much one legged squats.</p>
+<p>Squats work the big muscles in your legs, especially your quads but also your hamstrings and your glutes. You squat all the time, any time you get in and out of a chair or crouch down to play with a cute dog or a baby.</p>
+<h3>Hinge</h3>
+<p>The hinge movement is probably the trickiest one, but also the most important. A hinge is when you bend at the waist, without bending your knees much. That’s different than a squat, which is when you bend at the waist and at the knees about equally.</p>
+<p>The hinge builds strength in your back and legs with exercises like the deadlift or hip thrust. The hinge also works the big muscles in your legs, but it focuses more on the backside, and also incorporates your lower back.</p>
+<p>Any time you lift anything large and heavy, like a suitcase, you should be doing a hinge movement. Mastering a good hinge movement is really important for preventing injury and keeping your back healthy.</p>
+<h3>Core Activation</h3>
+<p>The fifth movement is core activation. This isn’t exactly a movement, more of a skill. Learning to activate your core properly is incredibly important for protecting your spine and moving effectively. Any time you lift or hold anything away from your body, your core needs to be working.</p>
+<p>Once you know how to activate your core, you can strengthen it with exercises like the plank, but also the dead bug, which is a very underrated core exercise.</p>
+<h2>Putting It All Together: Train Movements, Not Muscles</h2>
+<p>When you’re doing a strength workout, choose one or two exercises for each movement category.</p>
+<p>Once you’ve done all of your movement exercises, you can finish your workout with an isolation exercise for a specific muscle group, if you want to.</p>
+<p>Focus on training movements to simplify your workouts, build functional strength, and get better results from your training!</p>
+<h2>If You Need Help</h2>
+<p>To get started on your strength training journey right now, download my FREE Strength Training 101 eBook. This comprehensive guide will give you all the information you need to set up your own effective strength training program, plus it includes sample workouts.</p>
+<p>For a more guided option, check out my Strength Training For Anxiety Program. This program features 12 weeks of done-for-you workouts, guided by an app which shows you exactly how to do each exercise. I developed this program using science-based techniques for getting the best mental health benefits from your workouts. It also has an in-depth eBook, video lessons, and worksheets to help you use strength training to manage anxiety.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

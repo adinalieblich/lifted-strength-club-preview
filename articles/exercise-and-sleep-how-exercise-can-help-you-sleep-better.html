@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Exercise and Sleep: How Exercise Can Help You Sleep Better -- Lifted Strength Club</title><meta name="description" content="Exercise and sleep are closely connected. If you sleep better, you have more energy to exercise, which helps you sleep even better, and so on."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Lifestyle</span><span class="rt">6 min read</span></div><h1>Exercise and Sleep: How Exercise Can Help You Sleep Better</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e47bb8546e68bc7b1eb0/1712681799347/Sleep.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>The short answer is: yes, there's a correlation between exercise and sleep. In fact, a great way to sleep better at night (and feel more refreshed and energized during the day) is to exercise.</p>
+<h2>Sleep Problems: How Exercise Can Help</h2>
+<p>Exercise and sleep are connected in a loop. If you’re not getting good sleep, you probably feel tired during the day. That might make you less likely to exercise, so you’ll keep getting poor sleep, and continue not exercising.</p>
+<p>Break that cycle with some exercise, and you might find that you reverse the loop. You’ll sleep better and have more energy to keep exercising, so you’ll keep sleeping better.</p>
+<p>Sleep problems affect more than just your daytime fatigue.</p>
+<p>People who have trouble sleeping or don’t get enough sleep are at an increased risk of chronic diseases. A lack of sleep can lead to cardiovascular disease, type 2 diabetes, depression, obesity, and cancer. People with these chronic diseases report lower quality of life and less productivity.</p>
+<p>Many studies have found that exercise improves sleep quality. Exercise improves sleep both on the same night and in the long term.</p>
+<p>One study of more than 450,000 people, found that people who were physically active were up to 24% less likely to report problems falling asleep or staying asleep.</p>
+<p>In fact, some studies have found that regular exercise is about as effective at improving sleep as other treatments.</p>
+<h2>How Does Exercise Help You Sleep Better?</h2>
+<h3>Exercise make all the systems in your body work better, including the ones that regulate sleep.</h3>
+<p>When you exercise, you get a stress response. Your body responds to that stress by adapting and getting fitter, stronger, and healthier, So the next time you experience that same stress, it’s easier to handle.</p>
+<p>Great adaptations also happen in your brain, muscles, heart, lungs, blood vessels, and other organs. An additional response to exercise is that your nervous system also adapts and gets better at doing its job.</p>
+<p>The part of your nervous system that helps you rest and recover from stress is called your parasympathetic nervous system. This system also helps regulate your sleep.</p>
+<p>When you exercise regularly and get fitter, that part of your nervous system starts working more effectively, increasing your sleep quality.</p>
+<h3>Exercise alleviates symptoms of depression and anxiety and boosts mood.</h3>
+<p>Sleep is closely tied to mental health. People who suffer from depression and anxiety are prone to poor sleep.</p>
+<p>If you need help managing anxiety, check out my Strength Training For Anxiety Program, a 12-week workout program specifically designed with anxiety in mind!</p>
+<p>Even people with undiagnosed issues but who often have low moods are more likely to sleep badly. Since exercise improves mood and alleviates feelings of depression and anxiety, it might break the poor sleep cycle caused by those issues.</p>
+<h3>Exercise helps you manage your weight.</h3>
+<p>Weight gain and having too much body fat are known to be associated with sleep problems, especially disorders like sleep apnea. Exercise helps with weight loss and body fat loss, which can reduce your risk of sleep disorders.</p>
+<h3>Exercise changes your body temperature.</h3>
+<p>Your body temperature naturally drops at night, as part of the process of winding down to go to sleep.</p>
+<p>When you exercise, your body temperature goes up, but afterward, it drops back to normal. If you have a bigger than usual temperature drop (because your body temperature is already elevated from exercise), that could signal your body that it’s time to sleep and make it easier to fall asleep.</p>
+<p>You can try something similar with a hot shower before bed, which will also warm your body and then cause a bigger temperature drop.</p>
+<h2>Exercise and Sleep: How To Get Better Sleep</h2>
+<h3>Do it often.</h3>
+<p>Since a single bout of exercise improves sleep that night, it’s better to exercise as frequently as you can. Do something active every day, even if it’s not a structured workout.</p>
+<h3>Aim for at least 30 minutes.</h3>
+<p>Most studies have used exercise bouts of 30 minutes or more and shown positive effects. Any amount of exercise is better than nothing, so if you can’t manage 30 minutes at a time yet, do what you can and aim to build up.</p>
+<h3>Medium and high-intensity exercise will help.</h3>
+<p>Studies have found that both moderate-intensity and vigorous-intensity exercise can improve sleep patterns. The research doesn’t show that one is better than the other, so do whatever you and enjoy and what matches your ability level and lifestyle.</p>
+<h3>Do both cardio and strength workouts.</h3>
+<p>Most of the research is on cardio exercise and has found that it’s effective at improving sleep. Strength training can also improve sleep, with several studies finding that strength training impacts sleep in a similar way to cardio exercise.</p>
+<p>A well-rounded program includes both cardio and strength workouts. Aim to incorporate both into your weekly activity plan. Since they both improve sleep on the night you do the exercise, you could alternate cardio and strength days.</p>
+<p>If you need help getting started with strength training, download my FREE Strength Training 101 eBook to learn how to put together an effective strength training program.</p>
+<h3>Aim to improve your fitness.</h3>
+<p>The positive changes that happen when you get fitter, especially in your nervous system, seem to be very important for getting the sleep-boosting benefits. Fitter people are less likely to report sleep problems, so improving your fitness with a smart, strategic training plan is a good idea.</p>
+<p>Start where you are and aim to do a little more over time, whether that’s doing your cardio at a slightly faster pace or for a longer time, or lifting slightly heavier weights.</p>
+<h2>Exercise and Sleep: What Time Should You Exercise</h2>
+<h3>Consider the time of day.</h3>
+<p>You may have heard that it’s not a good idea to work out before bed since it’ll make it harder for you to fall asleep. The research, though, doesn’t back that up.</p>
+<p>Several studies have found that sleep quality isn’t compromised after exercise in the evening. That's true even when the exercise is intense and ends within 1-2 hours of going to sleep.</p>
+<p>This is one of those cases where it’s important to find out what works for you. If you want to work out in the evenings, try to finish your session at least a few hours before bed, and see what happens.</p>
+<p>Try different types of exercise – moderate cardio, vigorous cardio, moderate strength training and heavy strength training. Keep some notes about what you did and how you slept.</p>
+<p>If you find it hard to fall asleep within a couple of hours after exercising, try to work out earlier in the day. If you don’t have any trouble exercising before bed and falling asleep, then exercise whenever it’s most convenient for you.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

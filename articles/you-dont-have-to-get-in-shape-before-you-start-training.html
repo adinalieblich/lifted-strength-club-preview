@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>You Don’t Have To Get In Shape Before You Start Training -- Lifted Strength Club</title><meta name="description" content="If you think you need to get in shape before you join a gym or start classes or personal training, think again. Here"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Mindset</span><span class="rt">6 min read</span></div><h1>You Don’t Have To Get In Shape Before You Start Training</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e498b8546e68bc7b21ae/1712773823757/Barbell+Squat.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>They think they need to get in shape before they’re ready to exercise in public, start taking fitness classes, or work with a personal trainer. That’s a mistake.</p>
+<p>You do not need to be fit before you start taking your exercise seriously. There’s no minimum fitness requirement to join a gym, fitness class, or personal training program.</p>
+<p>Here’s why you shouldn’t wait to get in shape before you start training.</p>
+<h2>You’ll Miss Out On Some Incredible Benefits</h2>
+<p>As you probably know, exercise is great for your health.</p>
+<p>Cardio and strength training can help you live longer, reduce your risk of dozens of chronic diseases, increase brain function, boost mood, improve energy levels, make you feel confident, increase mental health, and much more.</p>
+<p>Here’s an article I wrote about The Many Benefits Of Exercise And How To Get Them.</p>
+<p>If you keep holding off, you’re just delaying these incredible benefits if not giving them up entirely.</p>
+<p>Be honest with yourself. If you’re already feeling some friction to getting started, are you really going to work out consistently on your own?</p>
+<p>In my experience, most people who say they’re going to start training once they get in shape never end up getting started.</p>
+<h2>People Won’t Actually Judge You</h2>
+<p>I know gyms can be intimidating. You might imagine a room full of fit people staring and making comments as you try to figure out how to use the machines.</p>
+<p>That’s not usually what gyms are like. Most gym-goers are just as self-conscious as you are. They’re too busy worrying about what they’re doing to give you a second thought.</p>
+<p>Yes, there might be a few people who judge. Honestly, screw those people. The fact that they can’t help but mentally tear someone else down to feel better about themselves is not your problem, it’s theirs.</p>
+<p>It’s the same with personal trainers and fitness instructors.</p>
+<p>Yes, there are some “drill sergeant” style trainers who yell at their clients. There are some instructors who judge the people in their classes. Those are not good trainers, and I think they’re the exception rather than the rule.</p>
+<p>Most of the trainers I’ve known are caring professionals who do what they do because they sincerely want to help others lead healthy lives.</p>
+<p>A good personal trainer should approach each and every client from a place of compassion and non-judgement. They should never make their clients feel bad for not being fit or strong enough.</p>
+<p>Their job is to meet people where they are and empower them to get better at an appropriate pace. If you encounter a trainer who’s not doing that, they’re not doing their job properly.</p>
+<p>If you’re looking for a personal trainer, most will be happy to talk with you about your goals before you sign up so you can get a feel for whether they’ll be a good fit for you.</p>
+<p>I always offer two free consultations, one over the phone and one in person. It gives me and the prospective client a chance to get to know each other a little and for them to get a good idea of what it would be like to work with me. If you’re interested in setting up a free consultation, contact me!</p>
+<h2>It’s Ok If You Can’t Keep Up</h2>
+<p>Trying anything new can be scary. It’s the uncertainty that gets you. You might be unsure about how hard the class will be, what kind of movements you’ll be doing, and how you’ll perform. What if you can’t do the exercises or you’re too tired to finish the workout?</p>
+<p>Everyone in the gym was once where you are. If you have to stop and rest during a class or modify an exercise, that’s totally ok.</p>
+<p>Your trainer and the people around you will respect you for getting out of your comfort zone. Exercise is supposed to be challenging. The only way you’ll get better is to do it.</p>
+<h2>You Might Pick Up Some Bad Habits</h2>
+<p>Group classes are great. So is working out on your own. But I do think that everyone could benefit tremendously from doing at least one session with a good personal trainer.</p>
+<p>That’s because many people are exercising with poor form, without using their core properly, moving too fast and choosing exercises or weights that aren’t appropriate for them.</p>
+<p>I see this with new clients all the time. I don’t blame them. It’s really hard to figure this stuff out for yourself.</p>
+<p>If you’re working out on your own, following along with a video, or doing group classes, chances are you’ve never had proper individual instruction, and you may be moving in less-than-ideal ways.</p>
+<p>If you do pick up some bad movement or exercise habits, it’s not the end of the world. Some professional instruction and personal attention can help get you moving better pretty quickly.</p>
+<p>I always spend the first few weeks of a training program correcting core activation and exercise form.</p>
+<p>If you can learn good movement patterns and exercise skills early on, though, it will make everything easier as you progress through your fitness journey.</p>
+<h2>You Don’t Want To Let Your Fears Run Your Life</h2>
+<p>If you feel like you need to get in shape before you start training or going to a gym, that’s your fear talking. You might be afraid of looking foolish, feeling embarrassed or uncomfortable, or getting hurt.</p>
+<p>These fears may manifest as excuses. In this case you tell yourself you’ll get started once you’re a little fitter. But your current fitness isn’t the problem, your fears are.</p>
+<p>These fears are legitimate, and I’m not going to tell you to just get over them. But when you let your fears hold you back, there will always be another reason, another excuse, not to get started.</p>
+<p>Right now it’s your fitness. In a few months it might be your busy schedule. And then you get sick, and you have a vacation coming up, and on and on…</p>
+<h2>You Might Never Feel Ready</h2>
+<p>I can tell you from experience that you never feel fit “enough”.</p>
+<p>There will always be a class that’s a little too hard or an exercise you’re not quite ready for yet. There will always be someone fitter than you in the gym.</p>
+<p>Take the first step anyway. You’ll never regret getting started, even if it’s tough at the beginning. It’s the time you spent putting it off that you’ll want back.</p>
+<p>Be brave, get started. The sooner you do, the sooner you’ll be feeling great!</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

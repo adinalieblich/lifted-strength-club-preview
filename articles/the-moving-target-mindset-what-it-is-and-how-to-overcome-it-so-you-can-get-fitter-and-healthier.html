@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The "Moving Target" Mindset: What It Is And How To Overcome It So You Can Get Fitter And Healthier -- Lifted Strength Club</title><meta name="description" content="Your mindset makes or breaks your results. Here"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Mindset</span><span class="rt">8 min read</span></div><h1>The "Moving Target" Mindset: What It Is And How To Overcome It So You Can Get Fitter And Healthier</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e498b8546e68bc7b216e/1712773582908/Change+From+The+Inside.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><ul><li>The “Start/Stop” Mindset</li><li>The “Right Time” Mindset</li></ul>
+<p>Here’s another common mindset mistake I’ve seen many times. I call it the “moving target” mindset.</p>
+<h2>The Moving Target Mindset</h2>
+<p>The "moving target" mindset plays out like this:</p>
+<p>You decide you’re going to make some healthy lifestyle changes. You know you should exercise more, eat better, and get more sleep.</p>
+<p>So you decide you’re going to start walking every day and strength training twice a week. You’re also going to eat more fruits and vegetables and drink more water. And you’re going to get to bed an hour earlier.</p>
+<p>You feel energized and excited about all these changes. But then a week goes by and you haven’t done any work towards your goals.</p>
+<p>You didn’t go for your walks because it was raining, you didn’t get to the gym for your strength workouts because you were busy at work. There weren’t any fruits or veggies at home. At lunch with your work colleagues everyone else ordered a soda so you got one too. Bedtime came and went, and you were still scrolling on your phone.</p>
+<p>The following week, you get motivated again. This time you say you’re going to try at-home workouts, you’re going to pack a salad for lunch, and turn off your phone at 9pm.</p>
+<p>But again, you don’t follow through. And the cycle of setting new goals and then forgetting them continues.</p>
+<h2>The Problem With The Moving Target Mindset</h2>
+<p>The obvious problem here is that you never actually make changes, so you don’t make progress towards improving your health and fitness.</p>
+<p>You feel like you’re doing something, though. You’re thinking about your health, and you’re setting goals, even if you don’t take action.</p>
+<p>This is the tricky thing about this mindset. It fools you into believing that you’re doing something good for your health, when you’re really not. You're kind of just running in place.</p>
+<h2>Where Does The Moving Target Mindset Come From</h2>
+<p>Human beings are wired to do things that make us feel good, or that make us feel less bad. The long-term consequences of our actions are not as important, our brains prefer immediate rewards over long-term ones.</p>
+<p>When you do something that feels good immediately, you get a dopamine hit in the pleasure center of your brain. You’ll chase that dopamine hit even if you know it means you’ll feel worse later.</p>
+<p>This is why you stay up late watching tv even though you know it will make you feel tired in the morning, or you can’t resist that sweet treat even though you really do want to eat healthier in the long-term.</p>
+<p>To learn more about why our brains make it hard to change, check out my full article about Why Change Is So Hard.</p>
+<p>With the moving target mindset, the act of setting goals itself gives you that dopamine release. It feels satisfying and exciting to tell yourself (or others) that you’re going to make healthy changes.</p>
+<p>If you’ve been down on yourself because your bloodwork at your last physical wasn’t good or you don’t have the energy to play with your kids, the dopamine release from setting these goals gives you some relief from the guilt or shame.</p>
+<p>If you dig deeper, there’s also often an element of fear. This is the same thing that drives us to make excuses when we don’t follow through on our plans.</p>
+<p>If you don’t really try, you can’t really fail.</p>
+<p>When you set goals but don’t actually work on them, you can avoid the danger of having to confront some uncomfortable realities.</p>
+<p>Maybe you’re not as committed to your health and fitness as you think you are. You might value your health, but you value something else more. Maybe you’re not really ready, willing, or able to do what it takes to achieve your goals.</p>
+<p>So instead you just keep setting new ones.</p>
+<h2>How To Overcome The Moving Target Mindset</h2>
+<p>If this sounds familiar, there’s something you can do. Here are some tips for overcoming this mindset.</p>
+<h3>Figure out what’s holding you back.</h3>
+<p>Of course I think everyone could benefit from being more active and prioritizing their health and fitness. But you don’t have to do anything that you don’t want to. If leading a healthy lifestyle isn’t important to you, that’s ok.</p>
+<p>If it is important to you, you need to start taking action. If you’re not taking action, the first step is to figure out why.</p>
+<p>Are you afraid that you’ll have to make big restrictive changes to your diet or do grueling workouts and that it will make you miserable? That’s what a lot of people think health and fitness is all about, even though it’s not.</p>
+<p>You can eat healthy foods that you like and that make you feel good, and you should be doing workouts that make you feel energized and empowered, not exhausted.</p>
+<p>Learn more about exercising and healthy eating, and ask for help from a professional (like me – contact me here) who can design a program that works for you.</p>
+<p>Have you not yet figured out your true deep and meaningful motivation? Do you have other values that take priority and you don’t know how to balance them with your health and fitness goals?</p>
+<p>There might be many reasons why you’re not ready to take action yet. If you don’t figure out what they are, you’ll stay stuck.</p>
+<p>To learn more, check out my articles on How To Stop Making Excuses And Start Achieving Your Goals, and Finding Motivation In Your Personal Values.</p>
+<h3>Focus your effort.</h3>
+<p>When people have this moving target mindset, they often set many goals to work on at the same time. That’s another way of distracting yourself from having to work on any of them.</p>
+<p>Choose a maximum of three things to work on at a time. If you’re really struggling with this, start with just one.</p>
+<p>Any more than that and you won’t be able to apply enough effort and energy to each goal.</p>
+<h3>Be specific.</h3>
+<p>Often people set unclear goals, like “walking more” or “eating more vegetables”. What does “more” mean?</p>
+<p>This is another way of avoiding having to work on your goals. If it’s not clear what the goal is, you can’t fail. You also can’t succeed.</p>
+<p>A lack of clarity also leaves room for your goals to drift.</p>
+<p>Let’s say you’re trying to drink less soda. Without a clear goal, it’s easy to let one soda turn into two. And then you’ve already had two, so one more sip won’t hurt. Soon that’s three or four.</p>
+<p>Make sure you know exactly what you need to do to achieve your daily goals.</p>
+<p>I call this deciding on “bright lines”. How many minutes of walking do you plan to do? If your goal is 10 minutes of walking each day, there’s a clear bright line to indicate whether or not you achieved that goal. Walk for 10 minutes or more, and you’ve achieved it.</p>
+<h3>Set small and achievable goals.</h3>
+<p>The 1-3 goals you choose should be small and achievable. If you’ve been stuck in the moving target mindset, there’s probably a lot of friction to taking action towards your goals. What you need to do feels too big, too hard, too overwhelming.</p>
+<p>For that reason, it’s essential to “shrink the change”. Your daily goals need to be so small and achievable that you can’t say no.</p>
+<p>A 45-minute jog might feel like way too much on most days. There are a lot of reasons why you won’t be able to follow through on that goal. But a 5-minute jog is achievable. It’s only five minutes!</p>
+<p>Start there and build on it over time.</p>
+<h3>Make a plan.</h3>
+<p>Once you have a very specific and achievable goal, you should make a concrete plan.</p>
+<p>That means specifying exactly what you’ll do and when and where you’ll do it. Research suggests that people who make plans like these, which are also called “Implementation Intentions” are almost three times more likely to follow through.</p>
+<p>You should also make plan Bs and come up with strategies to make it easier for yourself to achieve your goals.</p>
+<p>For example, you might change into your exercise clothes before leaving work so you’re less likely to bail on your workout when you get home.</p>
+<p>To learn more about why creating action plans is so important, read my full article on Action Planning.</p>
+<h3>Give it time.</h3>
+<p>I know many people want fast results, but I’m sorry to say that fast results are rare and unsustainable. It takes a lot of time and consistency to truly get fitter and healthier.</p>
+<p>People often want to know how long it will take to see results. Honestly, it depends on the person, their starting point, their overall lifestyle, and their goals.</p>
+<p>I can’t give a definitive answer, but I generally advise that you continue working on each goal until you can achieve it with at least 80% consistency for at least a month.</p>
+<p>Only then should you change your goals and add something else to your daily routine.</p>
+<p>Your body and mind won’t change unless you’re staying consistent over time. Trust the process and stick with it. You got this!</p>
+<h2>If You Need Help</h2>
+<p>My FREE Goal-Setting Guide can help you create effective goals and come up with plans to achieve them. This eBook walks you, step-by-step, through the process of finding your motivation, outlining your overall goal, breaking that big goal into actionable “process goals”, and creating plans to make sure you follow through.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

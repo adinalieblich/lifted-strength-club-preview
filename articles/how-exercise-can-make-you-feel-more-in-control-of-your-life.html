@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>How Exercise Can Make You Feel More In Control Of Your Life -- Lifted Strength Club</title><meta name="description" content="There are a lot of reasons to be active. Here"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Mental Health</span><span class="rt">6 min read</span></div><h1>How Exercise Can Make You Feel More In Control Of Your Life</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/66055edb488a1777a91b88dc/1712775272440/Exercise+and+Control.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>My life has changed dramatically in the past few years. The reason: kids. I’m “mom” now.</p>
+<p>That’s a wonderful thing, but it’s also challenging, stressful, and overwhelming. Having kids has taken away a lot of the control I used to have over my daily routine.</p>
+<p>Harsh but true…</p>
+<p>Many of my friends and family members have kids around the same age as mine, and I’ve noticed something interesting. Several young dads I know have taken up distance running. These guys were not runners before, and in a million years I never would have bet that they’d be running marathons.</p>
+<p>So what happened? When I asked them, several said that they needed an outlet. They wanted to feel better. They needed to do something to cope with the stress and responsibilities of young kids plus full time jobs, and many of their old coping strategies weren’t available to them anymore.</p>
+<p>Of course, exercise is a great way to relieve stress, improve mood, support mental health, and more.</p>
+<p>But I think there’s also something deeper going on. When you have a dramatic life change like having kids, losing a job, the death of a loved one, a health diagnosis, or a breakup, it shakes something deep inside you.</p>
+<p>It changes your self-identity. That can be a scary and uncomfortable feeling.</p>
+<h2>The Need For Control</h2>
+<p>Human beings have an innate need for control and certainty. It’s hard-wired into our brains. Even babies have it.</p>
+<p>If you’ve spent time with young children, you’ll know that once they’re capable of doing something, like feeding themselves or putting their shoes on, they want to do it themselves. Don’t you dare try to do it for them or they’ll fight you to get back their control over that behavior.</p>
+<p>As adults, we experience a subconscious (or sometimes conscious) discomfort when we feel like we have no control. It’s stressful when you feel like the world is unpredictable and there’s nothing you can do to direct your outcomes.</p>
+<p>When your self-identity suddenly changes, you reflexively grasp to feel control of something. This is where exercise comes in.</p>
+<h2>Exercise And Breakups</h2>
+<p>Garage Gym Reviews did a survey on the relationship between breakups and exercise. They surveyed 1,700 people who had been through a breakup in the last five years.</p>
+<p>82% of the people surveyed said they had started exercising more after their breakup. Some people went from no exercise to exercising three days a week and others who were already exercising increased their number of weekly workouts. 64% of them even maintained their exercise habits for more than a year. That’s impressive!</p>
+<p>People cited a range of motivations, from showing up their ex, improving their mental and physical health, gaining confidence, and meeting new people. I don’t doubt that those were real motivators, but (with the exception of showing up your ex), those motivators could apply at any time. I find it very interesting that it was a breakup that triggered people to do something.</p>
+<p>I’m sure there are many explanations, but I think, peeling back the layers, there’s a fundamental need for control during a time of significant change and uncertainty.</p>
+<p>That’s at least part of what prompts people to take the motivation that’s already there and finally take long-lasting action on it.</p>
+<h2>How Exercise Can Help You Take Back Control</h2>
+<p>Exercise is something that you can choose to do at a time when other things feel outside your control. It can help turn things around when you’re feeling bad.</p>
+<p>Those bad feelings come from many places. You may feel stressed or overwhelmed. You may feel stuck or adrift, hopeless or helpless.</p>
+<p>The neurochemical changes that exercise provides (exercise has been called “giving your brain a bubble-bath of feel-good chemicals”) can help settle those feelings.</p>
+<p>But on a deeper level, exercise is an action you can take. It gives you direction, something to do.</p>
+<p>Of course there are a lot of things you can do to feel like you’re in control of your life. Not all of them are good for you, but many are. You could learn a new skill, find a hobby, make changes in your sleep or media consumption habits.</p>
+<p>It’s the taking action that really makes the difference.</p>
+<p>But I think exercise is a particularly good choice because of the feel-good neurochemicals it releases and the inherent stress dampening effects it has.</p>
+<p>It’s a win-win for so many reasons. With exercise, you get to feel a sense of control, you improve your confidence, your physical and mental health, and more.</p>
+<h2>How To Use Exercise To Feel In Control</h2>
+<h3>Set A Small Achievable Goal</h3>
+<p>I’ve written many times about the power of small goals. This is especially relevant if you’re in a challenging time of your life where you feel stressed or helpless.</p>
+<p>Choose something so small and achievable you can’t say no. It might be to do a set of 5 squats at the start of your lunch break or taking a 5-minute walk in the evening.</p>
+<p>Take all the motivation and willpower out of the equation and just focus on making the choice to do something for yourself, no matter how small. You can build on it later once it becomes a habit.</p>
+<h3>Track Your Progress And Aim To Improve</h3>
+<p>There’s a lot in fitness that you can’t control. In fact, one of the biggest lies of the fitness industry is the idea that if you just exercise in a certain way, you can control the way your body looks or the physical results you get. You can’t.</p>
+<p>What you can control, however, is what you do in your workouts. You can choose to increase your weights, to try to do one more repetition with the same weight, to walk or jog for one minute longer. You can even choose how you think about those exercises and why you’re doing them.</p>
+<p>Keep track of what you do in each workout, including the exercises and the number of sets, reps, and weights you used for each one. You can use a simple pen and paper, an app, or a spreadsheet.</p>
+<p>Aim to do a little more next time. It doesn’t have to be a lot more. Just one more rep, one more minute. The important thing is that you recognize and celebrate your progress, no matter how small.</p>
+<p>Taking control of your exercise like this helps you build better internal motivation to keep exercising. It also gives you some structure and something to strive for.</p>
+<p>For more guidance, I’ve written a full article about how to progress your workouts, including a simple system to keep you on track: How To Use Progressive Overload.</p>
+<h2>If You Need Help</h2>
+<p>To get started on your strength training journey, download my FREE Strength Training 101 eBook. You’ll learn how to set up your workouts, how to choose your exercises and how to make progress towards your goals.</p>
+<p>For a done-for-you option, check out my Strength Training For Anxiety program. This 12-week program is guided by an app so you can see exactly which exercises to do and how to do them. You’ll also get video lessons and worksheets to help you translate the strength you gain in the gym into mental resilience.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

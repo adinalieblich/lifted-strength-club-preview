@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Break The Start/Stop Cycle And Actually Stick To Exercise! -- Lifted Strength Club</title><meta name="description" content="If you"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Mindset</span><span class="rt">6 min read</span></div><h1>Break The Start/Stop Cycle And Actually Stick To Exercise!</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e471b8546e68bc7b1d97/1712680949244/Stop+Start+Mindset.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>You can’t possibly exercise and make healthy eating choices while you’re away, right? So you decide to hit pause, do whatever you want for two weeks, and get back into your workouts and healthy eating when you get back.</p>
+<p>I see this all the time, and it never leads anywhere good. The problem is that there will always be something that comes up and gets in the way of your healthy lifestyle goals. A deadline at work, a busy kid’s afterschool activity schedule, an illness or injury in the family, birthday month…</p>
+<p>No one’s life is easy and uncomplicated, and yet some people manage to maneuver through their obstacles and maintain their healthy habits (and their results) all the time, and others don’t.</p>
+<p>Why do some people stick to exercise? It’s all about their mindset.</p>
+<h2>The Start/Stop Mindset</h2>
+<p>What I see most often with this mindset is an extension of the “all-or-nothing” mindset and the “right time” mindset.</p>
+<p>When you have this mindset, you feel like you’re all-in or all-out. When you’re all-in, you do intense workouts most days of the week, you stick to a restrictive diet, you change your whole lifestyle to get the results you’re after at the right time, when things are simple and it’s convenient for you. Even then, it’s a struggle, but you put your head down and do it.</p>
+<p>But things are rarely simple and convenient for long. As soon as something difficult or unexpected happens, you’re all-out again. You “take a break” and you reason that you’ll just start again when the time is right.</p>
+<h2>The Start/Stop Mindset Makes It Hard To Stick To Exercise</h2>
+<p>When you feel like you can just hit pause on your healthy lifestyle, it’s not really part of your lifestyle. It’s temporary. You go all-in for a short time, and then you’re finished.</p>
+<p>That’s not how fitness, or anything really important in life, works. It takes consistency and commitment.</p>
+<p>If you want to be successful in your career, you have to show up every day and do your work. If you want to be a good parent or partner, you have to show up and take care of your responsibilities all the time, not just when it’s convenient for you.</p>
+<p>You don’t have to be great at it every day, though. Some days you just do your best. But you have to do something, you can’t just press pause. If you do, there will be a price to pay.</p>
+<p>For health and fitness, that price is your results.</p>
+<p>If you’re constantly starting and stopping, you never build any momentum. Any gains you’ve worked so hard for fade away, and you end up in a cycle of action and inaction and never make long-lasting progress towards your goals.</p>
+<h2>How Does Your Body Respond When You're Always Starting And Stopping?</h2>
+<p>When you try to do it all from the very beginning, it takes a while for your body to respond and for you to see results. Just like slamming on the gas petal from a complete stop, the car struggles to get in gear.</p>
+<p>Your body is accustomed to operating in a certain way. Your metabolism, your muscles, your fitness level, they’re all used to a status quo, and they will resist changing at first.</p>
+<p>When they do start to change, it’s always small and subtle. Physical results never come quickly, they take time.</p>
+<p>No matter how hard you’re working in the gym or how well you’re eating, the initial changes are all under the surface.</p>
+<p>Muscles build coordination and strength before they look bigger or more defined. Your metabolism revs up slowly before it really starts humming. Your cardiovascular system slowly builds the infrastructure it needs to improve your fitness.</p>
+<p>Each time you stop you lose some of those gains, and your body will have to rebuild them again when you re-start.</p>
+<p>If you’re always doing something, though, it’s easier to get up to speed. Your body keeps slowly making positive adaptations, or at least maintains the ones you’ve already made, so when you ramp up your effort it’s easier and faster to continue your progress.</p>
+<p>You’re also always building skills and habits. You learn what works and what doesn’t, under real life conditions, not just when it’s easy. You’re building the foundation of confidence by stacking up small successes.</p>
+<p>Hit the pause button, and you get the opposite – bad habits, lost skills, and lower confidence.</p>
+<h2>How To Stick To Your Exercise Program</h2>
+<p>Next time something comes up and you’re tempted to take a break from your healthy habits, instead of stopping altogether just scale down your effort instead. This is an idea I first read about from Precision Nutrition, and it has worked well with many clients.</p>
+<p>Think about your effort on a scale from 0-10, where 10 is your maximum focus and effort, and 0 is nothing at all.</p>
+<p>What does a 10/10 effort mean to you when it comes to your fitness, your eating, and your lifestyle? If you had nothing but time, money, energy, and motivation, what would you do?</p>
+<p>Six intense workouts a week? Eat only organic, whole foods in perfectly balanced meals? Spend all day building close relationships with your loved ones and doing things that make you happy?</p>
+<p>What would a 1/10 effort be? What’s the bare minimum you could do towards your goals?</p>
+<p>Park a little farther away from the office and walk the rest of the way? Replace one ultra-processed ingredient or meal element with a minimally processed one? Order a side of vegetables with your less-healthy restaurant entrée? Spend 5 minutes winding down before bed without any electronics?</p>
+<p>Once you know what your maximum and minimum effort is for each goal, fill in the rest of the scale. You should end up with a list of 10 actions that you could take towards your goal, each one a little bigger than the last.</p>
+<p>For more ideas, check out Precision Nutrition’s Dial Infographic.</p>
+<p>When you’re able to, turn up your effort. Give it an 8 or 9 out of 10, or whatever is the most you can do.</p>
+<p>But when times are tougher, or you’re busy, or stressed, or overwhelmed, turn down your effort. Give it a 1, 2, or 3 out of ten, but never stop completely.</p>
+<h3>Something is always, ALWAYS, better than nothing.</h3>
+<p>On that vacation, maybe you can’t cook or go to the gym, but there is always something you could do to maintain your momentum.</p>
+<p>Even if you work out less and eat and drink more not-so-healthy things than usual, you don’t have to abandon all your efforts.</p>
+<p>Could you go for a short walk in the mornings? Order a vegetable side dish at one meal a day? Do 5 push ups when you first get out of bed?</p>
+<p>There are almost no circumstances under which you can’t possibly do anything towards your goals.</p>
+<p>This stops you from losing all the gains you’ve made, but more importantly, it keeps you in the right mindset, which is that your healthy routine is part of your permanent lifestyle, not something you start and stop whenever it’s convenient.</p>
+<p>That builds important skills, like persistence, resilience, and problem-solving, and a healthy self-identity, which is extremely important for motivation.</p>
+<p>Replace your stop/start mindset with the “always do something” mindset, and you’ll be in a much better position to stick to exercise and achieve your goals.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

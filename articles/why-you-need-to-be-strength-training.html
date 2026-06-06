@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Why You Need To Be Strength Training -- Lifted Strength Club</title><meta name="description" content="If you need motivation to start strength training, I have it right here! Learn why you should be strength training."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">7 min read</span></div><h1>Why You Need To Be Strength Training</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e49cb8546e68bc7b21f2/1712774633412/Back+Muscle.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>You might think strength training is only important if you’re a bodybuilder or an athlete. You’d be wrong.</p>
+<p>Too many people shy away from strength training because they don’t want to get too muscular, or because they think cardio is the best way to improve their health. Nope.</p>
+<p>Building a large amount of muscle is very difficult and requires specific training and eating strategies. It does not happen by accident. I guarantee that lifting a few weights will not turn you into Arnold Schwarzenegger. What it will do is make you a stronger, more confident, and more resilient person.</p>
+<p>Cardio is also important, but without strength training you won’t improve your overall health as much as you could.</p>
+<p>A dental hygienist once told me: “If you brush your teeth but don’t floss, you’ve only done half the job.” Obviously my flossing habit needed some work... It’s the same with exercise. If you do cardio but not strength training, you’ve only done half the job.</p>
+<h2>The Benefits Of Strength Training</h2>
+<p>Here are just some of the amazing benefits of strength training:</p>
+<h3>Increased Strength And Muscle Mass</h3>
+<p>This is obvious, but I had to include it. Again, it’s not about building big bulging muscles. Your muscles can get significantly stronger without making you look like a bodybuilder.</p>
+<h3>More Confidence</h3>
+<p>Strength training creates the opportunity for “mastery experiences” which is when you get better at a skill. Those little wins add up, and you become a person who feels capable of achieving big things.</p>
+<h3>More Resilience To Stress</h3>
+<p>Strength training can increase your resilience to stress and improve coping mechanisms. The stressors in your life might not disappear, but you’ll feel better and be able to deal with them more effectively.</p>
+<h3>Better Posture</h3>
+<p>If you sit for long periods throughout the day or use electronic devices (i.e. if you’re a human in the modern world), you might have developed rounded shoulders and “forward head posture”. Resistance training can improve your posture by strengthening your upper back and core to pull you back into alignment.</p>
+<h3>Stronger Bones</h3>
+<p>The good stress of weightlifting makes your bones denser and stronger in basically the same way that it makes your muscles bigger and stronger. This is especially important as you age, since many people develop osteopenia and osteoporosis, putting them at risk for fractures.</p>
+<h3>Increased Metabolism</h3>
+<p>The average adult loses 3-8% of their muscle mass each decade over 30, and 5-10% each decade after they reach 50. Muscle loss decreases your metabolism, making it harder to maintain your body weight and increasing the risk of chronic diseases.</p>
+<h3>Improved Body Composition</h3>
+<p>If you want to look better (at least what our society often considers "better"), you should increase muscle mass and lose body fat so you can see those muscles. If you lose weight without strength training, it’s likely that you’ll lose muscle mass along with body fat, and you’ll be metabolically worse off than you started.</p>
+<h3>Better Brain Function</h3>
+<p>Strength training releases substances called “neurotrophic factors” that protect brain cells. Many studies have found that stronger people do better on tests of memory, focus, attention, and decision-making, and have a less pronounced age-related decrease in brain volume in certain areas.</p>
+<h3>Slower Cellular Aging</h3>
+<p>Studies (like this one) have found that resistance training improves cellular markers of certain enzymes and mitochondrial function that are associated with aging.</p>
+<h3>Better Mental Health</h3>
+<p>Strength training has been found to reduce symptoms of depression and anxiety. I’ve written in-depth about the mental health benefits of strength training, you can find that article here; The Mental Health Benefits Of Strength Training.</p>
+<h3>Reduced Pain</h3>
+<p>Resistance training can reduce pain perception in people with osteoarthritis, rheumatoid arthritis, back and knee pain, as well as other types of chronic pain.</p>
+<h3>Decreased Fall Risk</h3>
+<p>Age-related losses of muscle and strength contributes to the risk of falling, but strength training can improve coordination and decrease that risk. One study, for example, found that fall risk in older women was reduced by 57% after a 6-month strength training program.</p>
+<h3>Improved Blood Sugar Management</h3>
+<p>Muscles use sugar as a fuel. The more active your muscles are, the better you are at regulating your blood sugar and the less likely you are to develop type 2 diabetes.</p>
+<h3>Better Heart Health</h3>
+<p>A study in 2019 found that strength training was associated with a 40-70% decreased risk of cardiovascular events (like heart attacks or strokes), and a similar decreased risk of death from cardiovascular disease and death from any cause.</p>
+<h3>Better Sleep</h3>
+<p>People who strength train report better quality sleep.</p>
+<p>Whew, that’s a long list! But what does all of this really mean?</p>
+<h2>Strength Training And Quality Of Life</h2>
+<p>I can tell you what it means for me.</p>
+<p>Strength training makes me feel confident. When I lift a heavy weight, it’s like my brain lights up and I get this aura of unshakeable self-belief. I feel like I could do anything. That’s especially important to me as someone who has struggled with anxiety, depression, and low self-esteem in the past.</p>
+<p>It also helps relieve my stress, which I (like everyone) experience a lot with a full time job and two small kids.</p>
+<p>To learn my favorite strategy for using exercise to manage feelings of stress in the moment, check out my full article: How To Use Exercise To Manage Stress.</p>
+<p>Speaking of my kids, I can lift them over my head. I can carry them on my back without pain or fatigue. I can get on the floor and crawl around with them. If there was an emergency, I know I could pick both of them up at the same time and run to safety.</p>
+<p>I can also move furniture. I can carry all of my groceries in at once. I’m independent, and while I can’t control what happens in the future, I’m doing what I can to stay that way as I age.</p>
+<p>Finally, I feel much more optimistic than I used to be, like I generally expect to be able to handle challenges both in the gym and in my daily life. I love the pride I feel in setting new personal bests.</p>
+<p>When I did an informal poll of my clients and friends that lift weights, I heard this pattern repeated over and over. Almost no one mentioned their abs or their biceps.</p>
+<p>Many talked about having less back pain and feeling more energetic and resilient. They talked about feeling strong, solid, and stable through their core. Some loved showing off their strength.</p>
+<p>One friend told a story about a time when she and her coworkers needed to set up for a work event. They had called their facilities department to help, but they hadn’t shown up yet. While her coworkers waited around, she started picking up tables and moving them.</p>
+<p>Her eyes lit up as she recalled the positive comments she got from those coworkers. They said “wow, you’re strong, I couldn’t do that”. She was so proud.</p>
+<p>Another told me about the difference between her mother and her mother-in-law. Her mother-in-law was frail, with chronic aches and pains and trouble walking for long distances. When they went on family vacations, they had to make special plans to ensure she'd be able to join in.</p>
+<p>My friend's mother, who was the same age and a long-time weightlifter and tennis player, looked and moved like she was 10 years younger. She could do anything the rest of the family were doing. “I want to grow old like my mother is, not like my mother-in-law”, she said.</p>
+<h2>Why You Should Be Strength Training</h2>
+<p>Too many people skip strength training and miss out on all these incredible benefits. Don’t let that be you.</p>
+<p>Be strong and capable. Be healthy and independent. No one ever wished they were weaker.</p>
+<h2>If You Need Help</h2>
+<p>To get started on your strength training journey, download my FREE Strength Training 101 eBook. You’ll find everything you need to know to create an effective program, including which exercises to do and how to make progress towards your goals.</p>
+<p>For a more guided option, check out my Strength Training For Anxiety program. This 12-week workout program is delivered by an app with detailed instructions and videos so you know exactly what you need to do in each session. It also has bonus features that will help you unlock the power of strength training for managing anxiety and changing the way you think and feel.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

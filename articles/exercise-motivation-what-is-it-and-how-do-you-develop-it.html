@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Exercise Motivation: What Is It and How Do You Develop It -- Lifted Strength Club</title><meta name="description" content="You don"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Mindset</span><span class="rt">8 min read</span></div><h1>Exercise Motivation: What Is It and How Do You Develop It</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e46ab8546e68bc7b1cf4/1712604103438/Exercise+motivation.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><ul><li>To feel better about yourself or improve your self-esteem, or to stop feeling guilty or bad about yourself. You don’t really want to exercise, but you think you “should”.</li><li>Because you know it’s important for your health and you have another meaningful weight loss-related goal you are trying to achieve. For example, you know that if you lose weight you will be at less risk of having a heart attack or stroke. You'll also have more energy to play with your kids. You might not enjoy exercise, but you connect it to something that you value in your life.</li><li>Because being fit and healthy is part of who you are. You see exercising and eating healthy as part of your lifestyle. The activity (exercise) and your goals (weight loss) are integrated into how you view yourself. Do you necessarily enjoy exercise? Maybe not. But you take pride in being the kind of person who exercises. This is the most effective type of extrinsic motivation.</li></ul>
+<p>Finally, there’s “Intrinsic Motivation”, which is all about the activity itself. An intrinsically motivated person would exercise because they like to exercise. Another reason would be to challenge themselves to be a better runner, or weightlifter, or yoga person (is that called a yogi?), or any other type of exercise.</p>
+<p>As you move along this continuum of motivation, your reasons for doing the behavior move from “needing” to exercise to “wanting” to exercise. There's a huge difference between doing something because you “need” to, and doing something because you “want” to.</p>
+<p>If you’ve struggled to stick with exercise before, the most important thing you can do is move from the mindset that you need to exercise and instead develop the ability to want to exercise.</p>
+<h2>How to Develop Effective Motivation, According to Science</h2>
+<p>People are motivated by many different things. When it comes to exercise, you might have a few different types of motivation. That’s totally fine. You can exercise because you like it and also because you want to look good. There’s nothing wrong with that.</p>
+<p>You don’t have to give up your less effective extrinsic motivations (unless they are having a negative effect on your health or happiness).</p>
+<p>But if you want long-term success you should try to develop some intrinsic motivation to go with them. Aim for intrinsic exercise motivation, but if you can at least improve your extrinsic motivation, you will be well on your way to success.</p>
+<p>According to Self-Determination Theory, you can shift your way towards the intrinsic end of the spectrum by fulfilling three basic psychological needs: “Autonomy”, “Competency”, and “Relatedness”.</p>
+<ul><li>Autonomy is when you feel like you are in control of your choices and actions.</li><li>Competency is when you feel like you’re capable and have confidence in your abilities.</li><li>Relatedness involves having satisfying and supportive social relationships.</li></ul>
+<p>The more you feel confident, in control, and connected with others, the more likely you are to be intrinsically motivated to exercise.</p>
+<p>Here are some strategies that can help.</p>
+<h2>How to Increase Autonomy</h2>
+<p>Find An Activity That You Enjoy.</p>
+<p>For the health benefits of exercise, you should be doing strength training, cardio, and flexibility exercises. But within those guidelines, there are so many different ways to be active.</p>
+<p>For strength training, you can try different variations of weightlifting (powerlifting, Olympic lifting), bodyweight training, or experiment with different strength exercises, sets, and repetition ranges.</p>
+<p>For cardio, try running, cycling, swimming, hiking, paddle boarding, or team sports. Stretching can increase flexibility, and so can yoga.</p>
+<p>Remember that the best workout is the one that you can do, consistently, for a long time. Don’t worry about what others are doing and don’t do a specific type of exercise because someone else says it’s good for you.</p>
+<p>You get to choose what you do, and it can be anything that you enjoy. Just make sure you keep an open mind, give different types of exercise a chance, and keep trying until you find something that you like and can maintain over time.</p>
+<p>Be Actively Involved In Your Training.</p>
+<p>You may not be an expert in exercise, but you can learn enough to make some decisions about the exercises you’re doing.</p>
+<p>If you have input into at least some of the details of your program, you’re more likely to feel in control of your actions. Even if you’re following along with an instructor or you downloaded a generic program, there are always ways to get involved.</p>
+<p>Set goals that are important to you and choose a program that addresses those goals.</p>
+<p>If one of your goal is to improve your mental health, check out my Strength Training For Anxiety Program! It's a 12-week program guided by an app so you can do that workouts anytime, anywhere. It also has videos and lessons to help you challenge negative thought patterns, rewire your brain, and improve your physical and mental strength at the same time!</p>
+<p>Learn more about exercise so you can make tweaks to your current program. There is plenty of information on this site and all over the internet.</p>
+<p>If you have a trainer, talk to them about your preferences. Any good trainer should be considering your needs and goals when designing your program and should be able to adjust the program to accommodate your likes and dislikes. Ask questions so you can understand why you’re performing certain exercises and what they will help you achieve.</p>
+<p>If nothing else, take ownership of each movement as you do it. If you’re in a group class and the instructor tells you to sprint, don’t think “Ugh, I have to sprint now because it’s part of the workout.” Instead, think “I’m here for a reason, and I’m choosing to sprint as hard as I can right now because I know it will help me achieve my goals.”</p>
+<p>You don’t have to do anything when it comes to exercise, it’s always your choice. Own that choice and remember that every time you exercise is an opportunity to get better.</p>
+<h2>How to Increase Competency</h2>
+<p>Practice The Basic Exercises.</p>
+<p>There are some exercises that form the foundation for any good strength training and cardio program. Commit a few minutes several times a day to practicing these basics, and you’ll build confidence in your ability to move which will pay off exponentially.</p>
+<p>For strength exercises, learn to do the basic push, pull, squat, hinge, and core activation movements. You can do versions of each of those movements with little or no equipment, and you can do them pretty much anywhere.</p>
+<p>Practice those movements often. It’s helpful to think of them as skills you're trying to learn rather than exercises. The better you get at those movements, the more confident you'll feel during your strength workouts.</p>
+<p>For cardio, walk as much as you can each day. Do the simple things that help you get more steps: park farther away, take the stairs, get up from your desk every couple of hours and go for a quick walk.</p>
+<p>Those things all add up and can improve your health and your fitness little by little. The fitter you are, the more confident you'll feel when it’s time to do your higher intensity cardio.</p>
+<p>Start Slowly And Set Yourself Up For Little Victories.</p>
+<p>Too many people try to do too much, too soon in their exercise programs. Not only does this put you at risk for an injury, it can undermine your confidence.</p>
+<p>When someone struggles with an exercise that’s beyond their ability level, they often think they’re just not strong enough or fit enough. That’s not true. Exercise is a skill, and like any skill, it takes time and practice to improve. You can’t expect to jump in and be good at it right away.</p>
+<p>Instead, set yourself up for success. When you first try a new exercise, or when you go back to an exercise you’ve had trouble with in the past, do something you know you can accomplish.</p>
+<p>Try an easy variation of a bodyweight exercise (like incline push ups instead of floor push ups), choose a light weight that you can lift comfortably for 8 to 10 repetitions for just one set, or run for just one minute during your usual walk.</p>
+<p>As you get more comfortable with exercise, make one small increase in difficulty at a time and make sure you acknowledge and celebrate the progress you make, no matter how small it is. Little victories will eventually add up to big results.</p>
+<p>Track Your Progress.</p>
+<p>It’s easy to focus too much on where you’re going and forget how far you’ve come. Documenting your workouts and referring back to previous ones is a great way to appreciate the improvements you’ve made. It’s also essential for incorporating progressions in your training.</p>
+<p>Keep a log of your workouts. That can be as simple as putting a note in your phone with the date and the details of your session. Keep track of your exercises, sets, reps, distance, and time, and also keep track of how you felt during each exercise. A simple 1-10 scale of exercise difficulty can be useful for this, with 1 being not difficult at all and 10 being the most difficult exercise you’ve ever done.</p>
+<p>The benefits of exercise can be subtle and come slowly, so having solid evidence of your progress can help you see how much you’ve accomplished, and can drive your confidence to keep going.</p>
+<h2>How to Increase Relatedness</h2>
+<p>Make Exercise A Social Experience.</p>
+<p>Find a training partner, or join a group or team. If training with someone else isn’t convenient or you'd rather exercise alone, even discussing your workouts with like-minded friends or family can add a supportive social aspect to your training.</p>
+<h3>Exercise Motivation Is A Powerful Thing</h3>
+<p>Use these strategies to develop it and you’ll be amazed at how much easier it will be to stick with your training and achieve your goals.</p>
+<h2>If You Need More Help</h2>
+<p>Contact me to find out about my one-on-one in person or online training programs!</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

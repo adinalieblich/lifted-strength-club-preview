@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Exercise and Stress: How Exercise Can Help You Feel Less Stressed -- Lifted Strength Club</title><meta name="description" content="Exercise is one of the best ways to deal with stress. Here"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Lifestyle</span><span class="rt">7 min read</span></div><h1>Exercise and Stress: How Exercise Can Help You Feel Less Stressed</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e47eb8546e68bc7b1f0a/1771358080158/Exercise+Decreases+Stress.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>It can even cause serious health problems like clinical depression and anxiety, heart disease, diabetes, and premature aging.</p>
+<p>If you’ve ever felt stressed, you know the toll it can take on your life. Maybe you’ve tried a few stress relief exercises such as meditation, deep-breathing exercises, mindfulness, reaching out to social connections, or other strategies. These are all good ways to manage stress.</p>
+<h2>Did You Know You Can Reduce Stress With Exercise?</h2>
+<p>In one large study of more than 55,000 people, those who were physically active were about 50% less likely to report high levels of stress than less active people. Active people were also about 125% less likely to report high levels of stress than people who weren’t active at all.</p>
+<h3>How Does Stress Work?</h3>
+<p>Before we get into the connection between exercise and stress, it's important to know that stress can be a normal and even healthy part of life.</p>
+<p>Whenever you encounter any kind of change, your brain and body react by initiating a stress response.</p>
+<p>That change could be something physical like an injury or a potentially dangerous situation, something emotional like an argument with a friend or a tense work meeting, or a major life event.</p>
+<p>That response is meant to prepare you to take action so you can deal with whatever change you’re experiencing. It’s often called the “fight-or-flight” response.</p>
+<p>This stress response involves hormones. You may have heard of one of the hormones involved with stress: cortisol. When cortisol is released into your bloodstream, it causes many changes in your body.</p>
+<p>Your heart rate, blood pressure, and blood sugar levels change. Additionally, your immune system changes, and there are changes in the brain areas that control your mood, motivation, and fear. Some of the other systems in your body that aren’t important in an emergency, like your digestion, slow down.</p>
+<p>You get pretty much the same stress response when you exercise, but with a few very important differences.</p>
+<h2>The Difference Between Good Stress And Bad Stress</h2>
+<p>Once the situation that caused the cortisol response has passed, cortisol levels drop and your body goes back to normal.</p>
+<p>Here’s where the differences between “good” stress, like exercise, and “bad” stress, like psychological stress, come into play.</p>
+<p>When you exercise you get that cortisol response, but other hormones, like growth hormones, are also released at the same time.</p>
+<p>That allows your body to adapt and grow after each stress response. With psychological stress, you don’t get a release of growth hormones, so your body doesn’t recover from that kind of stress as easily.</p>
+<p>With good stress, your body starts to get better at neutralizing cortisol, so your cortisol levels drop much faster after an exercise bout.</p>
+<p>There are also other substances released by exercise that help regulate the mood and brain responses to stress. Those substances aren’t released (and are even sometimes decreased), by bad stress.</p>
+<p>Both “good” exercise stress and “bad” stress increase stress hormones. However, only exercise gives you a way to recover from the effects of those stress hormones while having a positive impact on your body and brain.</p>
+<h2>How Does Exercise Decrease Stress?</h2>
+<h3>Exercise builds resilience to stress.</h3>
+<p>As you’ve just read, exercise provides a controlled stress response and the tools to recover from that response.</p>
+<p>Every time you exercise, you’re essentially practicing how to deal with stress in a manageable way and building up a tolerance to it.</p>
+<p>When you exercise regularly, all of those stress-management processes get stronger and more efficient and can transfer over to bad stress situations.</p>
+<p>That makes it easier for you to handle not only the good stress you get from exercise but also the bad stress you feel from negative life events.</p>
+<p>In fact, studies have shown that people who exercise regularly don’t respond as negatively to mental or psychological stress.</p>
+<p>For example, when active people go through a stressful situation (like public speaking), their blood pressure and other physical signs of stress are affected less than inactive people in the same situation.</p>
+<h3>Exercise improves your overall mental well-being.</h3>
+<p>Since exercise improves mood, increases self-confidence, happiness, and optimism, it can help you feel good even in the face of stressful circumstances.</p>
+<p>While you can’t always control what happens to you, you can control how you respond. Exercise puts you in a position to be able to respond to negative events in a more positive way.</p>
+<h3>Exercise can combat the negative body responses to chronic stress.</h3>
+<p>Being active has a positive effect on just about every system in your body. That's especially true for your cardiovascular system and your brain, but also your immune system, metabolic system, and many more.</p>
+<p>So even if you do experience the negative effects of bad stress, they’re less likely to impact your health.</p>
+<h2>How To Exercise to Reduce Stress:</h2>
+<h3>Do it often.</h3>
+<p>People who exercise 3 or more times a week generally have better responses to stress. Each exercise session can be considered a “practice session” for your body to get better at dealing with stress. More frequent exercise (up to 5 or 6 days a week) is probably best.</p>
+<h3>Up your intensity.</h3>
+<p>While both moderate and high-intensity exercise can decrease feelings of stress, higher intensity exercise seems to be more effective.</p>
+<p>Moderate exercise includes brisk walking, slow jogging, or weightlifting with a moderate effort. High-intensity exercise is hard running, intervals, or heavy strength training.</p>
+<p>Try some higher intensity workouts, just make sure you build up the intensity slowly as your fitness improves.</p>
+<h3>Make time for longer sessions.</h3>
+<p>Some studies have found stress-relieving effects after exercise as short as 20 minutes. However, longer sessions seem to be better.</p>
+<p>Aim for about 40 minutes for the best effects. If you can’t do that yet, just start where you are and aim to increase your workout time slowly.</p>
+<h3>Cardio seems to be the most effective for reducing stress.</h3>
+<p>The vast majority of the research on exercise and stress has been done using cardio exercise. There are very few studies on strength training and stress.</p>
+<p>It seems that both strength training and cardio exercise can improve stress responses, but cardio is more effective.</p>
+<h3>Aim to improve your fitness by making your workouts a little harder over time.</h3>
+<p>Training to improve your fitness leads to many positive changes in the way your body functions. It can improve the way you respond to both exercise-induced and general stressors.</p>
+<p>Aim to increase your fitness by following a progressive program, but be careful to increase gradually and focus on recovery. You want to induce a good stress response along with the responses that help you recover from that good stress.</p>
+<p>Over-doing it, by making big jumps in the amount or intensity of your exercise, could make it harder to recover.</p>
+<p>Look out for signs that you’re not recovering well. That includes unexplained decreases in exercise performance. For example, if you’re not able to maintain your usual cardio pace or lift the weights that you usually can, you might not be recovering enough.</p>
+<p>It also includes feeling very fatigued or having muscle aches and pains.</p>
+<p>Make sure you prioritize your recovery by getting enough sleep and eating plenty of nutritious foods.</p>
+<h2>Take advantage of the stress-dampening effect of exercise.</h2>
+<p>Within about 30 minutes of finishing an exercise session, your resilience to the physical effects of stress is particularly high. If you have a stressful task you need to do, try to exercise right before.</p>
+<p>You can also try using exercise to "complete the stress cycle" by doing a very quick but very intense bout of exercise when you feel particularly stressed, then practicing diaphragmatic breathing to bring your heart rate down quickly. This might look like 30 seconds of jump squats, then 2-3 minutes of breathing.</p>
+<h2>If You Need Help</h2>
+<p>If you found this article helpful and want a simple guide to using exercise to support your mental health, I created a FREE eBook called A Guide to Exercise for Mental Health. It walks you through the science, the mindset shifts, and the practical strategies that make exercise feel supportive instead of overwhelming, including beginner-friendly workout templates.</p>
+<p>If you're feeling overwhelmed and stressed and need personalized help, contact me. I can help you with exercise so you can cope with the stresses in your life.</p>
+<p>I wish you the best in your journey to being healthy and stress-free!</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>

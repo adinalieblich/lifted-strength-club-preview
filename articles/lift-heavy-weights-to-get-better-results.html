@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Lift Heavy Weights To Get Better Results -- Lifted Strength Club</title><meta name="description" content="If you want to build strength or muscle, don"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:'Jost',sans-serif;font-weight:600;font-size:1.2rem;letter-spacing:.32em;color:#fff}
+.logo b{color:var(--brass)}
+.menu{display:flex;align-items:center;gap:32px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:760px){.menu a:not(.pill){display:none}}
+.bloghero{padding:clamp(60px,9vh,110px) 0 30px}
+.bloghero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+.bloghero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:300}
+.bloghero h1 em{font-style:italic;color:var(--teal-dk)}
+.bloghero p{max-width:34em;color:var(--warmgray);margin-top:18px;font-size:1.06rem;line-height:1.7}
+.filters{display:flex;gap:10px;flex-wrap:wrap;padding:30px 0 6px}
+.filters button{font-family:'Poppins';font-size:.8rem;letter-spacing:.04em;border:1px solid var(--rule);background:transparent;color:var(--warmgray);padding:9px 18px;border-radius:40px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--charcoal);color:var(--charcoal)}
+.filters button.on{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;padding:34px 0 90px}
+.card{display:flex;flex-direction:column;transition:.4s}
+.card .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;margin-bottom:18px;background:var(--cream)}
+.card .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.22) sepia(.08) contrast(1.04);transition:.6s}
+.card:hover .im img{transform:scale(1.05)}
+.card .meta{display:flex;gap:12px;align-items:center;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.card .meta .rt{color:var(--warmgray)}
+.card h2{font-size:1.42rem;font-weight:400;line-height:1.18;margin-bottom:10px}
+.card p{color:var(--warmgray);font-size:.95rem;line-height:1.6}
+.card .more{margin-top:14px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+.art{max-width:760px;margin:0 auto;padding:0 clamp(24px,5vw,40px)}
+.artmeta{padding:clamp(50px,8vh,90px) 0 0;display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.artmeta .rt{color:var(--warmgray)}
+.art h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:300;margin:22px 0 18px;line-height:1.04}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:30px;border-bottom:1px solid var(--rule);color:var(--warmgray);font-size:.92rem}
+.byline b{color:var(--charcoal);font-weight:600}
+.arthero{max-width:1180px;margin:34px auto;padding:0 clamp(24px,5vw,64px)}
+.arthero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px;filter:grayscale(.18) sepia(.06) contrast(1.03)}
+.prose{padding:8px 0 60px}
+.prose p{font-size:1.12rem;line-height:1.85;color:#39352f;margin:0 0 22px}
+.prose h2{font-size:1.7rem;font-weight:400;color:var(--teal-dk);margin:38px 0 14px}
+.prose h3{font-size:1.3rem;font-weight:500;margin:28px 0 10px}
+.prose ul{margin:0 0 22px 22px}
+.prose li{font-size:1.08rem;line-height:1.7;margin-bottom:8px;color:#39352f}
+.prose p:first-of-type::first-letter{font-family:'Jost',sans-serif;font-weight:500;font-size:3.4rem;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--brass)}
+.artcta{background:var(--teal-dk);color:var(--cream);border-radius:18px;padding:clamp(34px,5vw,56px);text-align:center;margin:20px 0 70px}
+.artcta h3{font-size:1.8rem;font-weight:300;margin-bottom:10px}
+.artcta h3 em{font-style:italic;color:var(--blush)}
+.artcta p{color:rgba(244,248,245,.78);margin-bottom:22px}
+.artcta a{display:inline-block;background:var(--brass);color:#fff;padding:15px 32px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.back{display:inline-block;margin:30px 0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-dk);font-weight:600}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:10px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px}
+footer .logo{font-size:1.1rem;margin-bottom:14px}
+@media(max-width:860px){.feed{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feed{grid-template-columns:1fr}}
+</style></head><body><div class="grain"></div><header><div class="wrap nav"><a class="logo" href="../flagship.html">LIFTED<b>.</b></a><nav class="menu"><a href="../flagship.html#method">Method</a><a href="../flagship.html#founder">Dr. Gam</a><a href="../flagship.html#pricing">Membership</a><a href="../blog.html">Journal</a><a class="pill" href="../flagship.html#book">Book a Consult</a></nav></div></header><article><div class="art"><div class="artmeta"><span>Training</span><span class="rt">10 min read</span></div><h1>Lift Heavy Weights To Get Better Results</h1><div class="byline">By <b>Dr. Sharon Gam, PhD</b> &middot; CSCS &middot; ACE-HC</div></div><div class="arthero"><img src="http://static1.squarespace.com/static/65b7df6a90c12b5744244219/65d4e45eb8546e68bc7b1b18/65d4e49cb8546e68bc7b220e/1730378047920/Exercising+vs+Training.jpg?format=1500w" alt=""></div><div class="art"><div class="prose"><p>I’m currently at capacity for personal training clients. If you’d like to be added to my waitlist and be the first to know when a new spot opens, please email Sharon@DrSharonGam.com.</p>
+<p>Read on to find out why.</p>
+<h2>What Is A “Heavy” Weight</h2>
+<p>First, let me define what I mean by “heavy” weights. Heavy weights are weights that truly challenge your muscles, and that you can only lift a few times in a row.</p>
+<p>Heavy is a feeling, not a number. On the same exercise, a heavy weight might be a 5lb dumbbell for one person and a 50lb dumbbell for someone else.</p>
+<p>I also want to be very clear that an appropriate heavy weight is one that you can lift safely and with good form. You should never lift more than you can handle, and it’s very important to work your way up to heavy lifting by learning proper exercise techniques and building a foundation of strength before increasing the weights.</p>
+<p>In fact, I recommend having at least one session with a fitness professional like a qualified personal trainer who can show you how to properly engage your core and do each exercise correctly.</p>
+<p>If you need help, I offer FREE consultations. Contact me!</p>
+<h2>Your Strength Training Goals</h2>
+<p>You might think weightlifting is only about building muscle, but it’s more complicated than that. There are different qualities within your muscles that you can train by lifting weights.</p>
+<p>You can build muscular power, muscular strength, muscular mass (that’s known as hypertrophy), and muscular endurance. Those traits are related, but they’re not the same thing.</p>
+<h3>Strength</h3>
+<p>Muscular strength is your muscle’s ability to move maximal loads. In other words, the stronger you get the more weight you can move. For the purpose of this article I’m going to lump muscular power in with strength, although they’re not quite the same.</p>
+<p>Getting stronger means you can lift and move heavy things, like furniture or your kids, and makes you feel empowered and independent. Training for muscular strength also increases bone density, something that’s especially important as you get older.</p>
+<h3>Hypertrophy</h3>
+<p>Muscle mass, or hypertrophy, is an increase in muscle size. If you look at a huge bodybuilder, you’ll see a lot of hypertrophy.</p>
+<p>Please don’t be afraid of hypertrophy. You have to train very often and very hard, for a very long time, to look like a bodybuilder. You also need to eat A LOT and you usually need to have a genetic predisposition to be able to gain a lot of mass.</p>
+<p>Most non-bodybuilders who train for hypertrophy will increase their muscle size in a way that makes their muscles look denser. That’s what people mean when they say they want to look “toned”.</p>
+<p>Building muscle mass can improve your body composition, increase your metabolism, and is an incredibly important marker of good health.</p>
+<p>Your muscles use sugar as a fuel. The more muscle you have and the more active it is, the better you can manage your blood sugar and insulin levels and the lower your risk of type 2 diabetes. People with lower muscle mass are also at risk of falls, hospitalizations, and premature death, and experience significant decreases in daily functioning.</p>
+<h3>Endurance</h3>
+<p>Muscular endurance is the ability for your muscles to keep contracting over time without getting fatigued. This is important for endurance athletes or people who do a lot of hiking, walking, running, or cycling.</p>
+<p>Increasing muscular endurance helps with cardio performance, and it makes you more energetic and fatigue resistant. You can crawl around on the floor with your grandkids, climb stairs with less effort, and walk your dog without feeling like you need to collapse into a chair when you get back.</p>
+<p>For overall health and daily functioning, you want to be improving all of these qualities.</p>
+<h2>How Your Muscles Get Stronger, Bigger, Or More Fatigue-Resistant</h2>
+<p>So now you know that you can target different muscle qualities through strength training. It’s also important to know what actually happens when you train for those things.</p>
+<p>When you lift weights in a certain way, it sets off alarm bells in your muscles that scream at your brain. “Hey! I need some help down here! This thing that my person is making me do is really hard, and I need you to send some reinforcements so that if they make me do it again I’ll be able to handle it.”</p>
+<p>Then your brain says “Ok, here you go. Thanks for all the hard work you’re doing!” (your brain is a very supportive coach) and starts the process of making you stronger, or more muscular, or better at endurance.</p>
+<h3>Strength</h3>
+<p>Believe it or not, most of your strength doesn’t come from your muscles themselves. Strength actually comes mainly from your central nervous system, which is made up of your brain and nerves.</p>
+<p>You get stronger when your brain gets better at sending signals to activate and coordinate your muscles, and your nerves get better at transmitting those signals.</p>
+<p>This is why it’s possible to get much stronger without getting very muscular (whether you’re able to get very muscular depends a lot on your genetics and your diet).</p>
+<p>When you lift something really heavy, your brain starts sending signals through your nerves and into your muscles. The heavier the thing, the more signals are needed.</p>
+<p>When the number and strength of those nerve signals reaches a certain threshold, an alarm goes off and your brain starts the process of making your nervous system more efficient.</p>
+<h3>Hypertrophy</h3>
+<p>Hypertrophy is the growth of the muscle fibers themselves, so the entire muscle gets bigger and denser.</p>
+<p>The signal for hypertrophy is primarily mechanical tension. Your muscles have tiny structures in them that act like little strain gauges. When your muscles tense against resistance, like when you have a weight in your hand that you’re trying to lift, those gauges sense the tension.</p>
+<p>If enough of the right muscle fibers are under enough tension, an alarm goes off that tells your brain to start the muscle growth process.</p>
+<p>To learn more about the muscle building process, check out my full article on How Muscle Building Works.</p>
+<p>There are other signals that also set off muscle growth, like muscle damage and metabolic stress, but research suggests that tension is the biggest driver of muscle growth, and those other signals come in and amplify the tension signal. Over time, your muscles get bigger.</p>
+<h3>Endurance</h3>
+<p>For endurance, your muscles build more capillaries and enzymes so they can receive more fuel (in the form of stored sugar and fat) and use that fuel more efficiently.</p>
+<p>The primary signal for endurance is metabolic stress. Waste products like lactic acid and others build up when muscles contract over and over again. Your brain senses that and starts the process of building more blood vessels and enzymes in your muscles.</p>
+<p>Blood delivers oxygen and nutrients like sugar and fat which your muscles use, with the help of those enzymes, to create energy. Blood also takes away waste products. Over time, you get more fatigue resistant.</p>
+<h2>How To Train For Each Goal</h2>
+<p>Strength, hypertrophy, and endurance are related to each other. They're on a spectrum with strength on one end, endurance on the other end, and hypertrophy in the middle.</p>
+<p>Some people are more genetically predisposed towards some of these muscle qualities than others. Regardless of whether you’re naturally strong or naturally better at endurance, you can train specifically for each goal.</p>
+<h3>Strength</h3>
+<p>For strength, you should be using weights that you can only lift between 2-6 times with good form. Those would be considered very heavy weights.</p>
+<p>As I mentioned at the beginning of this article, it’s very important to work your way up to these kinds of heavy weights over time and use good exercise form. I don’t usually introduce very heavy weights with new clients for at least the first 6 months, sometimes much longer. I always make sure they are fully mentally and physically prepared for it.</p>
+<h3>Hypertrophy</h3>
+<p>For muscle mass, you should be using weights that you can lift about 6-15 times with good form. Those would be considered heavy to moderate weights.</p>
+<p>Muscle size is unique in that it’s not just about the weight you use, but the effort you put in. Recently, studies have found that you can get muscle growth with reps ranging from 6 to 30. However, if you’re lifting lighter weights with the goal of hypertrophy, you need to push yourself to muscle failure to get those tension gauges to go off and stimulate muscle growth.</p>
+<p>So even though you *could* lift light weights and get muscle growth, those weights will feel very heavy and you will experience a lot of discomfort by the time you get to muscle failure. Personally, that’s my least favorite way to lift weights. I much prefer moderate to heavy weights to stimulate muscle growth.</p>
+<h3>Endurance</h3>
+<p>For endurance, you should use weights that you can lift more than 15 times with good form, Keep going until you feel some burning in your muscles. Those would be considered light weights.</p>
+<p>To be clear, these are not hard numbers. It’s not like there’s a switch that flips and you stop building strength and start building size. You’re always building a little of everything.</p>
+<p>If you’re lifting heavy weights for less reps, you’re building mostly strength and some size. When you’re lifting primarily for size, you’re also building some strength and endurance. If you’re lifting mostly for endurance, you’re also building some size (as long as you go to failure).</p>
+<h2>Are You Training For The Wrong Results?</h2>
+<p>That long explanation (thanks for staying with me here!) was to set the stage for my main point. Many people are training for endurance when they actually want size and strength.</p>
+<p>When I put on my personal trainer hat and talk to people about their goals, they almost never say they want muscular endurance. The vast majority of people mention strength and muscle definition or toning as their primary goals.</p>
+<p>Remember that there are plenty of other great physical and mental health-related reasons to lift weights. I hope you’re aware that you should be strength training regardless of aesthetics.</p>
+<p>But many people want to see those physical results. If they don’t, they’ll often give up strength training altogether. That’s a shame, because it means they’ll miss out on those other incredible benefits.</p>
+<p>That’s often exactly what happens to people who, without realizing it, are lifting weights in a way that builds muscular endurance, not strength or hypertrophy.</p>
+<p>They’re lifting light weights and creating some metabolic stress. But because they’re not lifting heavy weights they’re not getting the nervous system alarm and so they don’t get stronger. Most people don’t lift their light weights anywhere near muscle failure, so they also don’t get the mechanical tension alarm, and their muscles don’t get bigger or more defined.</p>
+<p>Bottom line, they don’t see the results they’re expecting.</p>
+<p>If you want to build strength or muscle, you need to be lifting weights that are heavy enough to trigger those changes in your brain, nerve cells, and muscles.</p>
+<p>Lift heavy weights.</p>
+<h2>If You Need Help</h2>
+<p>For tips on how to lift heavy weights, check out some of my other articles:</p>
+<p>To Get Results From Strength Training, Make Sure You Push Yourself</p>
+<p>How To Tell If You’re Pushing Yourself Hard Enough</p>
+<p>How To Choose The Right Weights For Your Strength Exercises</p>
+<p>If you’re just getting started on your strength training journey, I have a couple of resources for you:</p>
+<p>Download my FREE Strength Training 101 eBook. You'll learn everything you need to know to get started, including which exercises to do and how to progress your workouts over time.</p>
+<p>For a more guided option, check out my Strength Training for Anxiety program. This 12-week workout program is delivered through an app which shows you exactly what to do in each session. You'll also get bonus lessons and resources to help you use strength training to build resilience, boost mood, and increase self-confidence.</p>
+<p>About Contact Membership</p></div><div class="artcta"><h3>Train with <em>intention</em></h3><p>Strength training for mental health, in Longwood. Book a free consult with Dr. Gam.</p><a href="../flagship.html#book">Book a free consult -&gt;</a></div><a class="back" href="../blog.html">&lt;- Back to the Journal</a></div></article><footer><div class="wrap"><div class="logo" style="color:var(--cream)">LIFTED<b style="color:var(--brass)">.</b></div><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>
