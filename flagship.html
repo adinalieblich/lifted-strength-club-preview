@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lifted Strength Club — Flagship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ===== Brand palette — STRICT ===== */
+  :root{
+    --teal:#4D7E83; --teal-dk:#3E6E73; --greige:#F4F0EB; --cream:#F4F8F5;
+    --blush:#C98D86; --brass:#B78B52; --charcoal:#2A2A2A; --warmgray:#6E6A65;
+    --greige-2:#E9E2D6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.015em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+  .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;font-weight:600}
+
+  /* grain + progress (premium texture / scroll storytelling) */
+  .grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--brass);z-index:300}
+
+  /* barely-there nav */
+  header{position:fixed;top:0;left:0;right:0;z-index:120;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(42,42,42,.78);backdrop-filter:blur(12px);border-color:rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+  .logo{font-family:'Fraunces',serif;font-weight:500;font-size:1.2rem;letter-spacing:.32em;color:#fff;transition:color .4s}
+  .logo b{color:var(--brass)}
+  .menu{display:flex;align-items:center;gap:38px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+  .menu a{position:relative}
+  .menu a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--brass);transition:width .35s}
+  .menu a:hover::after{width:100%}
+  .menu .pill{border:1px solid rgba(255,255,255,.5);padding:11px 22px;border-radius:40px;color:#fff}
+  .menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+
+  /* ===== HERO (video-ready) ===== */
+  .hero{position:relative;height:100vh;min-height:680px;overflow:hidden;display:flex;align-items:flex-end;background:var(--charcoal)}
+  .hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero .poster{filter:grayscale(.25) contrast(1.04) brightness(.92) sepia(.12);animation:kenburns 24s ease-in-out infinite alternate}
+  @keyframes kenburns{from{transform:scale(1.04)}to{transform:scale(1.16) translateY(-2%)}}
+  .hero::after{content:'';position:absolute;inset:0;background:
+     linear-gradient(180deg,rgba(42,42,42,.55) 0%,rgba(42,42,42,0) 30%,rgba(42,42,42,.25) 55%,rgba(42,42,42,.92) 100%),
+     linear-gradient(90deg,rgba(62,110,115,.45),transparent 60%)}
+  .hero .wrap{position:relative;z-index:3;width:100%;padding-bottom:7vh}
+  .hero .eyebrow{color:var(--brass);margin-bottom:26px;display:flex;align-items:center;gap:16px;opacity:0;animation:rise .9s .15s forwards}
+  .hero .eyebrow::before{content:'';width:54px;height:1px;background:var(--brass)}
+  .hero h1{color:var(--cream);font-size:clamp(3rem,8.5vw,8.2rem);font-weight:300;line-height:.94}
+  .hero h1 .ln{display:block;overflow:hidden}
+  .hero h1 .ln span{display:block;transform:translateY(110%);animation:rise 1s forwards}
+  .hero h1 .ln:nth-child(1) span{animation-delay:.25s}
+  .hero h1 .ln:nth-child(2) span{animation-delay:.4s}
+  .hero h1 .ln:nth-child(3) span{animation-delay:.55s}
+  .hero h1 em{font-style:italic;color:var(--brass)}
+  .hero .meta{display:flex;justify-content:space-between;align-items:flex-end;margin-top:42px;gap:30px;flex-wrap:wrap;opacity:0;animation:rise 1s .7s forwards}
+  .hero .meta p{max-width:30em;color:rgba(244,248,245,.8);font-size:1.04rem;line-height:1.7}
+  .hero .cta{display:inline-flex;align-items:center;gap:14px;background:var(--cream);color:var(--charcoal);padding:17px 32px;border-radius:40px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;white-space:nowrap;transition:.25s}
+  .hero .cta:hover{background:var(--brass);color:#fff;transform:translateY(-2px)}
+  .vlabel{position:absolute;left:clamp(24px,5vw,64px);top:120px;z-index:3;writing-mode:vertical-rl;font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,248,245,.5)}
+  .scrollcue{position:absolute;right:clamp(24px,5vw,64px);bottom:36px;z-index:3;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,248,245,.6);display:flex;align-items:center;gap:10px}
+  .scrollcue .bar{width:1px;height:40px;background:rgba(244,248,245,.4);position:relative;overflow:hidden}
+  .scrollcue .bar::after{content:'';position:absolute;top:-40px;left:0;width:1px;height:40px;background:var(--brass);animation:drop 2s infinite}
+  @keyframes drop{to{top:40px}}
+  @keyframes rise{to{transform:translateY(0);opacity:1}}
+
+  /* marquee */
+  .marquee{background:var(--brass);color:var(--charcoal);overflow:hidden;white-space:nowrap;padding:16px 0}
+  .marquee .track{display:inline-block;animation:scroll 30s linear infinite}
+  .marquee span{font-family:'Fraunces',serif;font-style:italic;font-size:1.35rem;margin:0 30px}
+  .marquee span.o{font-style:normal;font-weight:500;letter-spacing:.02em}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+
+  /* ===== STATEMENT ===== */
+  .statement{padding:clamp(90px,13vh,170px) 0;background:var(--greige)}
+  .statement .lbl{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:34px}
+  .statement h2{font-size:clamp(1.8rem,4vw,3.4rem);font-weight:300;line-height:1.18;max-width:18em;color:var(--charcoal)}
+  .statement h2 b{font-weight:500;color:var(--teal-dk)}
+  .statement h2 em{font-style:italic;color:var(--brass)}
+
+  /* ===== MIND / BODY (the concept, palette-correct) ===== */
+  .duo{display:grid;grid-template-columns:1fr 1fr;min-height:88vh}
+  .duo .pane{padding:clamp(48px,7vw,96px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .duo .mind{background:var(--cream);color:var(--charcoal)}
+  .duo .body{background:var(--teal-dk);color:var(--cream)}
+  .duo .num{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:22px}
+  .duo .mind .num{color:var(--brass)}.duo .body .num{color:var(--blush)}
+  .duo h3{font-family:'Fraunces',serif;font-size:clamp(3rem,7vw,6rem);font-weight:300;line-height:.9;margin-bottom:24px}
+  .duo .mind h3{color:var(--teal-dk)}.duo .mind h3 em{font-style:italic;color:var(--brass)}
+  .duo .body h3 em{font-style:italic;color:var(--blush)}
+  .duo p{max-width:24em;font-size:1.05rem;line-height:1.75}
+  .duo .mind p{color:var(--warmgray)}.duo .body p{color:rgba(244,248,245,.82)}
+  .duo .body .ph{position:absolute;right:-8%;bottom:-10%;width:60%;opacity:.22;mix-blend-mode:screen}
+
+  /* ===== METHOD — bento ===== */
+  .method{padding:clamp(80px,12vh,150px) 0;background:var(--charcoal);color:var(--cream)}
+  .method .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:54px}
+  .method .head h2{font-size:clamp(2rem,4.6vw,3.6rem);font-weight:300;color:var(--cream);max-width:12em}
+  .method .head h2 em{font-style:italic;color:var(--brass)}
+  .method .head p{max-width:22em;color:rgba(244,248,245,.6);font-size:.98rem;line-height:1.7}
+  .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+  .cell{background:rgba(244,248,245,.04);border:1px solid rgba(244,248,245,.09);border-radius:16px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;transition:.4s;overflow:hidden;position:relative}
+  .cell:hover{background:rgba(183,139,82,.12);border-color:rgba(183,139,82,.5);transform:translateY(-4px)}
+  .cell .n{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--brass)}
+  .cell h4{font-family:'Fraunces',serif;font-weight:400;font-size:1.35rem;color:var(--cream);margin-bottom:8px}
+  .cell p{color:rgba(244,248,245,.62);font-size:.92rem;line-height:1.6}
+  .cell.wide{grid-column:span 2}.cell.tall{grid-row:span 2}
+  .cell.feature{grid-column:span 2;grid-row:span 2;background:var(--teal-dk);border-color:transparent;justify-content:flex-end}
+  .cell.feature .big{font-family:'Fraunces',serif;font-size:clamp(1.6rem,2.4vw,2.4rem);font-weight:300;line-height:1.1;color:var(--cream)}
+  .cell.feature .big em{font-style:italic;color:var(--blush)}
+  .cell.img{padding:0}.cell.img img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) sepia(.12) contrast(1.05)}
+
+  /* ===== FOUNDER ===== */
+  .founder{padding:clamp(80px,12vh,150px) 0;background:var(--cream)}
+  .founder .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,80px);align-items:center}
+  .founder .pic{position:relative}
+  .founder .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;filter:grayscale(.2) sepia(.08) contrast(1.03)}
+  .founder .pic .frame{position:absolute;inset:-14px;border:1px solid var(--brass);border-radius:6px;z-index:-1}
+  .founder .pic .badge{position:absolute;left:-22px;bottom:34px;background:var(--charcoal);color:var(--cream);padding:18px 22px;border-radius:6px}
+  .founder .pic .badge b{font-family:'Fraunces',serif;font-size:1.7rem;display:block;color:var(--brass)}
+  .founder .pic .badge span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,248,245,.7)}
+  .founder .lbl{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:26px}
+  .founder blockquote{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.5rem,2.8vw,2.5rem);line-height:1.28;color:var(--charcoal);margin-bottom:28px}
+  .founder blockquote em{font-style:italic;color:var(--teal-dk)}
+  .founder .by{color:var(--warmgray);font-size:1rem;line-height:1.7;max-width:34em;margin-bottom:26px}
+  .chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:30px}
+  .chip{border:1px solid rgba(42,42,42,.18);border-radius:40px;padding:8px 15px;font-size:.74rem;color:var(--warmgray)}
+  .press{display:flex;align-items:center;gap:30px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(42,42,42,.12)}
+  .press .pl{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--warmgray)}
+  .press img{height:30px;width:auto}
+
+  /* ===== PRICING ===== */
+  .pricing{padding:clamp(80px,12vh,150px) 0;background:var(--teal-dk);color:var(--cream)}
+  .pricing .head{text-align:center;max-width:34em;margin:0 auto 56px}
+  .pricing .head h2{font-size:clamp(2rem,4.6vw,3.6rem);font-weight:300;color:var(--cream)}
+  .pricing .head h2 em{font-style:italic;color:var(--blush)}
+  .pricing .head p{color:rgba(244,248,245,.7);margin-top:16px}
+  .plans{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:920px;margin:0 auto}
+  .plan{background:rgba(244,248,245,.05);border:1px solid rgba(244,248,245,.12);border-radius:18px;padding:40px;display:flex;flex-direction:column}
+  .plan.feat{background:var(--cream);color:var(--charcoal)}
+  .plan .t{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+  .plan h3{font-family:'Fraunces',serif;font-weight:400;font-size:1.7rem;margin-bottom:6px}
+  .plan .amt{font-family:'Fraunces',serif;font-size:3rem;font-weight:300;margin:8px 0}
+  .plan.feat .amt{color:var(--teal-dk)}
+  .plan .amt span{font-family:'Inter';font-size:.9rem;color:inherit;opacity:.6}
+  .plan ul{list-style:none;margin:18px 0 28px}
+  .plan li{padding:9px 0;font-size:.92rem;border-bottom:1px solid rgba(255,255,255,.1);opacity:.82}
+  .plan.feat li{border-color:rgba(42,42,42,.1)}
+  .plan .b{margin-top:auto;text-align:center;padding:15px;border-radius:40px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+  .plan .b.solid{background:var(--brass);color:#fff}
+  .plan .b.ghost{border:1px solid rgba(244,248,245,.4);color:var(--cream)}
+
+  /* ===== TESTIMONIAL ===== */
+  .quotes{padding:clamp(80px,12vh,150px) 0;background:var(--greige)}
+  .quotes .grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .qc{background:var(--cream);border-radius:18px;padding:clamp(34px,4vw,56px)}
+  .qc .mk{font-family:'Fraunces',serif;font-size:3.4rem;color:var(--blush);line-height:.4}
+  .qc p{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.4;color:var(--charcoal);margin:18px 0 24px}
+  .qc cite{font-style:normal;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--warmgray)}
+
+  /* ===== JOURNAL ===== */
+  .journal{padding:clamp(80px,12vh,150px) 0;background:var(--charcoal);color:var(--cream)}
+  .journal .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:48px;flex-wrap:wrap;gap:16px}
+  .journal .head h2{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:300;color:var(--cream)}
+  .journal .head h2 em{font-style:italic;color:var(--brass)}
+  .journal .head a{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .pcard .im{aspect-ratio:4/5;border-radius:12px;overflow:hidden;margin-bottom:18px}
+  .pcard .im img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) sepia(.1) contrast(1.05);transition:.6s}
+  .pcard:hover .im img{transform:scale(1.06)}
+  .pcard .c{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+  .pcard h3{font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;line-height:1.25;margin:8px 0;color:var(--cream)}
+
+  /* ===== CTA / FOOTER ===== */
+  .endcta{padding:clamp(100px,16vh,200px) 0;background:var(--teal-dk);color:var(--cream);text-align:center}
+  .endcta h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.4rem,6vw,5rem);line-height:1}
+  .endcta h2 em{font-style:italic;color:var(--blush)}
+  .endcta p{color:rgba(244,248,245,.75);margin:24px auto 36px;max-width:30em}
+  .endcta .cta{display:inline-block;background:var(--brass);color:#fff;padding:19px 44px;border-radius:40px;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+  footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:64px 0 36px}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(244,248,245,.12)}
+  footer .logo{color:var(--cream);font-size:1.3rem}
+  footer p{font-size:.9rem;margin-top:16px;max-width:24em}
+  .fcol h4{color:var(--cream);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+  .fcol a,.fcol span{display:block;font-size:.92rem;padding:4px 0}
+  .fbot{padding-top:24px;display:flex;justify-content:space-between;font-size:.8rem;flex-wrap:wrap;gap:8px}
+
+  @media(max-width:900px){
+    .menu a:not(.pill){display:none}
+    .duo{grid-template-columns:1fr}
+    .bento{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+    .cell.feature{grid-column:span 2}
+    .founder .grid{grid-template-columns:1fr;gap:50px}
+    .plans,.quotes .grid{grid-template-columns:1fr}
+    .posts{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr 1fr}
+    .vlabel{display:none}
+  }
+  @media(max-width:560px){.bento{grid-template-columns:1fr}.cell.wide,.cell.feature{grid-column:span 1}.fgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="progress" id="prog"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <div class="logo">LIFTED<b>.</b></div>
+    <nav class="menu">
+      <a>Method</a><a>Dr. Gam</a><a>Membership</a><a>Journal</a>
+      <a class="pill">Book a Consult</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO (video-ready) -->
+<section class="hero">
+  <!-- Drop Sharon's LinkedIn clip here: <video autoplay muted loop playsinline poster="..."><source src="sharon.mp4"></video> -->
+  <img class="poster" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=2000w" alt="" />
+  <div class="vlabel">Lifted Strength Club — Est. Longwood, FL</div>
+  <div class="wrap">
+    <div class="eyebrow">Strength training for mental health</div>
+    <h1>
+      <span class="ln"><span>Strong mind.</span></span>
+      <span class="ln"><span>Strong body.</span></span>
+      <span class="ln"><span><em>Strong life.</em></span></span>
+    </h1>
+    <div class="meta">
+      <p>A private studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength — led by Dr. Sharon Gam, PhD.</p>
+      <a class="cta" href="#">Book a free consult →</a>
+    </div>
+  </div>
+  <div class="scrollcue">Scroll <span class="bar"></span></div>
+</section>
+
+<div class="marquee"><div class="track">
+  <span class="o">PhD-led</span><span>·</span><span>Strength for mental health</span><span>·</span><span class="o">No weigh-ins</span><span>·</span><span>300+ coached</span><span>·</span><span class="o">As seen in Shape & Business Insider</span><span>·</span>
+  <span class="o">PhD-led</span><span>·</span><span>Strength for mental health</span><span>·</span><span class="o">No weigh-ins</span><span>·</span><span>300+ coached</span><span>·</span><span class="o">As seen in Shape & Business Insider</span><span>·</span>
+</div></div>
+
+<!-- STATEMENT -->
+<section class="statement">
+  <div class="wrap">
+    <div class="lbl reveal">— The premise</div>
+    <h2 class="reveal d1">I help people build strength — <b>physically, mentally, and emotionally</b> — especially those who’ve felt unwelcome, judged, or defeated by fitness culture. If all you want is a better butt, <em>I’m not your trainer.</em></h2>
+  </div>
+</section>
+
+<!-- MIND / BODY -->
+<section class="duo">
+  <div class="pane mind reveal">
+    <div class="num">01 — The mind</div>
+    <h3>Strong <em>mind.</em></h3>
+    <p>Strength training is one of the most effective tools we have for anxiety, mood and resilience. Here it’s the whole point — not a side effect.</p>
+  </div>
+  <div class="pane body reveal d1">
+    <div class="num">02 — The body</div>
+    <h3>Strong <em>body.</em></h3>
+    <p>Safe, smart, progressive programming designed with PhD-level knowledge of exercise science. Private, unhurried, and built entirely around you.</p>
+    <img class="ph" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1200w" alt="" />
+  </div>
+</section>
+
+<!-- METHOD — bento -->
+<section class="method">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="reveal">What sets the <em>training</em> apart</h2>
+      <p class="reveal d1">Every package begins with a movement assessment and evolves as you get stronger. This is what you can expect.</p>
+    </div>
+    <div class="bento">
+      <div class="cell feature reveal"><div class="n">✦</div><div class="big">Coaching grounded in <em>exercise science</em> — not trends, not guesswork.</div></div>
+      <div class="cell reveal d1"><div class="n">01</div><div><h4>Tailored programs</h4><p>Posture, movement & strength tests shape a plan that meets you where you are.</p></div></div>
+      <div class="cell img reveal d2"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""></div>
+      <div class="cell reveal"><div class="n">02</div><div><h4>Mindful coaching</h4><p>Every rep with intention — building a real connection between body and mind.</p></div></div>
+      <div class="cell wide reveal d1"><div class="n">03</div><div><h4>Progress, tracked & celebrated</h4><p>Progression is the key to results. Every exercise is recorded so we can see — and celebrate — how far you’ve come.</p></div></div>
+      <div class="cell reveal d2"><div class="n">04</div><div><h4>Habits that hold</h4><p>Small, powerful lifestyle changes that make a big difference and actually last.</p></div></div>
+      <div class="cell reveal"><div class="n">05</div><div><h4>Real accountability</h4><p>I’ll believe in you until you believe in yourself.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder">
+  <div class="wrap grid">
+    <div class="pic reveal">
+      <div class="frame"></div>
+      <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w" alt="Dr. Sharon Gam" />
+      <div class="badge"><b>PhD</b><span>Exercise Physiology</span></div>
+    </div>
+    <div>
+      <div class="lbl reveal">— Meet your coach</div>
+      <blockquote class="reveal d1">“I struggled for years with depression and anxiety. What changed my life was <em>strength training</em> — so I built Lifted to share that.”</blockquote>
+      <p class="by reveal d1">After more than 18 years training clients and studying exercise science, I have the tools to help you build the rewarding life you want. You can get a personal training certification in a weekend — I’m not that kind of trainer.</p>
+      <div class="chips reveal d2">
+        <span class="chip">PhD · Exercise Physiology</span><span class="chip">CSCS (NSCA)</span><span class="chip">ACE Health Coach</span><span class="chip">Precision Nutrition</span><span class="chip">300+ clients</span>
+      </div>
+      <div class="press reveal d2">
+        <span class="pl">As featured in</span>
+        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
+        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
+        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
+        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Simple, <em>honest</em> membership</h2>
+      <p>Every package includes a movement assessment, a personalized nutrition report, your coaching app, and a habit-setting session.</p>
+    </div>
+    <div class="plans">
+      <div class="plan feat reveal">
+        <div class="t">In-studio · Longwood</div>
+        <h3>Personal Training</h3>
+        <div class="amt">from $790<span>/mo</span></div>
+        <ul><li>55-min 1-on-1 sessions, 2–3×/week</li><li>Comprehensive movement assessment</li><li>Personalized nutrition report</li><li>Coaching app + accountability</li></ul>
+        <div class="b solid">Book a free consult</div>
+      </div>
+      <div class="plan reveal d1">
+        <div class="t">Online · Anywhere</div>
+        <h3>Online Coaching</h3>
+        <div class="amt">from $180<span>/mo</span></div>
+        <ul><li>2–4 personalized weekly workouts</li><li>Monthly virtual progress check-in</li><li>Monthly program updates</li><li>Unlimited messaging support</li></ul>
+        <div class="b ghost">See full pricing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="quotes">
+  <div class="wrap grid">
+    <div class="qc reveal"><div class="mk">“</div><p>Working with her was the best decision I’ve made for my physical and mental health. She made me feel confident from day one — I never felt judged.</p><cite>— Jess L, 37</cite></div>
+    <div class="qc reveal d1"><div class="mk">“</div><p>You’ll thank yourself every day for investing in yourself with her. She really cares about the whole person in front of her.</p><cite>— Ember V, 45</cite></div>
+  </div>
+</section>
+
+<!-- JOURNAL -->
+<section class="journal">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="reveal">From the <em>journal</em></h2>
+      <a class="reveal" href="#">All articles →</a>
+    </div>
+    <div class="posts">
+      <article class="pcard reveal"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w" alt=""></div><div class="c">Mental Health</div><h3>Why I Don’t Post Body Transformations</h3></article>
+      <article class="pcard reveal d1"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>Why It’s So Hard to Stay Consistent With Exercise</h3></article>
+      <article class="pcard reveal d2"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>“I Know What To Do, Why Can’t I Make It Happen?”</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- END CTA -->
+<section class="endcta">
+  <div class="wrap">
+    <h2 class="reveal">The hardest part<br/>is <em>getting started.</em></h2>
+    <p class="reveal d1">Book a free initial consultation in Longwood and let’s make a plan together.</p>
+    <a class="cta reveal d2" href="#">Book a free consult</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><div class="logo">LIFTED<b style="color:var(--brass)">.</b></div><p>Strength training for mental health. A private studio in Longwood, serving Seminole County, FL & beyond.</p></div>
+      <div class="fcol"><h4>Explore</h4><a>Method</a><a>Dr. Gam</a><a>Membership</a><a>Journal</a></div>
+      <div class="fcol"><h4>Visit</h4><span>2100 N Ronald Reagan Blvd #1012</span><span>Longwood, FL 32750</span><a href="tel:4073427613">407-342-7613</a><a href="mailto:Sharon@DrSharonGam.com">Sharon@DrSharonGam.com</a></div>
+    </div>
+    <div class="fbot"><span>© 2026 Lifted Strength Club · Dr. Sharon Gam, PhD</span><span>Strong mind. Strong body. Strong life.</span></div>
+  </div>
+</footer>
+
+<script>
+  // scroll: nav state + progress
+  const hdr=document.getElementById('hdr'), prog=document.getElementById('prog');
+  const onScroll=()=>{
+    const y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    hdr.classList.toggle('scrolled', y>40);
+    prog.style.width=(h>0?(y/h*100):0)+'%';
+  };
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.16});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
