@@ -27,10 +27,11 @@
 
   header{position:fixed;top:0;left:0;right:0;z-index:120;transition:.4s;border-bottom:1px solid transparent}
   header.scrolled{background:rgba(42,42,42,.8);backdrop-filter:blur(12px);border-color:rgba(255,255,255,.08)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:104px}
   .logo{display:inline-flex;align-items:center;color:#fff;text-decoration:none}
-  .logo svg{height:52px;width:auto;display:block}
-  footer .logo svg{height:60px}
+  .logo svg{height:74px;width:auto;display:block}
+  footer .logo svg{height:96px}
+  @media(max-width:600px){.nav{height:86px}.logo svg{height:60px}}
   .menu{display:flex;align-items:center;gap:36px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
   .menu a{position:relative}
   .menu a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--brass);transition:width .35s}
