@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lifted Strength Club | Personal Training for Mental Health · Longwood, FL</title>
+<meta name="description" content="Customized personal training and holistic movement in Longwood & Seminole County, FL. No weigh-ins, no before-and-after pics. Led by Dr. Sharon Gam, PhD. Book a free initial consultation." />
+<meta property="og:title" content="Lifted Strength Club — Strong Mind. Strong Body. Strong Life." />
+<meta property="og:description" content="Personal training for mental health in Longwood, FL. Book a free consultation." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Lifted Strength Club",
+  "description": "Personal training for mental health led by Dr. Sharon Gam, PhD, in Longwood, FL.",
+  "founder": { "@type": "Person", "name": "Dr. Sharon Gam", "honorificSuffix": "PhD" },
+  "telephone": "+1-407-342-7613",
+  "email": "Sharon@DrSharonGam.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "2100 N Ronald Reagan Blvd #1012", "addressLocality": "Longwood", "addressRegion": "FL", "postalCode": "32750", "addressCountry": "US" },
+  "areaServed": "Longwood & Seminole County, FL",
+  "priceRange": "$$",
+  "url": "https://liftedstrengthclub.com"
+}
+</script>
+<style>
+  :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--ink:#2A2A2A;--gray:#6E6A65}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--greige);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:'Fraunces','Georgia',serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600}
+  .btn{display:inline-block;padding:14px 28px;border-radius:2px;font-weight:600;font-size:.92rem;transition:.2s;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:var(--teal-dk)}
+  .btn-ghost{border-color:var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .imgwrap{overflow:hidden;background:var(--cream)}
+  .imgwrap img{width:100%;height:100%;object-fit:cover}
+  header{position:sticky;top:0;z-index:50;background:rgba(244,240,235,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(42,42,42,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .logo{display:flex;align-items:center;gap:12px;color:var(--teal-dk)}
+  .logo svg{width:42px;height:42px}
+  .logo .lt{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;letter-spacing:.04em;line-height:1}
+  .logo .lt small{display:block;font-family:'Inter',sans-serif;font-size:.58rem;letter-spacing:.34em;color:var(--brass);font-weight:600;margin-top:3px}
+  .menu{display:flex;align-items:center;gap:30px;font-size:.9rem;font-weight:500}
+  .menu a:hover{color:var(--teal)}
+  .menu .btn{padding:11px 22px}
+  /* hero */
+  .hero{padding:70px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.6rem,5.2vw,4.3rem);margin:18px 0 22px}
+  .hero h1 em{font-style:italic;color:var(--teal)}
+  .hero p.lede{font-size:1.1rem;color:var(--gray);max-width:32em;margin-bottom:28px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+  .credit{font-size:.85rem;color:var(--gray)}
+  .credit b{color:var(--ink);font-weight:600}
+  .hero-img{aspect-ratio:4/5;border-radius:3px}
+  /* press */
+  .press{background:var(--cream);border-top:1px solid rgba(42,42,42,.06);border-bottom:1px solid rgba(42,42,42,.06)}
+  .press .wrap{padding:26px 28px;display:flex;align-items:center;gap:34px;flex-wrap:wrap;justify-content:center}
+  .press span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gray);font-weight:600}
+  .press img{height:26px;width:auto;opacity:.7;filter:grayscale(1)}
+  /* intro */
+  .intro{padding:84px 0}
+  .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+  .intro h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin:14px 0 18px}
+  .intro p{color:var(--gray);font-size:1.1rem}
+  .intro-img{aspect-ratio:5/4;border-radius:3px}
+  /* sections */
+  section.block{padding:84px 0}
+  .sec-head{max-width:40em}
+  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:14px 0 10px}
+  .sec-head p{color:var(--gray);font-size:1.05rem}
+  .feat{background:var(--cream)}
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;margin-top:48px}
+  .feat h3{font-size:1.05rem;margin:0 0 8px;letter-spacing:.02em;text-transform:uppercase;font-family:'Inter';font-weight:600;color:var(--teal-dk)}
+  .feat p{color:var(--gray);font-size:.96rem}
+  .feat .ic{width:44px;height:44px;border-radius:50%;background:var(--greige);display:flex;align-items:center;justify-content:center;color:var(--teal);border:1px solid rgba(77,126,131,.25);margin-bottom:16px}
+  .feat .ic svg{width:21px;height:21px}
+  /* pillars */
+  .pillars{background:var(--teal-dk);color:#fff}
+  .pillars .eyebrow{color:var(--blush)}
+  .pillars .sec-head h2{color:#fff}
+  .pil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:46px}
+  .pil{padding:30px 26px;border-top:2px solid var(--brass)}
+  .pil h3{color:#fff;font-size:1.4rem;margin-bottom:12px}
+  .pil p{color:rgba(255,255,255,.78);font-size:.96rem}
+  /* about */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+  .about-img{aspect-ratio:4/5;border-radius:3px}
+  .about h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:14px 0 18px}
+  .about p{color:var(--gray);margin-bottom:16px;font-size:1.04rem}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 24px}
+  .chip{font-size:.76rem;border:1px solid rgba(42,42,42,.16);border-radius:40px;padding:7px 14px;color:var(--gray)}
+  .stat-row{display:flex;gap:34px;margin:8px 0 22px}
+  .stat b{font-family:'Fraunces',serif;font-size:1.7rem;color:var(--teal);display:block}
+  .stat span{font-size:.82rem;color:var(--gray)}
+  /* pricing */
+  .pricing{background:var(--cream)}
+  .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:46px}
+  .price-card{background:#fff;border:1px solid rgba(42,42,42,.08);border-radius:4px;padding:36px;display:flex;flex-direction:column}
+  .price-card.feat2{border:1.5px solid var(--teal);position:relative;background:#fff}
+  .price-card .tag{position:absolute;top:-12px;left:36px;background:var(--brass);color:#fff;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:2px}
+  .price-card h3{font-size:1.4rem}
+  .price-card .amt{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--ink);margin:12px 0 4px}
+  .price-card .amt span{font-family:'Inter';font-size:.9rem;color:var(--gray)}
+  .price-card ul{list-style:none;margin:18px 0 26px}
+  .price-card li{padding:8px 0;font-size:.94rem;color:var(--gray);border-bottom:1px solid rgba(42,42,42,.06);display:flex;gap:10px}
+  .price-card li::before{content:'—';color:var(--blush)}
+  .price-card .btn{margin-top:auto;text-align:center}
+  /* testimonials */
+  .tests{padding:90px 0}
+  .test-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:42px}
+  .tcard{background:#fff;border:1px solid rgba(42,42,42,.08);border-radius:4px;padding:34px}
+  .tcard .mk{color:var(--blush);font-size:2.4rem;font-family:'Fraunces',serif;line-height:.2}
+  .tcard p{font-size:1.04rem;color:var(--ink);margin:14px 0 18px;line-height:1.5}
+  .tcard cite{font-style:normal;color:var(--gray);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  /* blog */
+  .blog{background:var(--cream)}
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
+  .post .img{aspect-ratio:3/2;border-radius:3px;margin-bottom:16px}
+  .post .cat{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600}
+  .post h3{font-size:1.16rem;margin:8px 0;line-height:1.25}
+  .post a.more{color:var(--teal);font-weight:600;font-size:.9rem}
+  /* newsletter */
+  .news{background:var(--teal);color:#fff;padding:74px 0}
+  .news-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .news h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.6rem)}
+  .news p{color:rgba(255,255,255,.85);margin-top:12px}
+  .news form{display:flex;gap:10px;flex-wrap:wrap}
+  .news input{flex:1;min-width:220px;padding:15px 18px;border:none;border-radius:2px;font-size:.95rem}
+  .news .btn-primary{background:var(--brass)}
+  .news .btn-primary:hover{background:#a07845}
+  .news small{display:block;color:rgba(255,255,255,.7);font-size:.78rem;margin-top:12px}
+  /* footer */
+  footer{background:var(--ink);color:rgba(255,255,255,.7);padding:64px 0 34px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+  footer .logo{color:#fff}
+  footer .logo .lt small{color:var(--brass)}
+  footer p{font-size:.9rem;margin-top:16px;max-width:24em}
+  .foot-col h4{color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+  .foot-col a,.foot-col p{display:block;font-size:.92rem;padding:4px 0;margin:0}
+  .foot-col a:hover{color:var(--blush)}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:24px;font-size:.82rem;flex-wrap:wrap;gap:10px}
+  .mock{background:var(--brass);color:#fff;text-align:center;font-size:.8rem;padding:8px;letter-spacing:.04em}
+  @media(max-width:880px){
+    .hero-grid,.intro-grid,.about-grid,.news-in,.test-grid{grid-template-columns:1fr;gap:34px}
+    .feat-grid,.blog-grid,.pil-grid{grid-template-columns:1fr 1fr}
+    .price-grid{grid-template-columns:1fr}
+    .menu a:not(.btn){display:none}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){.feat-grid,.blog-grid,.pil-grid,.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="mock">DESIGN MOCKUP — Direction 1 of 3: <b>“Warm Editorial”</b> · Lifted Strength Club · Longwood, FL · all copy, photos &amp; reviews are Dr. Sharon Gam’s real content</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#"><svg viewBox="0 0 120 116" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 4 110 33V83L60 112 10 83V33L60 4Z" stroke="currentColor" stroke-width="3"/><path d="M44 36h32M52 31l8-7 8 7" stroke="#B78B52" stroke-width="3" stroke-linecap="round"/><path d="M38 72h44M34 66v12M86 66v12M30 69v6M90 69v6" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg><span class="lt">LIFTED<small>STRENGTH CLUB</small></span></a>
+    <nav class="menu">
+      <a href="#about">About</a><a href="#training">Training</a><a href="#pricing">Membership</a><a href="#blog">Blog</a>
+      <a class="btn btn-primary" href="#consult">Book a Consult</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Personal training for mental health · Longwood, FL</span>
+      <h1>Strong Mind.<br/>Strong Body.<br/><em>Strong Life.</em></h1>
+      <p class="lede">Customized personal training and holistic movement for people in Longwood &amp; Seminole County. No weigh-ins. No before-and-after pics. No pressure to “transform.” Just a safe space to move, grow, and feel better, on your terms.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#consult">Book a Free Consultation</a>
+        <a class="btn btn-ghost" href="#training">How Training Works</a>
+      </div>
+      <p class="credit">Led by <b>Dr. Sharon Gam, PhD</b> · CSCS · 18+ years training clients · 300+ clients coached</p>
+    </div>
+    <div class="hero-img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1500w" alt="Dr. Sharon Gam coaching a client" /></div>
+  </div>
+</section>
+
+<!-- PRESS -->
+<div class="press">
+  <div class="wrap">
+    <span>As featured in</span>
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/7c94658d-6104-4e55-8570-f6a8d299cd4a/well-and-good-logo.jpg?format=300w" alt="Well+Good" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/fb9b76b6-9742-439c-b12a-1616572e2825/nike-com-sm-logo.png?format=300w" alt="Nike" />
+    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2a7f2b53-e8a6-4a1f-9c4a-64f812c9f6d4/woman-and-home-logo.jpg?format=300w" alt="Woman &amp; Home" />
+  </div>
+</div>
+
+<!-- INTRO (verbatim) -->
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div>
+      <span class="eyebrow">Strength, on your terms</span>
+      <h2>Strength—physically, mentally, and emotionally</h2>
+      <p>I help people build strength—physically, mentally, and emotionally. My training approach is based on creating positive, empowering experiences in the gym, especially for those who’ve felt unwelcome, judged, or defeated by fitness culture in the past.</p>
+    </div>
+    <div class="intro-img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1200w" alt="Strength training session" /></div>
+  </div>
+</section>
+
+<!-- FEATURES (verbatim 6) -->
+<section class="block feat" id="training">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Personal training</span>
+      <h2>What sets my personal training apart?</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4 8h16M4 16h16"/></svg></div><h3>Workouts that work for you</h3><p>For real results, you need an expertly designed program. You’ll get a safe, smart, and progressive strength training program, designed with my PhD-level knowledge of exercise science principles.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h3>Tailored programs</h3><p>Every personal training package starts with an assessment. We’ll discuss your goals and do posture, movement, and strength tests. Your program will meet you where you are and evolve as you get stronger.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9Z"/></svg></div><h3>Mindful coaching</h3><p>Beyond sets and reps, you’ll be guided through each exercise with intention. You’ll learn how to activate your core, use perfect form for each movement, and build a strong connection between your body and mind.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 16l4-5 3 3 4-6"/></svg></div><h3>Progress tracking</h3><p>Progression is the key to getting results from strength training. Every exercise you do will be carefully tracked so we can see and celebrate your progress as you conquer physical challenges.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></div><h3>Habits that support your goals</h3><p>We’ll work on small but powerful lifestyle habits that can make a big difference in your overall health and well-being and help you achieve the fulfilling and meaningful life you want.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M15 20c0-2 2-3.5 4-3.5"/></svg></div><h3>Support and accountability</h3><p>Change can be hard, but you don’t have to do it alone. I’ll be there to provide encouragement and motivation. I truly care about your success and I’ll believe in you until you believe in yourself.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS (verbatim 3) -->
+<section class="block pillars">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">My methodology</span><h2>A whole-person approach</h2></div>
+    <div class="pil-grid">
+      <div class="pil"><h3>Whole-Person Coaching</h3><p>A healthy lifestyle should make your life better, not take anything away from it. Together we’ll create a program that supports your goals and that feels balanced and achievable for you.</p></div>
+      <div class="pil"><h3>Client-Centered</h3><p>You guide the process. You know your habits, your obstacles, your mindset, and what you’re willing and able to do. I’m here to help you keep the habits that serve you and ditch the ones that don’t.</p></div>
+      <div class="pil"><h3>Habits-Based</h3><p>Starting where you are and taking small steps in the right direction. Turn small, achievable changes into habits, then build on them—that’s what sticks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="block about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w" alt="Dr. Sharon Gam" /></div>
+    <div>
+      <span class="eyebrow">Meet your coach</span>
+      <h2>Meet Sharon Gam, PhD</h2>
+      <p>I struggled for many years with depression and anxiety, and what changed my life for the better was running and strength training. Through exercise I gained self-confidence, resilience, patience, persistence, and just genuinely felt better in my own skin.</p>
+      <p>After more than 18 years of training clients and studying exercise science, I have the tools to help you build the rewarding life you want.</p>
+      <div class="stat-row">
+        <div class="stat"><b>300+</b><span>Clients coached</span></div>
+        <div class="stat"><b>18+ yrs</b><span>Training experience</span></div>
+        <div class="stat"><b>PhD</b><span>Exercise Physiology</span></div>
+      </div>
+      <div class="chips">
+        <span class="chip">PhD, Exercise Physiology</span><span class="chip">CSCS (NSCA)</span><span class="chip">ACE Health Coach</span><span class="chip">Precision Nutrition</span><span class="chip">Pain-Free Performance</span>
+      </div>
+      <a class="btn btn-ghost" href="#">Read My Full Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="block pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Membership</span>
+      <h2>Personal training packages</h2>
+      <p>Every package includes a movement assessment, a personalized nutrition report, your coaching app, and a habit-setting session.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card feat2">
+        <div class="tag">In-studio · Longwood</div>
+        <h3>Personal Training</h3>
+        <div class="amt">from $790<span>/mo</span></div>
+        <p style="color:var(--gray);font-size:.9rem">55-minute one-on-one sessions. Bronze (3 mo) · Silver (6 mo) · Gold (12 mo).</p>
+        <ul><li>2–3 face-to-face sessions per week</li><li>Comprehensive movement assessment</li><li>Personalized nutrition report</li><li>Coaching app + accountability</li></ul>
+        <a class="btn btn-primary" href="#pricing">See Full Pricing</a>
+      </div>
+      <div class="price-card">
+        <h3>Online Coaching</h3>
+        <div class="amt">from $180<span>/mo</span></div>
+        <p style="color:var(--gray);font-size:.9rem">Self-paced training through the app, anywhere. 3 / 6 / 12-month options.</p>
+        <ul><li>2–4 personalized weekly workouts</li><li>Monthly virtual progress check-in</li><li>Monthly program updates</li><li>Unlimited messaging support</li></ul>
+        <a class="btn btn-ghost" href="#pricing">See Full Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (real) -->
+<section class="tests">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Client reviews</span><h2>In their words</h2></div>
+    <div class="test-grid">
+      <div class="tcard"><div class="mk">“</div><p>Working with her was the best decision I have made for my physical and mental health. She made me feel so confident even from day one and I never felt judged or insecure. With different aches and pains, she was able to help me find the best exercises for my body.</p><cite>— Jess L, 37</cite></div>
+      <div class="tcard"><div class="mk">“</div><p>You will thank yourself every day for taking the time to invest in yourself with her. There is simply nobody else with the subject knowledge, experience, and ability to communicate so clearly. She really cares about the whole person in front of her.</p><cite>— Ember V, 45</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="block blog" id="blog">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">From the blog</span><h2>Articles on strength &amp; mental health</h2></div>
+    <div class="blog-grid">
+      <article class="post"><div class="img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w" alt=""/></div><span class="cat">Mental Health</span><h3>Why I Don’t Post Body Transformations</h3><a class="more" href="#">Read more →</a></article>
+      <article class="post"><div class="img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w" alt=""/></div><span class="cat">Mindset</span><h3>Why It’s So Hard to Stay Consistent With Exercise</h3><a class="more" href="#">Read more →</a></article>
+      <article class="post"><div class="img imgwrap"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w" alt=""/></div><span class="cat">Mindset</span><h3>“I Know What To Do, Why Can’t I Make It Happen?”</h3><a class="more" href="#">Read more →</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news" id="consult">
+  <div class="wrap news-in">
+    <div>
+      <span class="eyebrow" style="color:#fff">Keep in touch</span>
+      <h2>Get fitness articles in your inbox</h2>
+      <p>Get movement &amp; fitness articles delivered straight to your inbox weekly, plus access to special updates &amp; support. Don’t worry—we hate spam too.</p>
+    </div>
+    <div>
+      <form onsubmit="return false">
+        <input type="email" placeholder="Your email address" aria-label="Email" />
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+      <small>→ This is also where the <b>free eBooks</b> (Strength Training 101, Exercise for Mental Health) and the <b>consult scheduler</b> (Acuity/Calendly) will live.</small>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#"><svg viewBox="0 0 120 116" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 4 110 33V83L60 112 10 83V33L60 4Z" stroke="currentColor" stroke-width="3"/><path d="M44 36h32M52 31l8-7 8 7" stroke="#B78B52" stroke-width="3" stroke-linecap="round"/><path d="M38 72h44M34 66v12M86 66v12M30 69v6M90 69v6" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg><span class="lt">LIFTED<small>STRENGTH CLUB</small></span></a>
+        <p>Personal training &amp; wellness. Serving Longwood &amp; Seminole County, FL &amp; beyond.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <p>2100 N Ronald Reagan Blvd #1012<br/>Longwood, FL 32750</p>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="tel:4073427613">407-342-7613</a>
+        <a href="mailto:Sharon@DrSharonGam.com">Sharon@DrSharonGam.com</a>
+        <a href="#consult">Book a Consult</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Lifted Strength Club · Founded by Dr. Sharon Gam, PhD</span>
+      <span>Longwood, FL</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
