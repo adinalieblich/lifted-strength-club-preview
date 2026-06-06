@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Concept 1 — Quiet Strength (Editorial Luxe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{--ink:#15120F;--cream:#EDE7DD;--brass:#C49A5A;--blush:#C98D86;--teal:#6FA0A4;--mut:#9A9183}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .tag{position:fixed;top:0;left:0;right:0;z-index:99;background:var(--brass);color:#15120F;text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:6px;font-weight:600}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 46px}
+  nav{display:flex;align-items:center;justify-content:space-between;height:96px;margin-top:30px}
+  .logo{font-family:'Fraunces',serif;font-size:1.3rem;letter-spacing:.34em;font-weight:400}
+  .logo b{color:var(--brass);font-weight:500}
+  .nlinks{display:flex;gap:40px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+  .nlinks a{color:inherit;text-decoration:none}.nlinks a:hover{color:var(--cream)}
+  .book{border:1px solid var(--brass);color:var(--brass);padding:12px 24px;border-radius:2px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:40px 0 70px;min-height:78vh}
+  .eyebrow{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass);margin-bottom:30px;display:flex;align-items:center;gap:16px}
+  .eyebrow::before{content:'';width:46px;height:1px;background:var(--brass)}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(3.4rem,7vw,6.6rem);line-height:.98;letter-spacing:-.02em}
+  h1 .it{font-style:italic;color:var(--brass)}
+  h1 .line{display:block}
+  .sub{margin:34px 0 40px;max-width:30em;color:#C7BEB0;font-size:1.06rem;line-height:1.7;font-weight:400}
+  .actions{display:flex;align-items:center;gap:28px}
+  .cta{background:var(--cream);color:var(--ink);padding:17px 34px;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:.25s}
+  .cta:hover{background:var(--brass)}
+  .play{display:flex;align-items:center;gap:12px;color:var(--cream);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+  .play .circ{width:46px;height:46px;border:1px solid var(--mut);border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .figure{position:relative}
+  .figure .frame{position:absolute;inset:-14px;border:1px solid rgba(196,154,90,.4);z-index:0}
+  .figure img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(.35) contrast(1.05) sepia(.18);position:relative;z-index:1}
+  .figure .cap{position:absolute;right:-14px;bottom:30px;writing-mode:vertical-rl;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);z-index:2}
+  .marquee{border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);overflow:hidden;white-space:nowrap;padding:22px 0}
+  .marquee .track{display:inline-block;animation:scroll 26s linear infinite}
+  .marquee span{font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;color:var(--mut);margin:0 38px}
+  .marquee span b{color:var(--brass);font-style:normal;font-weight:400}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px}.nlinks{display:none}.figure{order:-1}.figure img{aspect-ratio:4/3}}
+</style>
+</head>
+<body>
+<div class="tag">ROUGH CONCEPT 1 — “QUIET STRENGTH” · EDITORIAL LUXE (think Equinox × Aesop, warmed up)</div>
+<div class="wrap">
+  <nav>
+    <div class="logo">LIFTED<b>.</b></div>
+    <div class="nlinks"><a>Training</a><a>Method</a><a>Dr. Gam</a><a>Journal</a></div>
+    <a class="book">Book a Consult</a>
+  </nav>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Strength training for mental health · Longwood</div>
+      <h1><span class="line">Strong mind.</span><span class="line">Strong body.</span><span class="line"><span class="it">Strong life.</span></span></h1>
+      <p class="sub">A quiet, private studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength, on your terms — led by Dr. Sharon Gam, PhD.</p>
+      <div class="actions">
+        <a class="cta" href="#">Book a free consult</a>
+        <a class="play" href="#"><span class="circ">▶</span> Watch the film</a>
+      </div>
+    </div>
+    <div class="figure">
+      <div class="frame"></div>
+      <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1200w" alt="" />
+      <span class="cap">Est. Longwood · FL</span>
+    </div>
+  </section>
+</div>
+<div class="marquee"><div class="track">
+  <span>PhD-led</span><span>·</span><span><b>Strength for mental health</b></span><span>·</span><span>No weigh-ins</span><span>·</span><span><b>300+ coached</b></span><span>·</span><span>As seen in Shape & Business Insider</span><span>·</span>
+  <span>PhD-led</span><span>·</span><span><b>Strength for mental health</b></span><span>·</span><span>No weigh-ins</span><span>·</span><span><b>300+ coached</b></span><span>·</span><span>As seen in Shape & Business Insider</span><span>·</span>
+</div></div>
+</body>
+</html>

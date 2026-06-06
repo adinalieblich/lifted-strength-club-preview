@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Concept 3 — Kinetic Movement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{--ink:#121212;--cream:#F4F0EB;--brass:#C49A5A;--blush:#C98D86;--teal:#4D7E83}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  .tag{position:fixed;top:0;left:0;right:0;z-index:99;background:var(--brass);color:#121212;text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:6px;font-weight:700}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:46px 4vw 0}
+  .logo{font-family:'Anton';letter-spacing:.14em;font-size:1.5rem}
+  .logo span{color:var(--brass)}
+  .nlinks{display:flex;gap:34px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#9b958c}
+  .book{border:1px solid var(--brass);color:var(--brass);padding:11px 22px;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase}
+  .hero{position:relative;padding:30px 4vw 0;min-height:74vh}
+  .hwords{font-family:'Anton';text-transform:uppercase;line-height:.82;letter-spacing:.01em;font-size:clamp(3.6rem,15vw,13rem);position:relative;z-index:3}
+  .hwords .l1{color:var(--cream)}
+  .hwords .l2{color:transparent;-webkit-text-stroke:1.5px var(--brass)}
+  .hwords .l3{color:var(--cream)}
+  .hwords .l3 em{color:var(--brass);font-style:normal}
+  .photo{position:absolute;right:4vw;top:8%;width:34vw;max-width:480px;aspect-ratio:3/4;z-index:1;overflow:hidden;border-radius:4px}
+  .photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) contrast(1.08)}
+  .photo::after{content:'';position:absolute;inset:0;background:linear-gradient(200deg,rgba(18,18,18,0) 40%,rgba(18,18,18,.85))}
+  .sub{display:flex;justify-content:space-between;align-items:flex-end;margin-top:40px;position:relative;z-index:3;flex-wrap:wrap;gap:24px}
+  .sub p{max-width:30em;color:#C7C0B6;font-size:1.05rem;line-height:1.7}
+  .sub p b{color:var(--cream)}
+  .cta{background:var(--brass);color:#121212;font-family:'Archivo';font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.92rem;padding:18px 38px;text-decoration:none;border-radius:2px;white-space:nowrap}
+  .strip{margin-top:50px;background:var(--brass);color:#121212;overflow:hidden;white-space:nowrap;padding:14px 0;transform:rotate(-1.2deg) scale(1.04)}
+  .strip .t{display:inline-block;animation:s 18s linear infinite}
+  .strip span{font-family:'Anton';text-transform:uppercase;font-size:1.5rem;letter-spacing:.04em;margin:0 26px}
+  .strip span.o{color:transparent;-webkit-text-stroke:1.3px #121212}
+  @keyframes s{to{transform:translateX(-50%)}}
+  @media(max-width:820px){.photo{display:none}.nlinks{display:none}.hwords{font-size:18vw}}
+</style>
+</head>
+<body>
+<div class="tag">ROUGH CONCEPT 3 — “KINETIC” · oversized motion type (think Barry’s/Gymshark energy, elevated)</div>
+<nav>
+  <div class="logo">LIFTED<span>.</span></div>
+  <div class="nlinks"><span>Train</span><span>Method</span><span>Pricing</span><span>Journal</span></div>
+  <div class="book">Book a Consult</div>
+</nav>
+<section class="hero">
+  <div class="photo"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1200w" alt=""></div>
+  <h1 class="hwords">
+    <div class="l1">Strong mind.</div>
+    <div class="l2">Strong body.</div>
+    <div class="l3"><em>Strong</em> life.</div>
+  </h1>
+  <div class="sub">
+    <p>Strength training for mental health in Longwood. <b>PhD-led, science-backed, zero shame.</b> No weigh-ins, no before-and-afters — just the strongest version of you, mind and body.</p>
+    <a class="cta" href="#">Book a free consult →</a>
+  </div>
+</section>
+<div class="strip"><div class="t">
+  <span>Strong mind</span><span class="o">Strong body</span><span>Strong life</span><span class="o">No shame</span><span>PhD-led</span><span class="o">Strong mind</span><span>Strong body</span><span class="o">Strong life</span><span>No shame</span><span class="o">PhD-led</span>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Concept 2 — Mind / Body Split</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{--cream:#F3ECE1;--blush:#E7C4BF;--ink:#1C2B2C;--teal:#2F5D60;--teal2:#234A4C;--brass:#B78B52}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .tag{position:fixed;top:0;left:0;right:0;z-index:99;background:var(--brass);color:#1C2B2C;text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:6px;font-weight:700}
+  .stage{display:flex;min-height:100vh;position:relative}
+  .half{flex:1;position:relative;overflow:hidden;transition:flex .5s cubic-bezier(.4,0,.1,1);padding:120px 4vw 60px}
+  .stage:hover .half{flex:.85}
+  .stage .half:hover{flex:1.3}
+  .mind{background:var(--cream);color:var(--ink)}
+  .body{background:var(--teal);color:var(--cream)}
+  .body::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,43,44,0) 40%,rgba(20,33,34,.55));z-index:0}
+  .kicker{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;margin-bottom:18px;position:relative;z-index:2}
+  .mind .kicker{color:var(--brass)}.body .kicker{color:var(--blush)}
+  .big{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(4rem,11vw,9rem);line-height:.86;letter-spacing:-.03em;position:relative;z-index:2;text-transform:uppercase}
+  .mind .big{color:var(--teal)}
+  .word{position:relative;z-index:2;max-width:20em;margin-top:26px;font-size:1.02rem;line-height:1.7}
+  .mind .word{color:#4A5A56}.body .word{color:#D8E4E2}
+  .body .ph{position:absolute;right:-40px;bottom:-30px;width:78%;z-index:1;opacity:.9}
+  .body .ph img{width:100%;filter:grayscale(.4) brightness(.85);mix-blend-mode:luminosity}
+  .mind .serif{font-family:'Fraunces',serif;font-style:italic;font-weight:400}
+  /* center seam */
+  .seam{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;width:300px;text-align:center;background:var(--ink);color:var(--cream);border-radius:50%;height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 30px 80px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.12)}
+  .seam .logo{font-family:'Fraunces',serif;letter-spacing:.3em;font-size:1.1rem;margin-bottom:14px}
+  .seam .tl{font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.3;margin-bottom:20px;padding:0 30px}
+  .seam .tl b{color:var(--brass);font-weight:500}
+  .seam .cta{background:var(--brass);color:#1C2B2C;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 24px;border-radius:40px;text-decoration:none;font-weight:600}
+  .topnav{position:fixed;top:34px;left:0;right:0;z-index:20;display:flex;justify-content:space-between;padding:0 4vw;align-items:center;mix-blend-mode:difference;color:#fff}
+  .topnav .l{font-family:'Archivo';font-weight:800;letter-spacing:.2em}
+  .topnav .r{display:flex;gap:30px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+  @media(max-width:820px){.stage{flex-direction:column}.seam{width:200px;height:200px}.big{font-size:18vw}.body .ph{display:none}}
+</style>
+</head>
+<body>
+<div class="tag">ROUGH CONCEPT 2 — “MIND / BODY” · the tagline made literal (hover a side — it grows)</div>
+<div class="topnav"><div class="l">LIFTED</div><div class="r"><span>Method</span><span>Membership</span><span>Book</span></div></div>
+<div class="stage">
+  <div class="half mind">
+    <div class="kicker">01 — The Mind</div>
+    <div class="big">Strong<br/>Mind</div>
+    <p class="word">Strength training is one of the most effective tools we have for anxiety, mood and resilience. Here it’s the <span class="serif">whole point</span> — not a side effect.</p>
+  </div>
+  <div class="half body">
+    <div class="kicker">02 — The Body</div>
+    <div class="big">Strong<br/>Body</div>
+    <p class="word">Science-led programming from a PhD in exercise physiology. Private, unhurried, and built entirely around you.</p>
+    <div class="ph"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" /></div>
+  </div>
+  <div class="seam">
+    <div class="logo">LIFTED</div>
+    <div class="tl">Strong mind.<br/>Strong body.<br/><b>Strong life.</b></div>
+    <a class="cta" href="#">Book a consult</a>
+  </div>
+</div>
+</body>
+</html>
