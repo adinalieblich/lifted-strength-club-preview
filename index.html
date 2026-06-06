@@ -3,132 +3,169 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lifted Strength Club — Website Design Options</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<title>Lifted Strength Club — Website Preview</title>
+<meta name="description" content="Website preview & review hub for Lifted Strength Club — Dr. Sharon Gam, Longwood, FL." />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
-  :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--ink:#2A2A2A;--gray:#6E6A65}
+  :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.12)}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--greige);line-height:1.6}
-  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+  body{font-family:'Poppins',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Jost',sans-serif;font-weight:300;letter-spacing:-.01em;line-height:1.05}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
-  .top{background:var(--teal-dk);color:#fff;padding:64px 0 70px;text-align:center}
-  .top .logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:24px;color:#fff}
-  .top .logo svg{width:48px;height:48px}
-  .top .logo .lt{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;letter-spacing:.04em;text-align:left;line-height:1}
-  .top .logo .lt small{display:block;font-family:'Inter';font-size:.6rem;letter-spacing:.34em;color:var(--brass);margin-top:3px}
-  .top h1{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px}
-  .top p{color:rgba(255,255,255,.82);max-width:40em;margin:0 auto;font-size:1.05rem}
-  .top .meta{margin-top:22px;font-size:.85rem;color:rgba(255,255,255,.65)}
-  .intro{padding:54px 0 10px}
-  .intro h2{font-size:1.5rem;margin-bottom:10px}
-  .intro p{color:var(--gray);max-width:46em}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:36px 0 20px}
-  .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 12px 34px rgba(62,110,115,.1);display:flex;flex-direction:column;border:1px solid rgba(42,42,42,.06)}
-  .card .swatch{height:130px;display:flex;align-items:flex-end;padding:14px;position:relative}
-  .s1{background:linear-gradient(135deg,#F4F0EB 0%,#F4F8F5 60%,#C98D86 130%)}
-  .s2{background:linear-gradient(135deg,#3E6E73,#4D7E83 60%,#B78B52)}
-  .s3{background:linear-gradient(150deg,#F1DCD8,#F4F8F5 50%,#cfe3e1)}
-  .swatch .tag{background:rgba(255,255,255,.9);color:var(--ink);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:5px 10px;border-radius:30px}
-  .s2 .tag{background:rgba(0,0,0,.25);color:#fff}
-  .card .body{padding:24px;flex:1;display:flex;flex-direction:column}
-  .card h3{font-size:1.3rem;margin-bottom:8px}
-  .card .desc{color:var(--gray);font-size:.94rem;flex:1}
-  .card .vibe{font-size:.8rem;color:var(--brass);font-weight:600;margin:12px 0 16px;letter-spacing:.02em}
-  .card a.btn{display:block;text-align:center;background:var(--teal);color:#fff;padding:13px;border-radius:5px;font-weight:600;font-size:.92rem;transition:.18s}
-  .card a.btn:hover{background:var(--teal-dk)}
-  .note{background:var(--cream);border-radius:8px;padding:30px 32px;margin:30px 0 60px;border:1px solid rgba(42,42,42,.06)}
-  .note h3{font-size:1.15rem;margin-bottom:12px}
-  .note ul{margin:0 0 0 18px;color:var(--gray)}
-  .note li{margin-bottom:7px}
-  .note b{color:var(--ink)}
-  footer{text-align:center;color:var(--gray);font-size:.84rem;padding:30px 0 50px}
-  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 clamp(24px,5vw,56px)}
+  .top{background:var(--charcoal);color:var(--cream);padding:18px 0}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Jost';font-weight:600;letter-spacing:.32em;font-size:1.1rem}.logo b{color:var(--brass)}
+  .top .meta{font-family:'Jost';font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,248,245,.6)}
+  .hero{padding:clamp(56px,9vh,100px) 0 40px;text-align:center}
+  .hero .k{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:22px}
+  .hero h1{font-size:clamp(2.4rem,5.5vw,4rem)}
+  .hero h1 em{font-style:italic;color:var(--teal-dk)}
+  .hero p{max-width:40em;margin:18px auto 0;color:var(--warmgray);font-size:1.06rem;line-height:1.7}
+  .section{padding:30px 0}
+  .label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--warmgray);font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .label::after{content:'';flex:1;height:1px;background:var(--rule)}
+  .grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+  .card{background:#fff;border:1px solid var(--rule);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:.3s;box-shadow:0 10px 30px rgba(62,110,115,.05)}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(62,110,115,.12)}
+  .card .sw{height:150px;background:var(--teal-dk);position:relative;overflow:hidden}
+  .card .sw.flag{background:linear-gradient(135deg,#2A2A2A,#3E6E73 70%,#B78B52)}
+  .card .sw.blog{background:linear-gradient(135deg,#3E6E73,#4D7E83)}
+  .card .sw .tg{position:absolute;top:14px;left:16px;background:rgba(255,255,255,.92);color:var(--charcoal);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:5px 11px;border-radius:30px}
+  .card .bd{padding:26px;flex:1;display:flex;flex-direction:column}
+  .card h3{font-size:1.5rem;font-weight:400;margin-bottom:8px}
+  .card p{color:var(--warmgray);font-size:.94rem;line-height:1.6;flex:1}
+  .card .go{margin-top:18px;display:inline-block;background:var(--teal);color:#fff;text-align:center;padding:13px;border-radius:8px;font-weight:500;font-size:.92rem;font-family:'Jost';letter-spacing:.02em}
+  .card .go:hover{background:var(--teal-dk)}
+  /* decision banner */
+  .decide{background:#fff;border:1.5px solid var(--brass);border-radius:16px;padding:30px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .decide .ic{width:48px;height:48px;border-radius:50%;background:var(--brass);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex:0 0 48px}
+  .decide .tx{flex:1;min-width:240px}
+  .decide h3{font-size:1.35rem;font-weight:400;margin-bottom:4px}
+  .decide p{color:var(--warmgray);font-size:.94rem}
+  .decide a{background:var(--brass);color:#fff;padding:13px 26px;border-radius:8px;font-family:'Jost';font-weight:500;white-space:nowrap}
+  /* status */
+  .status{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;background:var(--cream);border:1px solid var(--rule);border-radius:16px;padding:30px 34px}
+  .status .col h4{font-family:'Jost';font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-dk);margin-bottom:12px}
+  .status li{list-style:none;padding:6px 0 6px 22px;position:relative;font-size:.92rem;color:#4a463f}
+  .status .locked li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700}
+  .status .pending li::before{content:'○';position:absolute;left:0;color:var(--brass)}
+  /* archive */
+  .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .mini a{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;transition:.2s}
+  .mini a:hover{border-color:var(--teal);color:var(--teal)}
+  .mini a .n{font-family:'Jost';color:var(--brass);font-size:.78rem;letter-spacing:.06em}
+  .docs{display:flex;gap:14px;flex-wrap:wrap}
+  .docs a{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:16px 20px;display:flex;align-items:center;gap:12px;flex:1;min-width:240px}
+  .docs a:hover{border-color:var(--brass)}
+  .docs .em{font-size:1.5rem}
+  .docs b{font-family:'Jost';font-weight:500;display:block}.docs span{font-size:.82rem;color:var(--warmgray)}
+  footer{text-align:center;color:var(--warmgray);font-size:.82rem;padding:46px 0 56px}
+  @media(max-width:760px){.grid2,.status,.mini{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-  <div class="top">
-    <div class="wrap">
-      <span class="logo">
-        <svg viewBox="0 0 120 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M60 4 110 33V83L60 112 10 83V33L60 4Z" stroke="currentColor" stroke-width="3"/>
-          <path d="M44 36h32M52 31l8-7 8 7" stroke="#B78B52" stroke-width="3" stroke-linecap="round"/>
-          <path d="M38 72h44M34 66v12M86 66v12M30 69v6M90 69v6" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-        <span class="lt">LIFTED<small>STRENGTH CLUB</small></span>
-      </span>
-      <h1>Website Design — 3 Directions to Review</h1>
-      <p>Three homepage concepts for the new Lifted Strength Club site, all built from your existing content, pricing, and brand palette. Same information &amp; structure — three different looks &amp; feels. Pick the one that feels most “you,” and we’ll build out the full site from there.</p>
-      <div class="meta">Strong Mind. Strong Body. Strong Life. · Longwood, FL · Founded by Dr. Sharon Gam, PhD</div>
-    </div>
-  </div>
+<div class="top"><div class="wrap"><span class="logo">LIFTED<b>.</b></span><span class="meta">Website preview · review hub</span></div></div>
 
+<section class="hero">
   <div class="wrap">
-    <div class="intro">
-      <h2>How to review</h2>
-      <p>Click into each option below — it opens a full, scrollable homepage. Everything you see is <b>your real content</b>: your copy, your studio/coaching photos, your press features, your real client reviews (Jess L. and Ember V.), and your Longwood address. Focus on the <b>layout, colors, typography, and overall vibe</b> — and jot down what you love and what you’d change in each.</p>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <div class="swatch s1"><span class="tag">Option 1</span></div>
-        <div class="body">
-          <h3>Warm Editorial</h3>
-          <div class="vibe">Calm · premium · magazine-like</div>
-          <p class="desc">Elegant serif headlines, lots of whitespace, soft greige &amp; blush. Feels like a high-end wellness brand. Quietly confident and inclusive — the “anti-shame” message comes through in the calm.</p>
-          <a class="btn" href="option-1-warm-editorial.html">View Option 1 →</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="swatch s2"><span class="tag">Option 2</span></div>
-        <div class="body">
-          <h3>Bold Modern</h3>
-          <div class="vibe">Confident · punchy · conversion-focused</div>
-          <p class="desc">Deep teal hero, strong type, brass buttons, pricing tiers, FAQ. Closest to the Girls Gone Strong page you liked — built to turn visitors into booked consults. Energetic and decisive.</p>
-          <a class="btn" href="option-2-bold-modern.html">View Option 2 →</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="swatch s3"><span class="tag">Option 3</span></div>
-        <div class="body">
-          <h3>Community Wellness</h3>
-          <div class="vibe">Soft · friendly · approachable</div>
-          <p class="desc">Rounded shapes, pastel blush &amp; teal, warm and human. Leads with belonging and community. Feels welcoming and gentle — great for reaching people nervous about gyms.</p>
-          <a class="btn" href="option-3-community-wellness.html">View Option 3 →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="note">
-      <h3>A few things to know</h3>
-      <ul>
-        <li><b>It’s all your real content:</b> hero copy, the six “what sets my training apart” points, your methodology, bio, pricing (Bronze/Silver/Gold + online), reviews, and blog posts are pulled word-for-word from drsharongam.com.</li>
-        <li><b>Real photos &amp; press:</b> your coaching photos, headshot, and “As featured in” logos (Shape, Business Insider, Bustle, Well+Good, Greatist, Nike, Woman &amp; Home) are your real assets.</li>
-        <li><b>Longwood is set:</b> the new address (2100 N Ronald Reagan Blvd #1012, Longwood, FL 32750) is wired into every page, including the local-SEO schema.</li>
-        <li><b>Functionality is planned in:</b> each design has spots marked for the <b>consult scheduler</b>, <b>newsletter + free eBook signup</b>, and a <b>blog</b>.</li>
-        <li><b>Mix &amp; match welcome:</b> like the hero of one and the pricing of another? We can blend them.</li>
-        <li><b>SEO, competitor research &amp; moving your old site’s ranking</b> are covered in the two project documents.</li>
-      </ul>
-    </div>
-
-    <div style="margin:6px 0 64px">
-      <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:1.4rem;margin:0 0 8px;color:#2A2A2A">The write-ups <span style="font-size:.9rem;font-weight:400;color:#6E6A65">— read on your phone</span></h3>
-      <p style="color:#6E6A65;margin:0 0 20px;max-width:48em">The two documents behind the designs. Tap to open — they're PDFs, so they pop right open in your browser, no download or app needed.</p>
-      <div style="display:flex;gap:18px;flex-wrap:wrap">
-        <a href="Lifted-Strength-Club-Project-Brief.pdf" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid rgba(42,42,42,.1);border-radius:10px;padding:20px 24px;flex:1;min-width:270px;box-shadow:0 10px 28px rgba(62,110,115,.08)">
-          <span style="font-size:1.9rem;line-height:1">📄</span>
-          <span><b style="display:block;color:#3E6E73;font-family:'Fraunces',serif;font-size:1.1rem;margin-bottom:2px">Project Brief</b><span style="font-size:.86rem;color:#6E6A65">Pages, functionality, platform &amp; the plan to move your SEO over</span></span>
-        </a>
-        <a href="Lifted-Strength-Club-Strategy-and-Research.pdf" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid rgba(42,42,42,.1);border-radius:10px;padding:20px 24px;flex:1;min-width:270px;box-shadow:0 10px 28px rgba(62,110,115,.08)">
-          <span style="font-size:1.9rem;line-height:1">📄</span>
-          <span><b style="display:block;color:#3E6E73;font-family:'Fraunces',serif;font-size:1.1rem;margin-bottom:2px">Competitor Research &amp; Strategy</b><span style="font-size:.86rem;color:#6E6A65">Who else trains in Longwood/Orlando &amp; how to stand out</span></span>
-        </a>
-      </div>
-    </div>
+    <div class="k">Lifted Strength Club · Longwood, FL</div>
+    <h1>The website, <em>in progress.</em></h1>
+    <p>Everything below is a working preview built from your real content, photos and brand palette. <b>Start with the Flagship homepage</b> — that’s the chosen direction. The one thing still open is the headline font (and your new logo).</p>
   </div>
+</section>
 
-  <footer>Prepared for review · Lifted Strength Club · 3 homepage directions</footer>
+<div class="wrap">
+
+  <section class="section">
+    <div class="label">The build</div>
+    <div class="grid2">
+      <a class="card" href="flagship.html">
+        <div class="sw flag"><span class="tg">★ Start here</span></div>
+        <div class="bd">
+          <h3>The Flagship homepage</h3>
+          <p>The full homepage: cinematic video-ready hero, the Mind/Body drag-slider, your method in a bento grid, founder story, semi-private + 1-on-1 pricing with the founding-member offer, and more. Scroll the whole thing — the motion is the point.</p>
+          <span class="go">Open the homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="blog.html">
+        <div class="sw blog"><span class="tg">20 articles</span></div>
+        <div class="bd">
+          <h3>The Journal</h3>
+          <p>Your full blog — all 20 articles migrated, with category filters and individual article pages in the brand style.</p>
+          <span class="go">Open the blog →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="label">Your decision</div>
+    <div class="decide">
+      <div class="ic">Aa</div>
+      <div class="tx">
+        <h3>Pick a headline typeface</h3>
+        <p>Four options side-by-side (body stays Poppins). Tell us a number and it rolls through the whole site. Logo is being finalised separately.</p>
+      </div>
+      <a href="font-options.html">Choose a font →</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="label">Where things stand</div>
+    <div class="status">
+      <div class="col locked">
+        <h4>Locked in</h4>
+        <ul>
+          <li>Direction: the Flagship</li>
+          <li>Tagline: Strong Mind. Strong Body. Strong Life.</li>
+          <li>Pricing: semi-private (founding $299/mo) + 1-on-1 (from $790)</li>
+          <li>Longwood address &amp; appointment-based</li>
+          <li>Blog: all 20 articles migrated</li>
+          <li>Plan: redirect drsharongam.com → liftedstrengthclub.com (keep your SEO)</li>
+        </ul>
+      </div>
+      <div class="col pending">
+        <h4>Still to finalise</h4>
+        <ul>
+          <li>Headline font (your pick)</li>
+          <li>New logo (you’re working on it)</li>
+          <li>Drop in the August studio video</li>
+          <li>Build the Group Training + Founding Members pages</li>
+          <li>Wire Acuity (booking/payments) + MailerLite (newsletter)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="label">Earlier explorations (archive)</div>
+    <div class="mini">
+      <a href="concepts/concept-1-editorial-luxe.html"><span>Editorial Luxe</span><span class="n">01</span></a>
+      <a href="concepts/concept-2-mind-body-split.html"><span>Mind / Body split</span><span class="n">02</span></a>
+      <a href="concepts/concept-3-kinetic.html"><span>Kinetic</span><span class="n">03</span></a>
+      <a href="concepts/concept-4-index.html"><span>The Index</span><span class="n">04</span></a>
+      <a href="concepts/concept-5-clinical.html"><span>Clinical</span><span class="n">05</span></a>
+      <a href="concepts/concept-6-manifesto.html"><span>Manifesto</span><span class="n">06</span></a>
+    </div>
+    <div class="mini" style="margin-top:12px">
+      <a href="option-1-warm-editorial.html"><span>First draft · Warm</span><span class="n">v0</span></a>
+      <a href="option-2-bold-modern.html"><span>First draft · Bold</span><span class="n">v0</span></a>
+      <a href="option-3-community-wellness.html"><span>First draft · Community</span><span class="n">v0</span></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="label">The write-ups</div>
+    <div class="docs">
+      <a href="Lifted-Strength-Club-Project-Brief.pdf"><span class="em">📄</span><span><b>Project Brief</b><span>Pages, platform &amp; the SEO migration plan</span></span></a>
+      <a href="Lifted-Strength-Club-Strategy-and-Research.pdf"><span class="em">📄</span><span><b>Competitor Research &amp; Strategy</b><span>The Longwood/Orlando market &amp; how to stand out</span></span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Lifted Strength Club · prepared for review · Dr. Sharon Gam, PhD, CSCS, ACE-HC</footer>
 </body>
 </html>
