@@ -20,6 +20,7 @@
   .mono{font-family:'Outfit',sans-serif}
   .wrap{max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
   .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;font-weight:600}
+  .method,.gallery,.founder,.pricing,.quotes,.journal,.endcta{content-visibility:auto;contain-intrinsic-size:auto 900px}
 
   .grain{position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
@@ -52,8 +53,8 @@
   @keyframes fade{0%{opacity:0}3%{opacity:1}22%{opacity:1}26%{opacity:0}100%{opacity:0}}
   @keyframes ken{from{transform:scale(1.06)}to{transform:scale(1.18) translateY(-2%)}}
   .hero::after{content:'';position:absolute;inset:0;z-index:1;background:
-     linear-gradient(180deg,rgba(42,42,42,.5) 0%,rgba(42,42,42,.18) 30%,rgba(42,42,42,.5) 62%,rgba(42,42,42,.97) 100%),
-     linear-gradient(90deg,rgba(42,42,42,.8) 0%,rgba(42,42,42,.32) 44%,transparent 72%)}
+     linear-gradient(180deg,rgba(42,42,42,.6) 0%,rgba(42,42,42,.4) 34%,rgba(42,42,42,.62) 60%,rgba(42,42,42,.98) 100%),
+     linear-gradient(90deg,rgba(42,42,42,.85) 0%,rgba(42,42,42,.45) 50%,rgba(42,42,42,.12) 80%)}
   .hero .wrap{position:relative;z-index:3;width:100%;padding-bottom:6vh}
   .live{position:absolute;bottom:34px;left:clamp(24px,5vw,64px);z-index:4;display:flex;align-items:center;gap:9px;font-family:'Outfit',sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,248,245,.75);background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:8px 14px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
   .live .d{width:8px;height:8px;border-radius:50%;background:var(--blush);animation:pulse 1.6s infinite}
@@ -288,7 +289,6 @@
 </style>
 </head>
 <body>
-<div class="grain"></div>
 <div class="progress" id="prog"></div>
 
 <header id="hdr">
@@ -307,10 +307,10 @@
     <!-- AUGUST 2026: when the pro studio film is ready, replace the four <img class="slide"> below with:
          <video autoplay muted loop playsinline poster="poster.jpg"><source src="lifted-studio.mp4" type="video/mp4"></video>
          Everything else stays the same. Until then, these photos auto-play as a cinematic montage. -->
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1600w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1600w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1600w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1600w" alt="" />
+    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
+    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1200w" alt="" />
+    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1200w" alt="" />
+    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1200w" alt="" />
   </div>
   <div class="live"><span class="d"></span> Showreel · pro studio film, Aug ’26</div>
   <div class="wrap">
@@ -331,13 +331,13 @@
 <div class="featband">
   <div class="wrap">
     <span class="lab">As featured in</span>
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/7c94658d-6104-4e55-8570-f6a8d299cd4a/well-and-good-logo.jpg?format=300w" alt="Well+Good">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/fb9b76b6-9742-439c-b12a-1616572e2825/nike-com-sm-logo.png?format=300w" alt="Nike">
-    <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2a7f2b53-e8a6-4a1f-9c4a-64f812c9f6d4/woman-and-home-logo.jpg?format=300w" alt="Woman &amp; Home">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/7c94658d-6104-4e55-8570-f6a8d299cd4a/well-and-good-logo.jpg?format=300w" alt="Well+Good">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/fb9b76b6-9742-439c-b12a-1616572e2825/nike-com-sm-logo.png?format=300w" alt="Nike">
+    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2a7f2b53-e8a6-4a1f-9c4a-64f812c9f6d4/woman-and-home-logo.jpg?format=300w" alt="Woman &amp; Home">
   </div>
 </div>
 
@@ -352,7 +352,7 @@
 <!-- ===== MIND / BODY drag-slider ===== -->
 <section class="split" id="split">
   <div class="pane bodypane">
-    <img class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1600w" alt="" />
+    <img loading="lazy" decoding="async" class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
     <div class="content">
       <div class="num">02 — The body</div>
       <h3>Strong <em>body.</em></h3>
@@ -360,7 +360,7 @@
     </div>
   </div>
   <div class="pane mindpane" id="mindpane">
-    <img class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1600w" alt="" />
+    <img loading="lazy" decoding="async" class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
     <div class="content">
       <div class="num">01 — The mind</div>
       <h3>Strong <em>mind.</em></h3>
@@ -391,7 +391,7 @@
     <div class="bento">
       <div class="cell feature reveal"><div class="n">✦</div><div class="big">Coaching grounded in <em>exercise science</em> — not trends, not guesswork.</div></div>
       <div class="cell reveal d1"><div class="n">01</div><div><h4>Tailored programs</h4><p>Posture, movement &amp; strength tests shape a plan that meets you where you are.</p></div></div>
-      <div class="cell img reveal d2"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""></div>
+      <div class="cell img reveal d2"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""></div>
       <div class="cell reveal"><div class="n">02</div><div><h4>Mindful coaching</h4><p>Every rep with intention — a real connection between body and mind.</p></div></div>
       <div class="cell wide reveal d1"><div class="n">03</div><div><h4>Progress, tracked &amp; celebrated</h4><p>Progression is the key to results. Every exercise is recorded so we can see — and celebrate — how far you’ve come.</p></div></div>
       <div class="cell reveal d2"><div class="n">04</div><div><h4>Habits that hold</h4><p>Small, powerful lifestyle changes that actually last.</p></div></div>
@@ -407,11 +407,11 @@
     <p>A calm, private space — drag to look around.</p>
   </div>
   <div class="grail">
-    <div class="gcard"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1000w" alt=""><div class="cap">One-on-one, always</div></div>
+    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1000w" alt=""><div class="cap">One-on-one, always</div></div>
     <div class="gcard quote"><p>“A safe space to move, grow, and feel better — on your terms.”</p></div>
-    <div class="gcard"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1000w" alt=""><div class="cap">Form over ego</div></div>
-    <div class="gcard"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1000w" alt=""><div class="cap">Strength that lasts</div></div>
-    <div class="gcard"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""><div class="cap">Meet your body where it is</div></div>
+    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1000w" alt=""><div class="cap">Form over ego</div></div>
+    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1000w" alt=""><div class="cap">Strength that lasts</div></div>
+    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""><div class="cap">Meet your body where it is</div></div>
   </div>
   <div class="ghint">← Drag / scroll →</div>
 </section>
@@ -421,7 +421,7 @@
   <div class="wrap grid">
     <div class="pic reveal">
       <div class="frame"></div>
-      <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w" alt="Dr. Sharon Gam" />
+      <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w" alt="Dr. Sharon Gam" />
       <div class="badge"><b>PhD</b><span>Exercise Physiology</span></div>
     </div>
     <div>
@@ -434,10 +434,10 @@
       <a class="reveal d2" href="about.html" style="display:inline-block;margin:6px 0 24px;color:var(--brass);font-weight:600;font-size:.92rem;letter-spacing:.02em;border-bottom:1px solid var(--brass);padding-bottom:2px">Read her full bio &amp; published research →</a>
       <div class="press reveal d2">
         <span class="pl">As featured in</span>
-        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
-        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
-        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
-        <img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
+        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
+        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
+        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
+        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
       </div>
     </div>
   </div>
@@ -498,9 +498,9 @@
       <a class="reveal" href="blog.html">All 128 articles →</a>
     </div>
     <div class="posts">
-      <a class="pcard reveal" href="articles/why-i-dont-post-body-transformations.html"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w" alt=""></div><div class="c">Mental Health</div><h3>Why I Don’t Post Body Transformations</h3></a>
-      <a class="pcard reveal d1" href="articles/why-its-so-hard-to-stay-consistent-with-exercise-the-inconsistency-paradox.html"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>Why It’s So Hard to Stay Consistent With Exercise</h3></a>
-      <a class="pcard reveal d2" href="articles/i-know-what-to-do-why-cant-i-make-it-happen.html"><div class="im"><img src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>“I Know What To Do, Why Can’t I Make It Happen?”</h3></a>
+      <a class="pcard reveal" href="articles/why-i-dont-post-body-transformations.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w" alt=""></div><div class="c">Mental Health</div><h3>Why I Don’t Post Body Transformations</h3></a>
+      <a class="pcard reveal d1" href="articles/why-its-so-hard-to-stay-consistent-with-exercise-the-inconsistency-paradox.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>Why It’s So Hard to Stay Consistent With Exercise</h3></a>
+      <a class="pcard reveal d2" href="articles/i-know-what-to-do-why-cant-i-make-it-happen.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>“I Know What To Do, Why Can’t I Make It Happen?”</h3></a>
     </div>
   </div>
 </section>
@@ -527,11 +527,15 @@
 
 <script>
   const hdr=document.getElementById('hdr'), prog=document.getElementById('prog');
+  let ticking=false;
   const onScroll=()=>{
-    const y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
-    hdr.classList.toggle('scrolled', y>40);
-    prog.style.width=(h>0?(y/h*100):0)+'%';
-    document.querySelectorAll('[data-par]').forEach(el=>{el.style.transform='translateY('+(y*el.dataset.par)+'px)';});
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(()=>{
+      const y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+      hdr.classList.toggle('scrolled', y>40);
+      prog.style.width=(h>0?(y/h*100):0)+'%';
+      ticking=false;
+    });
   };
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
