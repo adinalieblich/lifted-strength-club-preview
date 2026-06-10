@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Membership &mdash; Lifted Strength Club</title><meta name="description" content="Semi-private and one-on-one strength training memberships in Longwood, FL with Dr. Sharon Gam."><link rel="icon" href="/lifted-strength-club-preview/lifted-badge-light.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,sans-serif;color:var(--charcoal);background:var(--greige);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.05}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+header{position:sticky;top:0;z-index:50;background:rgba(42,42,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:128px}
+.logo{display:inline-flex;align-items:center}.logo img{height:114px;width:auto;display:block}
+.menu{display:flex;align-items:center;gap:30px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.menu a.on{color:#fff}
+.menu .pill{border:1px solid rgba(255,255,255,.5);padding:10px 20px;border-radius:40px;color:#fff}
+.menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+@media(max-width:820px){.menu a:not(.pill){display:none}.nav{height:92px}.logo img{height:74px}}
+.phero{padding:clamp(60px,9vh,120px) 0 40px;text-align:center}
+.phero .k{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:18px}
+.phero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:300}
+.phero h1 em{font-style:italic;color:var(--teal-dk)}
+.phero p{max-width:40em;margin:20px auto 0;color:var(--warmgray);font-size:1.1rem;line-height:1.75}
+.sec{padding:clamp(36px,6vh,70px) 0}
+.flagtag{display:inline-block;background:var(--teal-dk);color:var(--cream);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:7px 16px;border-radius:30px;margin-bottom:18px;font-weight:600}
+.sec h2{font-size:clamp(2rem,4.4vw,3rem);font-weight:300;margin-bottom:8px}
+.sec h2 em{font-style:italic;color:var(--teal-dk)}
+.lead{color:var(--warmgray);font-size:1.08rem;line-height:1.8;max-width:54em;margin-bottom:10px}
+.lead+.lead{margin-top:14px}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:14px}
+.forwho{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+.forwho span{background:#fff;border:1px solid var(--rule);border-radius:30px;padding:9px 16px;font-size:.92rem;color:#39352f}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.step{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:28px}
+.step .n{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--brass);line-height:1;margin-bottom:8px}
+.step h4{font-family:'Outfit';font-size:1.02rem;font-weight:600;margin-bottom:10px;letter-spacing:.01em}
+.step p{color:var(--warmgray);font-size:.96rem;line-height:1.66}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:14px}
+.pcard{background:#fff;border:1px solid var(--rule);border-radius:20px;padding:34px;position:relative;display:flex;flex-direction:column}
+.pcard.feature{border:2px solid var(--brass);box-shadow:0 16px 50px rgba(42,42,42,.08)}
+.pcard .badge{position:absolute;top:-13px;left:34px;background:var(--brass);color:#fff;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:30px}
+.pcard h3{font-family:'Outfit';font-size:1.04rem;font-weight:600;letter-spacing:.02em;margin-bottom:6px}
+.pcard .price{font-family:'Cormorant Garamond',serif;font-size:3.1rem;font-weight:600;color:var(--teal-dk);line-height:1}
+.pcard .price span{font-family:'Outfit';font-size:1rem;color:var(--warmgray);font-weight:400}
+.pcard .was{color:var(--warmgray);font-size:.92rem;margin-top:6px}
+.pcard .was s{color:var(--blush)}
+.pcard ul{list-style:none;margin:18px 0 0;padding:0}
+.pcard li{font-size:.95rem;color:#39352f;padding:7px 0 7px 26px;position:relative;line-height:1.5}
+.pcard li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:50%;background:var(--brass)}
+.note{color:var(--warmgray);font-size:.92rem;margin-top:16px;line-height:1.6}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:14px}
+.tier{background:#fff;border:1px solid var(--rule);border-radius:18px;padding:30px;text-align:center}
+.tier .lvl{font-family:'Outfit';font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.tier .term{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--charcoal);margin:4px 0 16px}
+.tier .row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-top:1px solid var(--rule);font-size:.96rem}
+.tier .row b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--teal-dk);font-weight:600}
+.tier .row small{color:var(--warmgray);font-size:.8rem;display:block}
+.incl{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:26px 30px;margin-top:24px}
+.incl h4{font-family:'Outfit';font-size:.96rem;font-weight:600;margin-bottom:12px}
+.incl ul{columns:2;column-gap:40px;list-style:none;padding:0}
+.incl li{font-size:.95rem;color:#39352f;padding:6px 0 6px 24px;position:relative;break-inside:avoid}
+.incl li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+@media(max-width:760px){.steps,.prices,.tiers{grid-template-columns:1fr}.incl ul{columns:1}}
+.cta{background:var(--teal-dk);color:var(--cream);border-radius:22px;padding:clamp(40px,6vw,68px);text-align:center;margin:30px 0 0}
+.cta h2{font-size:clamp(2rem,4.4vw,3rem);font-weight:300;color:var(--cream)}
+.cta h2 em{font-style:italic;color:var(--blush)}
+.cta p{color:rgba(244,248,245,.82);margin:14px auto 26px;max-width:40em;line-height:1.7}
+.btn{display:inline-block;background:var(--brass);color:#fff;padding:16px 38px;border-radius:40px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.btn:hover{background:#a87c45}
+.btn.ghost{background:transparent;border:1px solid rgba(244,248,245,.5);margin-left:10px}
+footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:54px 0 30px;margin-top:80px}
+footer .logo img{height:124px}
+.fbot{display:flex;justify-content:space-between;font-size:.82rem;flex-wrap:wrap;gap:8px;margin-top:14px}
+.perks{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 30px}
+.perks li{font-size:1.02rem;color:#39352f;padding:10px 0 10px 28px;position:relative;line-height:1.5}
+.perks li::before{content:"\2713";position:absolute;left:0;top:9px;color:var(--brass);font-weight:700}
+@media(max-width:680px){.perks{grid-template-columns:1fr}}
+.limited{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--rule);border-radius:30px;padding:10px 18px;font-size:.9rem;color:var(--charcoal);margin-top:8px}
+.limited i{width:9px;height:9px;border-radius:50%;background:var(--blush);display:inline-block}
+</style></head><body><header><div class="wrap nav"><a class="logo" href="flagship.html"><img src="/lifted-strength-club-preview/lifted-badge-light.png" alt="Lifted Strength Club"></a><nav class="menu"><a href="flagship.html#method">Method</a><a href="about.html">Dr. Gam</a><a class="on" href="membership.html">Membership</a><a href="blog.html">Journal</a><a class="pill" href="flagship.html#book">Book a Consult</a></nav></div></header><section class="wrap phero"><div class="k">Membership</div><h1>Get stronger, <em>physically and mentally</em></h1><p>Coach-led strength training in Longwood for every starting point &mdash; built for confidence, resilience, energy and longevity. Semi-private classes are our flagship; one-on-one personal training is available too.</p></section><section class="sec"><div class="wrap"><div class="flagtag">Our flagship &mdash; semi-private strength training</div><h2>Semi-Private Personal <em>Training</em></h2><p class="lead">Our semi-private personal training classes combine personalized coaching with the energy and support of a small community. Every workout is guided by a coach and designed to help you build strength safely and confidently &mdash; whether you&rsquo;re brand new to strength training or returning after years away from exercise.</p><p class="lead">This is not an intimidating gym environment or a bootcamp-style workout. Classes are intentionally small (no more than 5 people), so you receive personalized attention, learn proper form, and progress at your own pace in a welcoming, supportive space.</p><div class="forwho"><span>Beginners who don&rsquo;t know where to start</span><span>Anyone who feels uncomfortable in traditional gyms</span><span>Busy adults who want structure &amp; accountability</span><span>Getting stronger, physically and mentally</span></div><h3 class="eyebrow" style="margin-top:48px">How it works</h3><div class="steps"><div class="step"><div class="n">1</div><h4>Consultation</h4><p>We begin with a conversation about your goals, fitness history, injuries and experience level &mdash; meeting you where you are and helping you use exercise to live the life you want.</p></div><div class="step"><div class="n">2</div><h4>Onboarding</h4><p>Two one-on-one sessions with a certified trainer: a full movement assessment, your personalized program built into your workout app, and coaching on the fundamentals so you feel confident from day one.</p></div><div class="step"><div class="n">3</div><h4>Join your group</h4><p>In 55-minute coach-led sessions you follow your personalized app-guided program. A trainer leads the group of no more than 5, helping with form, spotting, weight selection and motivation.</p></div></div><h3 class="eyebrow" style="margin-top:50px">Membership pricing</h3><div class="prices"><div class="pcard feature"><span class="badge">Most popular</span><h3>2 Sessions / Week</h3><div class="price">$299<span>/month</span></div><div class="was">Founding rate &middot; <s>standard $349/mo</s></div><ul><li>Two coach-led semi-private sessions each week</li><li>Personalized, app-guided program</li><li>Form coaching &amp; progressions every session</li><li>Class capped at 5 for real attention</li></ul></div><div class="pcard"><h3>3 Sessions / Week</h3><div class="price">$399<span>/month</span></div><div class="was">Founding rate &middot; <s>standard $449/mo</s></div><ul><li>Three coach-led semi-private sessions each week</li><li>Faster progress with added consistency</li><li>Same personalized, app-guided program</li><li>Class capped at 5 for real attention</li></ul></div></div><p class="note"><strong>One-time onboarding fee</strong> (covers your 2 one-on-one starter sessions): <strong>$99 founding</strong> &middot; <s style="color:var(--blush)">standard $199</s>. Initial 3-month commitment, then month-to-month. Founding members lock in their rate for as long as their membership stays active.</p><div class="incl"><h4>Every membership includes</h4><ul><li>2 one-on-one onboarding sessions</li><li>Individualized exercise program</li><li>Personal app for progress tracking</li><li>Coach-led semi-private training</li><li>Beginner-friendly instruction</li><li>Accountability &amp; ongoing support</li><li>A community working toward their goals alongside you</li><li>55-minute sessions, capped at 5 people</li></ul></div></div></section><section class="sec"><div class="wrap"><h3 class="eyebrow">Also available</h3><h2>One-on-One <em>Personal Training</em></h2><p class="lead">Prefer fully private, one-on-one coaching? In-person sessions in the Longwood studio, built entirely around you. The longer your commitment, the lower your monthly rate.</p><div class="tiers"><div class="tier"><div class="lvl">Bronze</div><div class="term">3 Months</div><div class="row"><span>2&times; / week</span><span><b>$970</b><small>/mo &middot; 24 sessions</small></span></div><div class="row"><span>3&times; / week</span><span><b>$1,450</b><small>/mo &middot; 36 sessions</small></span></div></div><div class="tier"><div class="lvl">Silver</div><div class="term">6 Months</div><div class="row"><span>2&times; / week</span><span><b>$880</b><small>/mo &middot; 48 sessions</small></span></div><div class="row"><span>3&times; / week</span><span><b>$1,320</b><small>/mo &middot; 72 sessions</small></span></div></div><div class="tier"><div class="lvl">Gold</div><div class="term">12 Months</div><div class="row"><span>2&times; / week</span><span><b>$790</b><small>/mo &middot; 96 sessions</small></span></div><div class="row"><span>3&times; / week</span><span><b>$1,180</b><small>/mo &middot; 144 sessions</small></span></div></div></div><div class="incl"><h4>Every personal training package includes</h4><ul><li>55-minute face-to-face sessions</li><li>Comprehensive movement assessment</li><li>One-time personalized nutrition report</li><li>Access to your personal coaching app</li><li>Habit-setting session</li><li>Accountability, support &amp; motivation</li></ul></div></div></section><section class="sec"><div class="wrap"><div class="cta"><h2>Not sure which is <em>right for you?</em></h2><p>Start with a free, no-pressure consultation. We&rsquo;ll talk through your goals and help you choose the option that fits &mdash; whether that&rsquo;s semi-private or one-on-one.</p><a class="btn" href="flagship.html#book">Book a free consult</a><a class="btn ghost" href="founding-members.html">Founding member offer</a></div></div></section><footer><div class="wrap"><a class="logo" href="flagship.html"><img src="/lifted-strength-club-preview/lifted-badge-light.png" alt="Lifted Strength Club"></a><div class="fbot"><span>(c) 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; 2100 N Ronald Reagan Blvd #1012, Longwood, FL</span><span>Strong mind. Strong body. Strong life.</span></div></div></footer></body></html>
