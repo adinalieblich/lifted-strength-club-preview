@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lifted Strength Club — Strength training for mental health · Longwood, FL</title>
+<title>Lifted Strength Club — One-on-one & small-group strength training · Longwood, FL</title>
 <link rel="icon" href="lifted-badge.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +39,10 @@
   .menu a:hover::after{width:100%}
   .menu .pill{border:1px solid rgba(255,255,255,.5);padding:11px 22px;border-radius:40px;color:#fff}
   .menu .pill:hover{background:var(--brass);border-color:var(--brass)}
+  .burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;line-height:1;cursor:pointer;padding:4px 10px}
+  @media(max-width:820px){.burger{display:block}
+  .menu{position:absolute;top:100%;left:0;right:0;background:rgba(42,42,42,.98);flex-direction:column;align-items:stretch;gap:0;padding:0;max-height:0;overflow:hidden;transition:max-height .35s ease;border-top:1px solid rgba(255,255,255,.1)}
+  .menu.open{max-height:520px;padding:8px 0 14px}.menu a{display:block;width:100%;padding:13px 26px}.menu .pill{margin:12px 26px 0;text-align:center}}
 
   /* ===== HERO — video montage ===== */
   .hero{position:relative;height:100vh;min-height:680px;overflow:hidden;display:flex;align-items:flex-end;background:var(--charcoal)}
@@ -63,12 +67,15 @@
   .herotop{position:absolute;top:88px;left:0;right:0;z-index:4;display:flex;align-items:center;justify-content:center;padding:8px clamp(24px,5vw,64px);flex-wrap:wrap}
   .herotop .cred{font-family:'Outfit',sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;color:var(--cream);display:flex;align-items:center;gap:9px;white-space:nowrap;background:rgba(42,42,42,.4);backdrop-filter:blur(6px);padding:9px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.14)}
   .herotop .cred b{color:var(--brass);font-weight:600}
-  /* prominent press band, directly under the hero */
-  .featband{background:var(--greige);padding:26px 0;border-bottom:1px solid rgba(42,42,42,.07)}
-  .featband .wrap{display:flex;align-items:center;justify-content:center;gap:18px 38px;flex-wrap:wrap}
-  .featband .lab{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--warmgray);font-weight:600}
-  .featband img{height:40px;width:auto}
-  @media(max-width:820px){.herotop{top:78px}.featband img{height:30px}.featband .wrap{gap:16px 24px}}
+  /* "we lift more" band, directly under the hero */
+  .liftmore{background:var(--greige);padding:clamp(60px,11vh,130px) 0;text-align:center}
+  .liftmore h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,5vw,3.4rem);color:var(--charcoal)}
+  .lm-line{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:300;color:var(--teal-dk);margin-top:6px}
+  .lm-rotate{display:inline-block;height:1.15em;overflow:hidden;vertical-align:bottom}
+  .lm-stack{display:flex;flex-direction:column;animation:lmroll 11s infinite}
+  .lm-stack i{font-style:italic;color:var(--brass);line-height:1.15em;height:1.15em}
+  @keyframes lmroll{0%,14%{transform:translateY(0)}18%,32%{transform:translateY(-1.15em)}36%,52%{transform:translateY(-2.3em)}56%,72%{transform:translateY(-3.45em)}76%,94%{transform:translateY(-4.6em)}100%{transform:translateY(0)}}
+  @media(max-width:820px){.herotop{top:78px}}
   .hero .eyebrow{color:var(--brass);margin-bottom:24px;display:flex;align-items:center;gap:16px;opacity:0;animation:rise .9s .15s forwards}
   .hero .eyebrow::before{content:'';width:54px;height:1px;background:var(--brass)}
   .hero h1{color:var(--cream);font-size:clamp(2.6rem,7.2vw,6.9rem);font-weight:300;line-height:1.06;text-shadow:0 2px 36px rgba(0,0,0,.4)}
@@ -108,8 +115,8 @@
   .manifesto .hi{font-style:italic;color:var(--brass)}
   .manifesto .out{color:transparent;-webkit-text-stroke:1.4px var(--cream)}
 
-  /* ===== MIND/BODY drag-slider ===== */
-  .split{position:relative;height:80vh;min-height:580px;overflow:hidden;background:var(--teal-dk);touch-action:none}
+  /* ===== MIND/BODY static split ===== */
+  .split{position:relative;height:80vh;min-height:580px;overflow:hidden;background:var(--teal-dk)}
   .split .pane{position:absolute;inset:0;overflow:hidden}
   .split .bg{position:absolute;top:0;left:0;height:100%;width:100vw;max-width:none;object-fit:cover}
   .split .content{position:absolute;bottom:0;z-index:3;padding:clamp(40px,6vw,84px);max-width:30em}
@@ -131,16 +138,11 @@
   .split .mindpane .num{color:var(--brass)}
   .split .mindpane h3{color:var(--teal-dk)}.split .mindpane h3 em{font-style:italic;color:var(--brass)}
   .split .mindpane p{color:var(--warmgray)}
-  /* handle */
-  .split .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--brass);z-index:5;transform:translateX(-1px);cursor:ew-resize}
-  .split .grip{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:var(--brass);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:1rem;letter-spacing:.1em}
-  .split .hint{position:absolute;top:24px;left:50%;transform:translateX(-50%);z-index:6;font-family:'Jost';font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream);background:rgba(42,42,42,.42);padding:7px 15px;border-radius:40px;backdrop-filter:blur(6px);animation:pulse 2.4s infinite}
   @media(max-width:760px){
     .split{height:auto;min-height:0;display:flex;flex-direction:column}
     .split .pane{position:relative;width:100%!important;height:62vw;min-height:330px}
     .split .bg{width:100%}
     .split .mindpane{border-right:none;border-top:2px solid var(--brass)}
-    .split .handle,.split .hint{display:none}
     .split .bodypane .content{text-align:left;right:auto;left:0}
   }
 
@@ -265,16 +267,18 @@
   .endcta h2 em{font-style:italic;color:var(--blush)}
   .endcta p{color:rgba(244,248,245,.75);margin:24px auto 36px;max-width:30em}
   .endcta .cta{background:var(--brass);color:#fff}
-  footer{background:var(--charcoal);color:rgba(244,248,245,.6);padding:64px 0 36px}
-  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(244,248,245,.12)}
-  footer .logo{color:var(--cream);font-size:1.3rem}
-  footer p{font-size:.9rem;margin-top:16px;max-width:24em}
-  .fcol h4{color:var(--cream);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
-  .fcol a,.fcol span{display:block;font-size:.92rem;padding:4px 0}
-  .fbot{padding-top:24px;display:flex;justify-content:space-between;font-size:.8rem;flex-wrap:wrap;gap:8px}
+  footer{background:var(--charcoal);color:rgba(244,248,245,.62);padding:60px 0 30px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;align-items:start;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:30px}
+  .fgrid .logo img{height:120px}
+  .ftag{margin-top:10px;font-style:italic;color:rgba(244,248,245,.5)}
+  .fcol h4{font-family:'Outfit';font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:12px;font-weight:600}
+  .fcol a{display:block;color:rgba(244,248,245,.78);padding:5px 0;font-size:.92rem}
+  .fcol a:hover{color:#fff}
+  .fcol p{font-size:.92rem;line-height:1.6;margin-bottom:8px}
+  .fcopy{font-size:.8rem;color:rgba(244,248,245,.45);padding-top:18px}
+  @media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:26px}}
 
   @media(max-width:900px){
-    .menu a:not(.pill){display:none}
     .duo{grid-template-columns:1fr}
     .stats .row{grid-template-columns:1fr 1fr}
     .bento{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
@@ -284,6 +288,7 @@
     .posts{grid-template-columns:1fr}
     .fgrid{grid-template-columns:1fr 1fr}
   }
+  @media(max-width:760px){.bento{grid-auto-rows:auto}.cell{min-height:200px;height:auto}}
   @media(max-width:560px){.bento{grid-template-columns:1fr}.cell.wide,.cell.feature{grid-column:span 1}.stats .row,.fgrid{grid-template-columns:1fr}}
   @media(prefers-reduced-motion:reduce){.slide,.marquee .track,.ken{animation:none}.slide:first-child{opacity:1}}
 .logo img{height:114px;width:auto;display:block}footer .logo img{height:168px}@media(max-width:760px){.nav{height:92px}.logo img{height:74px}}</style>
@@ -294,8 +299,9 @@
 <header id="hdr">
   <div class="wrap nav">
     <a class="logo" href="#"><img class="logo-img" src="lifted-badge-light.png" alt="Lifted Strength Club"></a>
-    <nav class="menu">
-      <a href="#method">Method</a><a href="about.html">Dr. Gam</a><a href="membership.html">Membership</a><a href="blog.html">Journal</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('navmenu').classList.toggle('open')">&#9776;</button>
+    <nav class="menu" id="navmenu">
+      <a href="#method">Method</a><a href="about.html">About</a><a href="membership.html">Membership</a><a href="blog.html">Journal</a>
       <a href="guides.html">Free Guides</a><a class="pill" href="#book">Book a Consult</a>
     </nav>
   </div>
@@ -314,42 +320,34 @@
   </div>
   <div class="live"><span class="d"></span> Showreel · pro studio film, Aug ’26</div>
   <div class="wrap">
-    <div class="eyebrow">Strength training for mental health · Longwood, FL</div>
+    <div class="eyebrow">One-on-one and small group personal training · Longwood, FL</div>
     <h1>
       <span class="ln"><span>Strong mind.</span></span>
       <span class="ln"><span>Strong body.</span></span>
       <span class="ln"><span><em>Strong life.</em></span></span>
     </h1>
     <div class="meta">
-      <p>A private studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength — led by <strong style="color:var(--cream);font-weight:600">Dr. Sharon Gam, PhD, CSCS, ACE-HC</strong>.</p>
+      <p>A private strength training studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength — led by <strong style="color:var(--cream);font-weight:600">Dr. Sharon Gam, PhD</strong>.</p>
       <a class="cta" href="#book">Book a free consult →</a>
     </div>
   </div>
   <div class="scrollcue">Scroll <span class="bar"></span></div>
 </section>
 
-<div class="featband">
-  <div class="wrap">
-    <span class="lab">As featured in</span>
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/7c94658d-6104-4e55-8570-f6a8d299cd4a/well-and-good-logo.jpg?format=300w" alt="Well+Good">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/fb9b76b6-9742-439c-b12a-1616572e2825/nike-com-sm-logo.png?format=300w" alt="Nike">
-    <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2a7f2b53-e8a6-4a1f-9c4a-64f812c9f6d4/woman-and-home-logo.jpg?format=300w" alt="Woman &amp; Home">
-  </div>
-</div>
+<section class="liftmore"><div class="wrap">
+  <h2>We lift more than just weights.</h2>
+  <p class="lm-line">We lift <span class="lm-rotate"><span class="lm-stack"><i>spirits.</i><i>moods.</i><i>energy.</i><i>confidence.</i><i>strength.</i></span></span></p>
+</div></section>
 
 <!-- ===== MANIFESTO (integrated from concept 6) ===== -->
 <section class="manifesto">
   <div class="wrap">
-    <div class="k reveal">The Lifted manifesto</div>
+    <div class="k reveal">Our philosophy</div>
     <h2 class="reveal d1">Most gyms are built for how you <span class="strike">look</span>. Lifted is built for how you <span class="hi">feel</span> — <span class="out">strong</span>, in mind and body.</h2>
   </div>
 </section>
 
-<!-- ===== MIND / BODY drag-slider ===== -->
+<!-- ===== MIND / BODY static split ===== -->
 <section class="split" id="split">
   <div class="pane bodypane">
     <img loading="lazy" decoding="async" class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
@@ -367,8 +365,6 @@
       <p>One of the most effective tools we have for anxiety, mood and resilience. Here it’s the whole point — not a side effect.</p>
     </div>
   </div>
-  <div class="handle" id="splitHandle"><div class="grip">◄ ►</div></div>
-  <div class="hint">Drag — mind &amp; body</div>
 </section>
 
 <!-- ===== STATS (count-up) ===== -->
@@ -446,7 +442,7 @@
 <!-- ===== THE INDEX (integrated from concept 4) ===== -->
 <section class="index">
   <div class="wrap">
-    <div class="top"><span>The Index</span><span>28.70°N / 81.34°W — Longwood, FL</span></div>
+    <div class="top"><span>The Index</span><span>2100 N Ronald Reagan Blvd #1012 — Longwood, FL</span></div>
     <a class="ix reveal" href="#method"><span class="n">01</span><span class="t">The <em>Method</em></span><span class="desc">Science-led programming, tracked and celebrated.</span><span class="a">↗</span></a>
     <a class="ix reveal" href="#"><span class="n">02</span><span class="t">The <em>Science</em></span><span class="desc">Why strength is medicine for the mind.</span><span class="a">↗</span></a>
     <a class="ix reveal" href="membership.html"><span class="n">03</span><span class="t"><em>Membership</em></span><span class="desc">In-studio &amp; online, simply priced.</span><span class="a">↗</span></a>
@@ -465,11 +461,11 @@
     <div class="reveal" style="max-width:920px;margin:0 auto 20px;background:var(--brass);color:var(--charcoal);text-align:center;padding:13px 22px;border-radius:40px;font-size:.86rem;font-weight:600;letter-spacing:.01em">★ Founding-member pricing is open — locked in for life, limited spots before opening day.</div>
     <div class="plans">
       <div class="plan feat reveal">
-        <div class="t">Semi-private · small group of 5 or fewer</div>
+        <div class="t">Semi-private · small group of 5 or fewer · our flagship</div>
         <h3>Strength Training</h3>
-        <div class="amt">$299<span>/mo founding</span></div>
-        <ul><li>Personalized programming in a group of ≤5</li><li>2 one-on-one onboarding sessions</li><li>Coach-guided 55-min sessions, 2–3×/week</li><li>$99 founding onboarding (then $199)</li><li>Founding rate locked in + priority class times</li></ul>
-        <a class="b solid" href="#book">Claim a founding spot</a>
+        <div class="amt">$299<span>/mo founding · 2×/week</span></div>
+        <ul><li>Personalized programming in a group of ≤5</li><li><b>2 sessions/week</b> — $299/mo founding (std $349)</li><li><b>3 sessions/week</b> — $399/mo founding (std $449)</li><li>2 one-on-one onboarding sessions</li><li>Coach-guided 55-min sessions</li><li>Founding rate locked in + priority class times</li></ul>
+        <a class="b solid" href="founding-members.html">Founding member pricing available →</a>
       </div>
       <div class="plan reveal d1">
         <div class="t">1-on-1 · fully private, Longwood</div>
@@ -479,6 +475,7 @@
         <a class="b ghost" href="#book">Book a free consult</a>
       </div>
     </div>
+    <div class="reveal" style="text-align:center;margin-top:34px"><a href="membership.html" style="display:inline-block;color:var(--brass);font-weight:600;font-size:.9rem;letter-spacing:.04em;border-bottom:1px solid var(--brass);padding-bottom:3px">See membership &amp; pricing →</a></div>
   </div>
 </section>
 
@@ -505,25 +502,21 @@
   </div>
 </section>
 
-<!-- ===== END CTA ===== -->
+<!-- ===== END CTA / BOOKING ===== -->
 <section class="endcta" id="book">
   <div class="wrap">
     <h2 class="reveal">The hardest part<br/>is <em>getting started.</em></h2>
-    <p class="reveal d1">Book a free initial consultation in Longwood and let’s make a plan together.</p>
-    <a class="cta reveal d2" href="#">Book a free consult →</a>
+    <p class="reveal d1">Book a free initial consultation and let’s make a plan together.</p>
+    <!-- Acuity scheduler embeds here in production: <iframe src="https://app.acuityscheduling.com/schedule.php?owner=XXXX" width="100%" height="800" frameborder="0"></iframe> -->
+    <a class="cta reveal d2" href="#book">Book a free consult →</a>
   </div>
 </section>
 
-<footer>
-  <div class="wrap">
-    <div class="fgrid">
-      <div><a class="logo" href="#" style="display:inline-flex;margin-bottom:16px"><img class="logo-img" src="lifted-badge-light.png" alt="Lifted Strength Club"></a><p>Strength training for mental health. A private studio in Longwood, serving Seminole County, FL &amp; beyond.</p></div>
-      <div class="fcol"><h4>Explore</h4><a href="#method">Method</a><a href="about.html">Dr. Gam</a><a href="membership.html">Membership</a><a href="blog.html">Journal</a></div>
-      <div class="fcol"><h4>Visit</h4><span>2100 N Ronald Reagan Blvd #1012</span><span>Longwood, FL 32750</span><a href="tel:4073427613">407-342-7613</a><a href="mailto:Sharon@DrSharonGam.com">Sharon@DrSharonGam.com</a></div>
-    </div>
-    <div class="fbot"><span>© 2026 Lifted Strength Club · Dr. Sharon Gam, PhD</span><span>Strong mind. Strong body. Strong life.</span></div>
-  </div>
-</footer>
+<footer><div class="wrap fgrid">
+<div><a class="logo" href="flagship.html"><img src="lifted-badge-light.png" alt="Lifted Strength Club"></a><p class="ftag">Strong mind. Strong body. Strong life.</p></div>
+<div class="fcol"><h4>Explore</h4><a href="flagship.html">Home</a><a href="about.html">About</a><a href="membership.html">Membership</a><a href="founding-members.html">Founding Members</a><a href="blog.html">Journal</a><a href="guides.html">Free Guides</a></div>
+<div class="fcol"><h4>Visit</h4><p>2100 N Ronald Reagan Blvd #1012<br>Longwood, FL 32750</p><p>By appointment</p><a href="#book">Book a free consult &rarr;</a></div>
+</div><div class="wrap fcopy">&copy; 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</div></footer>
 
 <script>
   const hdr=document.getElementById('hdr'), prog=document.getElementById('prog');
@@ -550,18 +543,6 @@
     requestAnimationFrame(step);
   })},{threshold:.6});
   document.querySelectorAll('.count').forEach(el=>cup.observe(el));
-
-  // mind/body drag-slider
-  (function(){
-    const sp=document.getElementById('split'), mind=document.getElementById('mindpane'), h=document.getElementById('splitHandle');
-    if(!sp||!mind||!h) return;
-    function set(x){const r=sp.getBoundingClientRect();let p=(x-r.left)/r.width;p=Math.max(.14,Math.min(.86,p));mind.style.width=(p*100)+'%';h.style.left=(p*100)+'%';}
-    let drag=false;
-    h.addEventListener('pointerdown',e=>{drag=true;try{h.setPointerCapture(e.pointerId)}catch(_){}} );
-    window.addEventListener('pointermove',e=>{if(drag)set(e.clientX)},{passive:true});
-    window.addEventListener('pointerup',()=>drag=false);
-    sp.addEventListener('pointerdown',e=>{if(!e.target.closest('.content')&&!e.target.closest('.handle'))set(e.clientX)});
-  })();
 </script>
 </body>
 </html>
