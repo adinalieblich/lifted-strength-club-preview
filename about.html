@@ -52,9 +52,10 @@ section{padding:clamp(50px,7vh,90px) 0;border-bottom:1px solid var(--rule)}
 .profile{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;padding:15px 28px;border-radius:40px;font-family:'Outfit';font-weight:500;font-size:.92rem;margin-top:14px}
 .profile:hover{background:var(--teal-dk,#2f5a5e);background:var(--charcoal)}
 /* press */
-.press .row{display:flex;align-items:center;justify-content:center;gap:18px 40px;flex-wrap:wrap;margin-top:8px}
+.press .row{display:flex;align-items:center;justify-content:center;gap:26px 48px;flex-wrap:wrap;margin-top:14px}
 .press .lab{width:100%;text-align:center;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--warm);font-weight:600;margin-bottom:8px}
-.press img{height:38px;width:auto}
+.press img{height:72px;width:auto;border-radius:8px}
+@media(max-width:600px){.press img{height:60px}}
 /* cta */
 .cta{background:var(--teal);color:var(--cream);text-align:center;padding:clamp(60px,10vh,120px) 0;border-bottom:none}
 .cta h2{color:var(--cream);font-size:clamp(2rem,4.6vw,3.4rem)}
