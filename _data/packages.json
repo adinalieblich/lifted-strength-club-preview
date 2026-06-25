@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "name": "Semi-Private — 2 sessions / week",
+      "price": "$299/month",
+      "was": "$349/month",
+      "sessions": "2x per week",
+      "desc": "Founding rate. Two coach-led semi-private sessions each week, personalized app-guided program, class capped at 5.",
+      "featured": true
+    },
+    {
+      "name": "Semi-Private — 3 sessions / week",
+      "price": "$399/month",
+      "was": "$449/month",
+      "sessions": "3x per week",
+      "desc": "Founding rate. Three coach-led semi-private sessions each week for faster progress, same personalized program.",
+      "featured": false
+    },
+    {
+      "name": "One-on-One — Bronze (3 months)",
+      "price": "$970/month",
+      "was": "",
+      "sessions": "2x per week (24 sessions)",
+      "desc": "Fully private personal training. $1,450/month for 3x per week (36 sessions). 3-month commitment.",
+      "featured": false
+    },
+    {
+      "name": "One-on-One — Silver (6 months)",
+      "price": "$880/month",
+      "was": "",
+      "sessions": "2x per week (48 sessions)",
+      "desc": "$1,320/month for 3x per week (72 sessions). 6-month commitment.",
+      "featured": false
+    },
+    {
+      "name": "One-on-One — Gold (12 months)",
+      "price": "$790/month",
+      "was": "",
+      "sessions": "2x per week (96 sessions)",
+      "desc": "$1,180/month for 3x per week (144 sessions). 12-month commitment — best monthly rate.",
+      "featured": false
+    }
+  ]
+}

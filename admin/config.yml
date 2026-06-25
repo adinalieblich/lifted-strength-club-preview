@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: adinalieblich/lifted-strength-club-preview
+  branch: master
+  base_url: https://sveltia-cms-auth1.adinalieblich.workers.dev
+
+site_url: https://liftedstrength.netlify.app
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: pricing
+    label: "Prices & Packages"
+    description: "Edit your training packages and prices. Changes go live after you publish."
+    files:
+      - name: packages
+        label: "Packages"
+        file: "_data/packages.json"
+        fields:
+          - label: "Packages"
+            name: "packages"
+            widget: "list"
+            label_singular: "Package"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Price", name: "price", widget: "string", hint: "e.g. $299/mo" }
+              - { label: "Was (strike-through, optional)", name: "was", widget: "string", required: false }
+              - { label: "Sessions / cadence", name: "sessions", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Highlight this one?", name: "featured", widget: "boolean", default: false }
+  - name: blog
+    label: "Journal (Blog)"
+    description: "Write and publish blog posts. New posts appear on your Journal page after publishing."
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Mindset", "Training", "Lifestyle", "Nutrition", "Mental Health"] }
+      - { label: "Summary", name: "summary", widget: "text", hint: "1–2 sentences shown on the blog index." }
+      - { label: "Body", name: "body", widget: "markdown" }
