@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lifted Strength Club — One-on-one & small-group strength training · Longwood, FL</title>
-<link rel="icon" href="/lifted-favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lifted Strength Club — One-on-one &amp; small-group strength training · Longwood, FL</title>
+<link href="/lifted-favicon.png" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <!-- Brand type: Futura PT (headings) + Poppins (body) per drsharongam.com. Jost = free Futura PT stand-in for preview; production uses real Futura PT via Adobe Fonts. -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Outfit:wght@300;400;500;600&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--teal:#4D7E83;--teal-dk:#3E6E73;--greige:#F4F0EB;--cream:#F4F8F5;--blush:#C98D86;--brass:#B78B52;--charcoal:#2A2A2A;--warmgray:#6E6A65;--rule:rgba(42,42,42,.15)}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -295,240 +296,224 @@
 </head>
 <body>
 <div class="progress" id="prog"></div>
-
 <style>.bookm{display:none}@media(max-width:820px){.bookm{display:inline-flex;align-items:center;margin-left:auto;margin-right:12px;background:var(--brass);color:#2A2A2A;font-family:Outfit,sans-serif;font-size:.74rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:9px 17px;border-radius:40px;white-space:nowrap}}</style>
 <header id="hdr">
-  <div class="wrap nav">
-    <a class="logo" href="#"><img class="logo-img" src="/lifted-logo-sunrise-light.png" alt="Lifted Strength Club"></a>
-    <a class="bookm" href="#book">Book</a><button class="burger" aria-label="Menu" onclick="document.getElementById('navmenu').classList.toggle('open')">&#9776;</button>
-    <nav class="menu" id="navmenu">
-      <a href="#method">Method</a><a href="about.html">About</a><a href="membership.html">Membership</a><a href="blog.html">Journal</a>
-      <a href="guides.html">Free Guides</a><a class="pill" href="#book">Book a Consult</a>
-    </nav>
-  </div>
+<div class="wrap nav">
+<a class="logo" href="#"><img alt="Lifted Strength Club" class="logo-img" src="/lifted-logo-sunrise-light.png"/></a>
+<a class="bookm" href="#book">Book</a><button aria-label="Menu" class="burger" onclick="document.getElementById('navmenu').classList.toggle('open')">☰</button>
+<nav class="menu" id="navmenu">
+<a href="#method">Method</a><a href="about.html">About</a><a href="membership.html">Membership</a><a href="blog.html">Journal</a>
+<a href="guides.html">Free Guides</a><a class="pill" href="#book">Book a Consult</a>
+</nav>
+</div>
 </header>
-
 <!-- ===== HERO (video-ready) ===== -->
 <section class="hero">
-  <div class="hero-media">
-    <!-- AUGUST 2026: when the pro studio film is ready, replace the four <img class="slide"> below with:
+<div class="hero-media">
+<!-- AUGUST 2026: when the pro studio film is ready, replace the four <img class="slide"> below with:
          <video autoplay muted loop playsinline poster="poster.jpg"><source src="lifted-studio.mp4" type="video/mp4"></video>
          Everything else stays the same. Until then, these photos auto-play as a cinematic montage. -->
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1200w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1200w" alt="" />
-    <img class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1200w" alt="" />
-  </div>
-  <div class="live"><span class="d"></span> Showreel · pro studio film, Aug ’26</div>
-  <div class="wrap">
-    <div class="eyebrow" data-edit="home.eyebrow">One-on-one and small group personal training · Longwood, FL</div>
-    <h1>
-      <span class="ln"><span>Strong mind.</span></span>
-      <span class="ln"><span>Strong body.</span></span>
-      <span class="ln"><span><em>Strong life.</em></span></span>
-    </h1>
-    <div class="meta">
-      <p data-edit="home.intro">A private strength training studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength — led by <strong style="color:var(--cream);font-weight:600">Dr. Sharon Gam, PhD</strong>.</p>
-      <a class="cta" href="#book" data-edit="home.cta">Book a free consult →</a>
-    </div>
-  </div>
-  <div class="scrollcue">Scroll <span class="bar"></span></div>
+<img alt="" class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w"/>
+<img alt="" class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1200w"/>
+<img alt="" class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1200w"/>
+<img alt="" class="slide" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1200w"/>
+</div>
+<div class="live"><span class="d"></span> Showreel · pro studio film, Aug ’26</div>
+<div class="wrap">
+<div class="eyebrow" data-edit="home.eyebrow">One-on-one and small group personal training · Longwood, FL</div>
+<h1 data-edit="home.h1-6d0b1a">
+<span class="ln"><span>Strong mind.</span></span>
+<span class="ln"><span>Strong body.</span></span>
+<span class="ln"><span><em>Strong life.</em></span></span>
+</h1>
+<div class="meta">
+<p data-edit="home.intro">A private strength training studio built for how you actually feel. No weigh-ins. No before-and-after photos. Just science-led strength — led by <strong style="color:var(--cream);font-weight:600">Dr. Sharon Gam, PhD</strong>.</p>
+<a class="cta" data-edit="home.cta" href="#book">Book a free consult →</a>
+</div>
+</div>
+<div class="scrollcue">Scroll <span class="bar"></span></div>
 </section>
-
 <section class="liftmore"><div class="wrap">
-  <h2 data-edit="home.liftmore">We lift more than just weights.</h2>
-  <p class="lm-line">We lift <span class="lm-rotate"><span class="lm-stack"><i>spirits.</i><i>moods.</i><i>energy.</i><i>confidence.</i><i>strength.</i></span></span></p>
+<h2 data-edit="home.liftmore">We lift more than just weights.</h2>
+<p class="lm-line" data-edit="home.p-afe8f2">We lift <span class="lm-rotate"><span class="lm-stack"><i>spirits.</i><i>moods.</i><i>energy.</i><i>confidence.</i><i>strength.</i></span></span></p>
 </div></section>
-
 <!-- ===== MANIFESTO (integrated from concept 6) ===== -->
 <section class="manifesto">
-  <div class="wrap">
-    <div class="k reveal">Our philosophy</div>
-    <h2 class="reveal d1">Most gyms are built for how you <span class="strike">look</span>. Lifted is built for how you <span class="hi">feel</span> — <span class="out">strong</span>, in mind and body.</h2>
-  </div>
+<div class="wrap">
+<div class="k reveal" data-edit="home.div-8cb022">Our philosophy</div>
+<h2 class="reveal d1" data-edit="home.h2-bc6dfe">Most gyms are built for how you <span class="strike">look</span>. Lifted is built for how you <span class="hi">feel</span> — <span class="out">strong</span>, in mind and body.</h2>
+</div>
 </section>
-
 <!-- ===== MIND / BODY static split ===== -->
 <section class="split" id="split">
-  <div class="pane bodypane">
-    <img loading="lazy" decoding="async" class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
-    <div class="content">
-      <div class="num">02 — The body</div>
-      <h3>Strong <em>body.</em></h3>
-      <p data-edit="home.bodyDesc">Safe, smart, progressive programming designed with PhD-level knowledge of exercise science. Private, unhurried, built entirely around you.</p>
-    </div>
-  </div>
-  <div class="pane mindpane" id="mindpane">
-    <img loading="lazy" decoding="async" class="bg" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w" alt="" />
-    <div class="content">
-      <div class="num">01 — The mind</div>
-      <h3>Strong <em>mind.</em></h3>
-      <p data-edit="home.mindDesc">One of the most effective tools we have for anxiety, mood and resilience. Here it’s the whole point — not a side effect.</p>
-    </div>
-  </div>
+<div class="pane bodypane">
+<img alt="" class="bg" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w"/>
+<div class="content">
+<div class="num" data-edit="home.div-b76f79">02 — The body</div>
+<h3 data-edit="home.h3-07b12d">Strong <em>body.</em></h3>
+<p data-edit="home.bodyDesc">Safe, smart, progressive programming designed with PhD-level knowledge of exercise science. Private, unhurried, built entirely around you.</p>
+</div>
+</div>
+<div class="pane mindpane" id="mindpane">
+<img alt="" class="bg" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1200w"/>
+<div class="content">
+<div class="num" data-edit="home.div-613a27">01 — The mind</div>
+<h3 data-edit="home.h3-ff2d7b">Strong <em>mind.</em></h3>
+<p data-edit="home.mindDesc">One of the most effective tools we have for anxiety, mood and resilience. Here it’s the whole point — not a side effect.</p>
+</div>
+</div>
 </section>
-
 <!-- ===== STATS (count-up) ===== -->
 <section class="stats">
-  <div class="wrap row">
-    <div class="stat reveal"><div class="v"><span class="count" data-to="300" data-suffix="+">0</span></div><div class="l">Clients coached, one-on-one</div></div>
-    <div class="stat reveal d1"><div class="v"><span class="count" data-to="19" data-suffix="">0</span></div><div class="l">Years studying &amp; coaching</div></div>
-    <div class="stat reveal d2"><div class="v"><span class="count" data-to="8">0</span></div><div class="l">National press features</div></div>
-    <div class="stat reveal d3"><div class="v">0<span class="serif" style="color:var(--brass)"> shame</span></div><div class="l">No weigh-ins. No before-and-afters.</div></div>
-  </div>
+<div class="wrap row">
+<div class="stat reveal"><div class="v"><span class="count" data-suffix="+" data-to="300">0</span></div><div class="l" data-edit="home.div-27fccc">Clients coached, one-on-one</div></div>
+<div class="stat reveal d1"><div class="v"><span class="count" data-suffix="" data-to="19">0</span></div><div class="l" data-edit="home.div-4456bf">Years studying &amp; coaching</div></div>
+<div class="stat reveal d2"><div class="v"><span class="count" data-to="8">0</span></div><div class="l" data-edit="home.div-f84dcf">National press features</div></div>
+<div class="stat reveal d3"><div class="v" data-edit="home.div-72a0b4">0<span class="serif" style="color:var(--brass)"> shame</span></div><div class="l" data-edit="home.div-bc6629">No weigh-ins. No before-and-afters.</div></div>
+</div>
 </section>
-
 <!-- ===== METHOD bento ===== -->
 <section class="method" id="method">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal">What sets the <em>training</em> apart</h2>
-      <p class="reveal d1">Every package begins with a movement assessment and evolves as you get stronger. This is what you can expect.</p>
-    </div>
-    <div class="bento">
-      <div class="cell feature reveal"><div class="n">✦</div><div class="big">Coaching grounded in <em>exercise science</em> — not trends, not guesswork.</div></div>
-      <div class="cell reveal d1"><div class="n">01</div><div><h4>Tailored programs</h4><p>Posture, movement &amp; strength tests shape a plan that meets you where you are.</p></div></div>
-      <div class="cell img reveal d2"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""></div>
-      <div class="cell reveal"><div class="n">02</div><div><h4>Mindful coaching</h4><p>Every rep with intention — a real connection between body and mind.</p></div></div>
-      <div class="cell wide reveal d1"><div class="n">03</div><div><h4>Progress, tracked &amp; celebrated</h4><p>Progression is the key to results. Every exercise is recorded so we can see — and celebrate — how far you’ve come.</p></div></div>
-      <div class="cell reveal d2"><div class="n">04</div><div><h4>Habits that hold</h4><p>Small, powerful lifestyle changes that actually last.</p></div></div>
-      <div class="cell reveal"><div class="n">05</div><div><h4>Real accountability</h4><p>I’ll believe in you until you believe in yourself.</p></div></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="shead">
+<h2 class="reveal" data-edit="home.h2-4e6dae">What sets the <em>training</em> apart</h2>
+<p class="reveal d1" data-edit="home.p-b364c5">Every package begins with a movement assessment and evolves as you get stronger. This is what you can expect.</p>
+</div>
+<div class="bento">
+<div class="cell feature reveal"><div class="n">✦</div><div class="big" data-edit="home.div-4fd440">Coaching grounded in <em>exercise science</em> — not trends, not guesswork.</div></div>
+<div class="cell reveal d1"><div class="n" data-edit="home.div-96a3be">01</div><div><h4 data-edit="home.h4-02043c">Tailored programs</h4><p data-edit="home.p-2a8493">Posture, movement &amp; strength tests shape a plan that meets you where you are.</p></div></div>
+<div class="cell img reveal d2"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w"/></div>
+<div class="cell reveal"><div class="n" data-edit="home.div-a2ef40">02</div><div><h4 data-edit="home.h4-1f155d">Mindful coaching</h4><p data-edit="home.p-918fbf">Every rep with intention — a real connection between body and mind.</p></div></div>
+<div class="cell wide reveal d1"><div class="n" data-edit="home.div-e45ee7">03</div><div><h4 data-edit="home.h4-940e35">Progress, tracked &amp; celebrated</h4><p data-edit="home.p-ea1b91">Progression is the key to results. Every exercise is recorded so we can see — and celebrate — how far you’ve come.</p></div></div>
+<div class="cell reveal d2"><div class="n" data-edit="home.div-7d0665">04</div><div><h4 data-edit="home.h4-fcfd5b">Habits that hold</h4><p data-edit="home.p-a0cbd1">Small, powerful lifestyle changes that actually last.</p></div></div>
+<div class="cell reveal"><div class="n" data-edit="home.div-751d31">05</div><div><h4 data-edit="home.h4-26f82b">Real accountability</h4><p data-edit="home.p-7fcdc6">I’ll believe in you until you believe in yourself.</p></div></div>
+</div>
+</div>
 </section>
-
 <!-- ===== HORIZONTAL SCROLL GALLERY ===== -->
 <section class="gallery">
-  <div class="shead reveal">
-    <h2>Inside the <em>studio</em></h2>
-    <p>A calm, private space — drag to look around.</p>
-  </div>
-  <div class="grail">
-    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1000w" alt=""><div class="cap">One-on-one, always</div></div>
-    <div class="gcard quote"><p>“A safe space to move, grow, and feel better — on your terms.”</p></div>
-    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1000w" alt=""><div class="cap">Form over ego</div></div>
-    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1000w" alt=""><div class="cap">Strength that lasts</div></div>
-    <div class="gcard"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w" alt=""><div class="cap">Meet your body where it is</div></div>
-  </div>
-  <div class="ghint">← Drag / scroll →</div>
+<div class="shead reveal">
+<h2 data-edit="home.h2-0be579">Inside the <em>studio</em></h2>
+<p data-edit="home.p-2e1e01">A calm, private space — drag to look around.</p>
+</div>
+<div class="grail">
+<div class="gcard"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/a40f2fbd-2287-499f-96ed-de9b27a3adb1/Sharon+Gam+Personal+Training+2.jpg?format=1000w"/><div class="cap" data-edit="home.div-b7bf56">One-on-one, always</div></div>
+<div class="gcard quote"><p data-edit="home.p-8a722e">“A safe space to move, grow, and feel better — on your terms.”</p></div>
+<div class="gcard"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/4e6f257d-a27f-4dd0-ad6a-33c321da88ea/Sharon+Gam+Personal+Training+5.jpg?format=1000w"/><div class="cap" data-edit="home.div-3f4106">Form over ego</div></div>
+<div class="gcard"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/748df321-d5a8-4af7-b464-ae874fc16611/Sharon+Gam+Personal+Training+6.jpg?format=1000w"/><div class="cap" data-edit="home.div-4e69fe">Strength that lasts</div></div>
+<div class="gcard"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/02ad4e0f-86e6-4f6b-a25e-ae91e0bab8c9/Sharon+Gam+Personal+Training+3.jpg?format=1000w"/><div class="cap" data-edit="home.div-bdb584">Meet your body where it is</div></div>
+</div>
+<div class="ghint" data-edit="home.div-4b5d04">← Drag / scroll →</div>
 </section>
-
 <!-- ===== FOUNDER ===== -->
 <section class="founder" id="founder">
-  <div class="wrap grid">
-    <div class="pic reveal">
-      <div class="frame"></div>
-      <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w" alt="Dr. Sharon Gam" />
-      <div class="badge"><b>Dr. Sharon Gam</b><span>PhD</span></div>
-    </div>
-    <div>
-      <div class="lbl reveal">— Meet your coach</div>
-      <blockquote class="reveal d1" data-edit="home.founderQuote">“I struggled for years with depression and anxiety. What changed my life was <em>strength training</em> — so I built Lifted to share that.”</blockquote>
-      <p class="by reveal d1" data-edit="home.founderBio">After 19 years training clients and studying exercise science, I have the tools to help you build the rewarding life you want. You can get a personal training certification in a weekend — I’m not that kind of trainer.</p>
-      <div class="chips reveal d2">
-        <span class="chip">PhD · Exercise Physiology</span><span class="chip">CSCS (NSCA)</span><span class="chip">ACE Health Coach</span><span class="chip">Precision Nutrition</span><span class="chip">300+ clients</span>
-      </div>
-      <a class="reveal d2" href="about.html" style="display:inline-block;margin:6px 0 24px;color:var(--brass);font-weight:600;font-size:.92rem;letter-spacing:.02em;border-bottom:1px solid var(--brass);padding-bottom:2px">Read her full bio &amp; published research →</a>
-      <div class="press reveal d2">
-        <span class="pl">As featured in</span>
-        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w" alt="Shape">
-        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w" alt="Business Insider">
-        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w" alt="Bustle">
-        <img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w" alt="Greatist">
-      </div>
-    </div>
-  </div>
+<div class="wrap grid">
+<div class="pic reveal">
+<div class="frame"></div>
+<img alt="Dr. Sharon Gam" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/cc740846-c899-4532-b052-04bd5920ddfe/Sharon+Gam+Headshot+7.jpg?format=1000w"/>
+<div class="badge" data-edit="home.div-932b69"><b>Dr. Sharon Gam</b><span>PhD</span></div>
+</div>
+<div>
+<div class="lbl reveal" data-edit="home.div-f79d33">— Meet your coach</div>
+<blockquote class="reveal d1" data-edit="home.founderQuote">“I struggled for years with depression and anxiety. What changed my life was <em>strength training</em> — so I built Lifted to share that.”</blockquote>
+<p class="by reveal d1" data-edit="home.founderBio">After 19 years training clients and studying exercise science, I have the tools to help you build the rewarding life you want. You can get a personal training certification in a weekend — I’m not that kind of trainer.</p>
+<div class="chips reveal d2" data-edit="home.div-ad4d88">
+<span class="chip">PhD · Exercise Physiology</span><span class="chip">CSCS (NSCA)</span><span class="chip">ACE Health Coach</span><span class="chip">Precision Nutrition</span><span class="chip">300+ clients</span>
+</div>
+<a class="reveal d2" data-edit="home.a-e88cf5" href="about.html" style="display:inline-block;margin:6px 0 24px;color:var(--brass);font-weight:600;font-size:.92rem;letter-spacing:.02em;border-bottom:1px solid var(--brass);padding-bottom:2px">Read her full bio &amp; published research →</a>
+<div class="press reveal d2">
+<span class="pl">As featured in</span>
+<img alt="Shape" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/2d5a0de4-b703-4162-b7b5-015fbdca555f/shape-magazine-logo.jpg?format=300w"/>
+<img alt="Business Insider" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/ac653f76-20ff-486c-9c18-de05bf7fa0b5/business-insider.jpg?format=300w"/>
+<img alt="Bustle" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/e0f22912-107f-4f51-9af3-7ee13682708d/bustle.jpg?format=300w"/>
+<img alt="Greatist" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/46dd8111-b7d6-4e5e-85ab-209fe1e3868f/greatist-logo.jpg?format=300w"/>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ===== THE INDEX (integrated from concept 4) ===== -->
 <section class="index">
-  <div class="wrap">
-    <div class="top"><span>The Index</span><span>2100 N Ronald Reagan Blvd #1012 — Longwood, FL</span></div>
-    <a class="ix reveal" href="#method"><span class="n">01</span><span class="t">The <em>Method</em></span><span class="desc">Science-led programming, tracked and celebrated.</span><span class="a">↗</span></a>
-    <a class="ix reveal" href="mental-health.html"><span class="n">02</span><span class="t">The <em>Science</em></span><span class="desc">Why strength is medicine for the mind.</span><span class="a">↗</span></a>
-    <a class="ix reveal" href="membership.html"><span class="n">03</span><span class="t"><em>Membership</em></span><span class="desc">In-studio &amp; online, simply priced.</span><span class="a">↗</span></a>
-    <a class="ix reveal" href="about.html"><span class="n">04</span><span class="t">Dr. <em>Sharon Gam</em></span><span class="desc">PhD, 19 years, 300+ clients coached.</span><span class="a">↗</span></a>
-    <a class="ix reveal" href="blog.html"><span class="n">05</span><span class="t">The <em>Journal</em></span><span class="desc">Writing on strength &amp; mental health.</span><span class="a">↗</span></a>
-  </div>
+<div class="wrap">
+<div class="top" data-edit="home.div-7a35a3"><span>The Index</span><span>2100 N Ronald Reagan Blvd #1012 — Longwood, FL</span></div>
+<a class="ix reveal" data-edit="home.a-28d87d" href="#method"><span class="n">01</span><span class="t">The <em>Method</em></span><span class="desc">Science-led programming, tracked and celebrated.</span><span class="a">↗</span></a>
+<a class="ix reveal" data-edit="home.a-76938b" href="mental-health.html"><span class="n">02</span><span class="t">The <em>Science</em></span><span class="desc">Why strength is medicine for the mind.</span><span class="a">↗</span></a>
+<a class="ix reveal" data-edit="home.a-b7a24e" href="membership.html"><span class="n">03</span><span class="t"><em>Membership</em></span><span class="desc">In-studio &amp; online, simply priced.</span><span class="a">↗</span></a>
+<a class="ix reveal" data-edit="home.a-f421f0" href="about.html"><span class="n">04</span><span class="t">Dr. <em>Sharon Gam</em></span><span class="desc">PhD, 19 years, 300+ clients coached.</span><span class="a">↗</span></a>
+<a class="ix reveal" data-edit="home.a-f63ad1" href="blog.html"><span class="n">05</span><span class="t">The <em>Journal</em></span><span class="desc">Writing on strength &amp; mental health.</span><span class="a">↗</span></a>
+</div>
 </section>
-
 <!-- ===== PRICING ===== -->
 <section class="pricing" id="pricing">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>Two ways to <em>train</em></h2>
-      <p>Semi-private small-group strength training, or fully private one-on-one — both built on a movement assessment and programmed around you. Appointment-based, in Longwood.</p>
-    </div>
-    <div class="reveal" style="max-width:920px;margin:0 auto 20px;background:var(--brass);color:var(--charcoal);text-align:center;padding:13px 22px;border-radius:40px;font-size:.86rem;font-weight:600;letter-spacing:.01em">★ Founding-member pricing is open — locked in for life, limited spots before opening day.</div>
-    <div class="plans">
-      <div class="plan feat reveal">
-        <div class="t">Semi-private · small group of 5 or fewer · our flagship</div>
-        <h3>Strength Training</h3>
-        <div class="amt">$299<span>/mo founding · 2×/week</span></div>
-        <ul><li>Personalized programming in a group of ≤5</li><li><b>2 sessions/week</b> — $299/mo founding (std $349)</li><li><b>3 sessions/week</b> — $399/mo founding (std $449)</li><li>2 one-on-one onboarding sessions</li><li>Coach-guided 55-min sessions</li><li>Founding rate locked in + priority class times</li></ul>
-        <a class="b solid" href="founding-members.html">Founding member pricing available →</a>
-      </div>
-      <div class="plan reveal d1">
-        <div class="t">1-on-1 · fully private, Longwood</div>
-        <h3>Personal Training</h3>
-        <div class="amt">from $790<span>/mo</span></div>
-        <ul><li>55-min private sessions, 2–3×/week</li><li>Comprehensive movement assessment</li><li>Personalized nutrition report</li><li>Coaching app + accountability</li><li>3 / 6 / 12-month options</li></ul>
-        <a class="b ghost" href="#book">Book a free consult</a>
-      </div>
-    </div>
-    <div class="reveal" style="text-align:center;margin-top:34px"><a href="membership.html" style="display:inline-block;color:var(--brass);font-weight:600;font-size:.9rem;letter-spacing:.04em;border-bottom:1px solid var(--brass);padding-bottom:3px">See membership &amp; pricing →</a></div>
-  </div>
+<div class="wrap">
+<div class="head reveal">
+<h2 data-edit="home.h2-7eb5f5">Two ways to <em>train</em></h2>
+<p data-edit="home.p-85c36f">Semi-private small-group strength training, or fully private one-on-one — both built on a movement assessment and programmed around you. Appointment-based, in Longwood.</p>
+</div>
+<div class="reveal" data-edit="home.div-b5d594" style="max-width:920px;margin:0 auto 20px;background:var(--brass);color:var(--charcoal);text-align:center;padding:13px 22px;border-radius:40px;font-size:.86rem;font-weight:600;letter-spacing:.01em">★ Founding-member pricing is open — locked in for life, limited spots before opening day.</div>
+<div class="plans">
+<div class="plan feat reveal">
+<div class="t" data-edit="home.div-f823c8">Semi-private · small group of 5 or fewer · our flagship</div>
+<h3 data-edit="home.h3-37b5c5">Strength Training</h3>
+<div class="amt" data-edit="home.div-0d8ecc">$299<span>/mo founding · 2×/week</span></div>
+<ul><li data-edit="home.li-428aba">Personalized programming in a group of ≤5</li><li data-edit="home.li-264a13"><b>2 sessions/week</b> — $299/mo founding (std $349)</li><li data-edit="home.li-953f4f"><b>3 sessions/week</b> — $399/mo founding (std $449)</li><li data-edit="home.li-2dd8d1">2 one-on-one onboarding sessions</li><li data-edit="home.li-dd3bbc">Coach-guided 55-min sessions</li><li data-edit="home.li-ab1bfb">Founding rate locked in + priority class times</li></ul>
+<a class="b solid" data-edit="home.a-037452" href="founding-members.html">Founding member pricing available →</a>
+</div>
+<div class="plan reveal d1">
+<div class="t" data-edit="home.div-220780">1-on-1 · fully private, Longwood</div>
+<h3 data-edit="home.h3-1dccb9">Personal Training</h3>
+<div class="amt" data-edit="home.div-f71306">from $790<span>/mo</span></div>
+<ul><li data-edit="home.li-847f16">55-min private sessions, 2–3×/week</li><li data-edit="home.li-411c8e">Comprehensive movement assessment</li><li data-edit="home.li-ee3964">Personalized nutrition report</li><li data-edit="home.li-c10092">Coaching app + accountability</li><li data-edit="home.li-0603a7">3 / 6 / 12-month options</li></ul>
+<a class="b ghost" data-edit="home.a-67b39d" href="#book">Book a free consult</a>
+</div>
+</div>
+<div class="reveal" data-edit="home.div-456d63" style="text-align:center;margin-top:34px"><a href="membership.html" style="display:inline-block;color:var(--brass);font-weight:600;font-size:.9rem;letter-spacing:.04em;border-bottom:1px solid var(--brass);padding-bottom:3px">See membership &amp; pricing →</a></div>
+</div>
 </section>
-
 <!-- ===== TESTIMONIALS ===== -->
 <section class="quotes">
-  <div class="wrap">
-    <div class="shead"><h2>What members <em>say</em></h2><p>A perfect <b style="color:var(--brass)">5.0 ★</b> from 53 reviews on Google. <a href="reviews.html" style="color:var(--brass);font-weight:600;white-space:nowrap;border-bottom:1px solid var(--brass)">Read all reviews →</a></p></div>
-    <div class="grid">
-    <div class="qc reveal"><div class="mk">“</div><p>One of the very best trainers I’ve had across three decades. She listens intently and designed a workout that helped me make significant gains — while preventing pain and discomfort.</p><cite>— Judi · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    <div class="qc reveal d1"><div class="mk">“</div><p>Even on the days I have to drag myself out of bed, I leave feeling happy and energized. By far the most knowledgeable trainer I’ve worked with — in training, nutrition and physiology.</p><cite>— Michelle B. · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    <div class="qc reveal"><div class="mk">“</div><p>I’m in my 50s and had never hired a trainer before — I couldn’t have picked a better one. She helped me transform both physically and mentally in such a short time.</p><cite>— Lisa F. · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    <div class="qc reveal d1"><div class="mk">“</div><p>She meets you exactly where you are and builds you up safely and strategically. I feel stronger, more balanced, and more confident. Highly recommend!</p><cite>— Gina D. · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    <div class="qc reveal"><div class="mk">“</div><p>If you’ve ever struggled to stay consistent, speak with Sharon. Her technique helps you build long-lasting habits for the rest of your fitness journey.</p><cite>— Alex K. · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    <div class="qc reveal d1"><div class="mk">“</div><p>Working with her was the best decision I’ve made for my physical and mental health. She made me feel confident from day one — I never felt judged.</p><cite>— Jess L. · <span style="color:var(--brass)">★★★★★</span></cite></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="shead"><h2 data-edit="home.h2-f0a964">What members <em>say</em></h2><p data-edit="home.p-6159bb">A perfect <b style="color:var(--brass)">5.0 ★</b> from 53 reviews on Google. <a href="reviews.html" style="color:var(--brass);font-weight:600;white-space:nowrap;border-bottom:1px solid var(--brass)">Read all reviews →</a></p></div>
+<div class="grid">
+<div class="qc reveal"><div class="mk">“</div><p data-edit="home.p-545e28">One of the very best trainers I’ve had across three decades. She listens intently and designed a workout that helped me make significant gains — while preventing pain and discomfort.</p><cite>— Judi · <span data-edit="home.span-da89e7" style="color:var(--brass)">★★★★★</span></cite></div>
+<div class="qc reveal d1"><div class="mk">“</div><p data-edit="home.p-b6035b">Even on the days I have to drag myself out of bed, I leave feeling happy and energized. By far the most knowledgeable trainer I’ve worked with — in training, nutrition and physiology.</p><cite>— Michelle B. · <span data-edit="home.span-da89e7-2" style="color:var(--brass)">★★★★★</span></cite></div>
+<div class="qc reveal"><div class="mk">“</div><p data-edit="home.p-31023e">I’m in my 50s and had never hired a trainer before — I couldn’t have picked a better one. She helped me transform both physically and mentally in such a short time.</p><cite>— Lisa F. · <span data-edit="home.span-da89e7-3" style="color:var(--brass)">★★★★★</span></cite></div>
+<div class="qc reveal d1"><div class="mk">“</div><p data-edit="home.p-116470">She meets you exactly where you are and builds you up safely and strategically. I feel stronger, more balanced, and more confident. Highly recommend!</p><cite>— Gina D. · <span data-edit="home.span-da89e7-4" style="color:var(--brass)">★★★★★</span></cite></div>
+<div class="qc reveal"><div class="mk">“</div><p data-edit="home.p-dfcd07">If you’ve ever struggled to stay consistent, speak with Sharon. Her technique helps you build long-lasting habits for the rest of your fitness journey.</p><cite>— Alex K. · <span data-edit="home.span-da89e7-5" style="color:var(--brass)">★★★★★</span></cite></div>
+<div class="qc reveal d1"><div class="mk">“</div><p data-edit="home.p-c9ee31">Working with her was the best decision I’ve made for my physical and mental health. She made me feel confident from day one — I never felt judged.</p><cite>— Jess L. · <span data-edit="home.span-da89e7-6" style="color:var(--brass)">★★★★★</span></cite></div>
+</div>
+</div>
 </section>
-
 <!-- ===== JOURNAL ===== -->
 <section class="journal" id="journal">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal">From the <em>journal</em></h2>
-      <a class="reveal" href="blog.html">All 126 articles →</a>
-    </div>
-    <div class="posts">
-      <a class="pcard reveal" href="articles/why-i-dont-post-body-transformations.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w" alt=""></div><div class="c">Mental Health</div><h3>Why I Don’t Post Body Transformations</h3></a>
-      <a class="pcard reveal d1" href="articles/why-its-so-hard-to-stay-consistent-with-exercise-the-inconsistency-paradox.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>Why It’s So Hard to Stay Consistent With Exercise</h3></a>
-      <a class="pcard reveal d2" href="articles/i-know-what-to-do-why-cant-i-make-it-happen.html"><div class="im"><img loading="lazy" decoding="async" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w" alt=""></div><div class="c">Mindset</div><h3>“I Know What To Do, Why Can’t I Make It Happen?”</h3></a>
-    </div>
-  </div>
+<div class="wrap">
+<div class="shead">
+<h2 class="reveal" data-edit="home.h2-a4bef2">From the <em>journal</em></h2>
+<a class="reveal" data-edit="home.a-8e80e5" href="blog.html">All 126 articles →</a>
+</div>
+<div class="posts">
+<a class="pcard reveal" href="articles/why-i-dont-post-body-transformations.html"><div class="im"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1768327284636-HBNIDCHHD5G89WU8ARRK/No+Body+Transformations.jpg?format=750w"/></div><div class="c" data-edit="home.div-b225e5">Mental Health</div><h3 data-edit="home.h3-b88292">Why I Don’t Post Body Transformations</h3></a>
+<a class="pcard reveal d1" href="articles/why-its-so-hard-to-stay-consistent-with-exercise-the-inconsistency-paradox.html"><div class="im"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1776968463566-D9BCHI9R0S8997Z7LT1F/Inconsistency+Paradox.jpg?format=750w"/></div><div class="c" data-edit="home.div-735b9d">Mindset</div><h3 data-edit="home.h3-8e666c">Why It’s So Hard to Stay Consistent With Exercise</h3></a>
+<a class="pcard reveal d2" href="articles/i-know-what-to-do-why-cant-i-make-it-happen.html"><div class="im"><img alt="" decoding="async" loading="lazy" src="https://images.squarespace-cdn.com/content/v1/65b7df6a90c12b5744244219/1763408378990-8LYU2J5RUB4N848J3Y4D/Why+cant+i+make+it+happen.jpg?format=750w"/></div><div class="c" data-edit="home.div-735b9d-2">Mindset</div><h3 data-edit="home.h3-4fbb7c">“I Know What To Do, Why Can’t I Make It Happen?”</h3></a>
+</div>
+</div>
 </section>
-
 <!-- ===== END CTA / BOOKING ===== -->
 <section class="endcta" id="book">
-  <div class="wrap">
-    <h2 class="reveal" data-edit="home.endctaTitle">The hardest part<br/>is <em>getting started.</em></h2>
-    <p class="reveal d1" data-edit="home.endctaSub">Book a free initial consultation and let’s make a plan together.</p>
-    <div class="sched reveal d2" style="max-width:920px;margin:34px auto 14px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.28)">
-      <iframe src="https://sharongamfitnesswellness.as.me/schedule/0a2ce14c/appointment/60284930/calendar/9854637?appointmentTypeIds[]=60284930" title="Book a free consultation with Dr. Sharon Gam" width="100%" height="760" frameborder="0" loading="lazy"></iframe>
-    </div>
-    <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
-    <a class="cta reveal d3" href="https://sharongamfitnesswellness.as.me/schedule/0a2ce14c/appointment/60284930/calendar/9854637?appointmentTypeIds[]=60284930" target="_blank" rel="noopener">Open the booking page →</a>
-  </div>
+<div class="wrap">
+<h2 class="reveal" data-edit="home.endctaTitle">The hardest part<br/>is <em>getting started.</em></h2>
+<p class="reveal d1" data-edit="home.endctaSub">Book a free initial consultation and let’s make a plan together.</p>
+<div class="sched reveal d2" style="max-width:920px;margin:34px auto 14px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.28)">
+<iframe frameborder="0" height="760" loading="lazy" src="https://sharongamfitnesswellness.as.me/schedule/0a2ce14c/appointment/60284930/calendar/9854637?appointmentTypeIds[]=60284930" title="Book a free consultation with Dr. Sharon Gam" width="100%"></iframe>
+</div>
+<script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+<a class="cta reveal d3" data-edit="home.a-cba975" href="https://sharongamfitnesswellness.as.me/schedule/0a2ce14c/appointment/60284930/calendar/9854637?appointmentTypeIds[]=60284930" rel="noopener" target="_blank">Open the booking page →</a>
+</div>
 </section>
-
 <footer><div class="wrap fgrid">
-<div><a class="logo" href="flagship.html"><img src="lifted-badge-light.png" alt="Lifted Strength Club"></a><p class="ftag">Strong mind. Strong body. Strong life.</p></div>
+<div><a class="logo" href="flagship.html"><img alt="Lifted Strength Club" src="lifted-badge-light.png"/></a><p class="ftag">Strong mind. Strong body. Strong life.</p></div>
 <div class="fcol"><h4>Explore</h4><a href="flagship.html">Home</a><a href="about.html">About</a><a href="membership.html">Membership</a><a href="founding-members.html">Founding Members</a><a href="blog.html">Journal</a><a href="guides.html">Free Guides</a></div>
-<div class="fcol"><h4>Visit</h4><p>2100 N Ronald Reagan Blvd #1012<br>Longwood, FL 32750</p><p>By appointment</p><p class="femail"><a href="mailto:sharon@drsharongam.com">sharon@drsharongam.com</a></p><a href="#book">Book a free consult &rarr;</a></div>
-</div><div class="wrap fcopy">&copy; 2026 Lifted Strength Club &middot; Dr. Sharon Gam, PhD &middot; Longwood, FL</div></footer>
-
+<div class="fcol"><h4>Visit</h4><p>2100 N Ronald Reagan Blvd #1012<br/>Longwood, FL 32750</p><p>By appointment</p><p class="femail"><a href="mailto:sharon@drsharongam.com">sharon@drsharongam.com</a></p><a href="#book">Book a free consult →</a></div>
+</div><div class="wrap fcopy">© 2026 Lifted Strength Club · Dr. Sharon Gam, PhD · Longwood, FL</div></footer>
 <script>
   const hdr=document.getElementById('hdr'), prog=document.getElementById('prog');
   let ticking=false;
