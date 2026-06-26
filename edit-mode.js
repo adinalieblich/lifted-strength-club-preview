@@ -133,7 +133,8 @@
     function markDirty() { dirty = true; saveBtn.disabled = false; msg.textContent = "Unsaved changes"; }
     function onElClick(e) {
       var el = e.currentTarget;
-      if (el.tagName === "A") e.preventDefault();
+      e.preventDefault();   // don't let a link/button (or a parent <a>) navigate
+      e.stopPropagation();
       if (el.getAttribute("contenteditable") === "true") return;
       el.setAttribute("contenteditable", "true");
       el.focus();
