@@ -141,6 +141,7 @@
     // expose for cleanup
     enterEdit._cleanup = function () {
       els.forEach(function (el) {
+        el.innerHTML = original[el.getAttribute("data-edit")]; // drop any unsaved on-screen edits
         el.removeEventListener("click", onElClick);
         el.removeEventListener("input", markDirty);
         el.removeAttribute("contenteditable");

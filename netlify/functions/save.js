@@ -27,10 +27,12 @@ function setEdit(html, key, value) {
   const marker = 'data-edit="' + key + '"';
   const mi = html.indexOf(marker);
   if (mi === -1) return html;
-  const lt = html.lastIndexOf("<", mi);
-  const tagMatch = /^<([a-zA-Z0-9]+)/.exec(html.slice(lt, mi + marker.length + 200));
-  if (!tagMatch) return html;
-  const tag = tagMatch[1].toLowerCase();
+  // Derive the tag from the REAL opening tag: walk back to a "<tag ...attrs" that ends at
+  // the marker, forbidding any "<" in between — so a "<" inside an earlier attribute value
+  // can't be mistaken for the tag start (would otherwise corrupt the doc). No match => no-op.
+  const open = /<([a-zA-Z0-9]+)(\s[^<>]*)?$/.exec(html.slice(0, mi + marker.length));
+  if (!open) return html;
+  const tag = open[1].toLowerCase();
   const gt = html.indexOf(">", mi);
   if (gt === -1) return html;
   if (html[gt - 1] === "/") return html; // self-closing, nothing to edit
@@ -64,6 +66,7 @@ exports.handler = async (event) => {
   const secret = process.env.JWT_SECRET || "";
   const payload = secret ? verify(token, secret) : null;
   if (!payload) return { statusCode: 401, body: JSON.stringify({ error: "Please log in again." }) };
+  if ((event.body || "").length > 512 * 1024) return { statusCode: 413, body: "Payload too large" };
 
   let path, edits;
   try { ({ path, edits } = JSON.parse(event.body || "{}")); }
