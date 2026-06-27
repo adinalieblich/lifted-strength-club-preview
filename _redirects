@@ -1,1 +1,21 @@
 /    /flagship.html    200
+
+# blog taxonomy archives
+/articles/category/*    /blog.html    301
+/articles/tag/*    /blog.html    301
+
+# moved or retired pages -> closest live page
+/about-expert-lake-mary-personal-training    /about.html    301
+/anxiety-strength-training-12-week-program    /mental-health.html    301
+/articles    /blog.html    301
+/contact    /    301
+/group-strength-training    /membership.html    301
+/guide-to-exercise-for-mental-health/download-guide-to-exercise-for-mental-health    /guide-to-exercise-for-mental-health-download.html    301
+/guide-to-healthy-eating/download-a-guide-to-healthy-eating    /guide-to-healthy-eating-download.html    301
+/how-to-set-effective-goals/download-effective-goals-ebook    /how-to-set-effective-goals-download.html    301
+/lift-and-learn-workshop    /membership.html    301
+/personal-training-lake-mary-florida    /strength-training-longwood.html    301
+/start-here-lake-mary-personal-training    /    301
+/start-here-lake-mary-personal-training-welcome    /    301
+/strength-training-101/download-guide-to-strength-training-101    /strength-training-101-download.html    301
+/welcome    /    301
