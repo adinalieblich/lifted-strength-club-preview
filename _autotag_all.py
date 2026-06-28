@@ -35,7 +35,7 @@ def excluded(el):
     return False
 
 def has_text(el):
-    t = el.get_text(strip=True); return bool(t) and len(t) >= 2
+    t = el.get_text(strip=True); return bool(t) and (len(t) >= 2 or t.isalnum())
 
 def is_pure_inline(el):
     return all(c.name in INLINE for c in el.find_all(True, recursive=True))

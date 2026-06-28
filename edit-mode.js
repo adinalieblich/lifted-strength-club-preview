@@ -98,6 +98,7 @@
 
     var bar = document.createElement("div"); bar.className = "lsc-bar";
     bar.innerHTML = '<span><span class="dot"></span> <b>Editing</b></span><span class="lsc-msg" id="lsc-msg">Click text to edit · click a photo to swap it</span>' +
+      '<button class="lsc-ghost" id="lsc-undo">↶ Undo</button>' +
       '<button class="lsc-link" id="lsc-linkbtn">🔗 Link</button><button class="lsc-save" id="lsc-savebtn" disabled>Publish changes</button>' +
       '<button class="lsc-ghost" id="lsc-done">Done</button><button class="lsc-ghost" id="lsc-logout">Log out</button>';
     document.body.appendChild(bar);
@@ -124,6 +125,11 @@
       if (url == null) return;
       pendingLinks[keyOf(lastLinkEl)] = { href: url, global: isGlobal(lastLinkEl) };
       markDirty(); setMsg("Link set — Publish to apply");
+    };
+
+    bar.querySelector("#lsc-undo").onclick = function () {
+      document.execCommand("undo");
+      setMsg("Undid last change (tip: Ctrl/Cmd+Z works too). Not yet published — use Discard to drop everything.");
     };
 
     function cleanup() {
