@@ -4,3 +4,8 @@
 [[edge_functions]]
 function = "noindex"
 path = "/*"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
