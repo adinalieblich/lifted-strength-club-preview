@@ -18,7 +18,8 @@ BLOCKCAND = {"h1","h2","h3","h4","h5","h6","p","li","blockquote","figcaption","c
 EXCL_TAGS = {"script","style","iframe","svg","noscript","head","title"}
 # decoration / animation / structural controls we never tag
 EXCL_CLASS = {"lm-rotate","lm-stack","slide","hero-media","count","sched","grain","progress",
-              "burger","scrollcue","im","press","herotop"}
+              "burger","scrollcue","im","press","herotop",
+              "ml-form-embedContainer","ml-form-embedWrapper","ml-form-embedBody"}
 
 def pagekey(f):
     b = os.path.basename(f)[:-5]
