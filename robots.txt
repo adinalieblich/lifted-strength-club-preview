@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
+Disallow: /preview.html
+Disallow: /mockups.html
+Disallow: /style-guide.html
+Disallow: /logo-compare.html
+Disallow: /logo-rebuild.html
+Disallow: /font-options.html
+Disallow: /seo-audit.html
+Disallow: /webflow-for-sharon.html
+Disallow: /launch-plan.html
+Disallow: /url-matching-index.html
+Disallow: /option-1-warm-editorial.html
+Disallow: /option-2-bold-modern.html
+Disallow: /option-3-community-wellness.html
+Disallow: /concepts/
 
 Sitemap: https://drsharongam.com/sitemap.xml
