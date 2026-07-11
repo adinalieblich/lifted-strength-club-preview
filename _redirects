@@ -1,3 +1,9 @@
+# --- liftedstrengthclub.com serves the front door (host-scoped; must be first) ---
+https://liftedstrengthclub.com/* /door/:splat 200
+https://www.liftedstrengthclub.com/* /door/:splat 200
+http://liftedstrengthclub.com/* https://liftedstrengthclub.com/:splat 301!
+http://www.liftedstrengthclub.com/* https://liftedstrengthclub.com/:splat 301!
+
 /    /flagship.html    200
 
 # blog taxonomy archives
