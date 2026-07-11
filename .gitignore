@@ -1,0 +1,6 @@
+
+# local-only docs (would be publicly served if committed)
+CLAUDE.md
+STATUS.md
+docs/
+files/
