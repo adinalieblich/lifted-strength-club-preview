@@ -4,3 +4,15 @@ CLAUDE.md
 STATUS.md
 docs/
 files/
+_dht.html
+_dht_body.html
+_url_report.html
+_fixes.py
+_autotag_all.py
+_build_missing_post.py
+_build_golive.py
+_*.txt
+_audit/
+_autotag.py
+_build_pages.py
+_data/
