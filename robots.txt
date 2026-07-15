@@ -15,4 +15,4 @@ Disallow: /option-2-bold-modern.html
 Disallow: /option-3-community-wellness.html
 Disallow: /concepts/
 
-Sitemap: https://drsharongam.com/sitemap.xml
+Sitemap: https://liftedstrengthclub.com/sitemap.xml

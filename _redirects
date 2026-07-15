@@ -1,8 +1,8 @@
-# --- liftedstrengthclub.com serves the front door (host-scoped; must be first) ---
-https://liftedstrengthclub.com/* /door/:splat 200
-https://www.liftedstrengthclub.com/* /door/:splat 200
-http://liftedstrengthclub.com/* https://liftedstrengthclub.com/:splat 301!
-http://www.liftedstrengthclub.com/* https://liftedstrengthclub.com/:splat 301!
+# --- DOMAIN SWAP (2026-07-11): liftedstrengthclub.com is the site; drsharongam.com 301s across (path-preserving) ---
+https://drsharongam.com/* https://liftedstrengthclub.com/:splat 301!
+https://www.drsharongam.com/* https://liftedstrengthclub.com/:splat 301!
+http://drsharongam.com/* https://liftedstrengthclub.com/:splat 301!
+http://www.drsharongam.com/* https://liftedstrengthclub.com/:splat 301!
 
 /    /flagship.html    200
 
