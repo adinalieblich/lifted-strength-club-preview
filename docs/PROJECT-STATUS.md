@@ -7,6 +7,9 @@ _Last updated: 2026-10-28. Update this file whenever something changes._
 **Waiting on Sharon** to choose a version of the ad landing page and send what we asked for (emailed Oct 27,
 "Website" thread). Nothing is being built until she replies.
 
+- Oct 27, 3:46pm ET: Sharon said the mockup links asked her to sign in. Adina turned on link sharing and
+  replied Oct 27 evening asking her to try again. No reply from Sharon yet (checked Oct 28, 6:45am ET).
+
 ## Open work
 
 ### 1. Ad landing page: free-consultation page for Facebook/Instagram ads
