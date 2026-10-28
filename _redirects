@@ -1,3 +1,8 @@
+# project docs are committed for hand-over but must never be served on the live site
+/docs/*    /404    404!
+/CLAUDE.md    /404    404!
+/claude.md    /404    404!
+
 # --- DOMAIN SWAP (2026-07-11): liftedstrengthclub.com is the site; drsharongam.com 301s across (path-preserving) ---
 https://drsharongam.com/* https://liftedstrengthclub.com/:splat 301!
 https://www.drsharongam.com/* https://liftedstrengthclub.com/:splat 301!

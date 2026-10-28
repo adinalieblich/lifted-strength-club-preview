@@ -1,8 +1,8 @@
 
-# local-only docs (would be publicly served if committed)
-CLAUDE.md
+# project docs (CLAUDE.md, docs/) ARE committed; _redirects 404s them on the live site
 STATUS.md
-docs/
+docs/mockups/*/img/
+docs/mockups/*/*.html
 files/
 _dht.html
 _dht_body.html
